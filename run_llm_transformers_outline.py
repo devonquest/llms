@@ -143,7 +143,7 @@ options = cargs_to_options( sys.argv[ 1: ] )
 generate, tokenizer = \
     setup_pipeline( options[ "model" ], options[ "attn_impl" ] )
 
-task = "- learning how to play piano without a teacher"
+task = "- learning how to play piano"
 generation_attempts = 0
 
 def make_breakdown_prompt( task ):
