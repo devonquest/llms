@@ -25,7 +25,7 @@ def create_pipeline( name, attn_impl, device, tokenizer ):
         model = tf.AutoModelForCausalLM.from_pretrained(
             name, config=config, torch_dtype=to.bfloat16,
             trust_remote_code=True,
-            # device_map = "auto"
+            device_map = "auto"
         ),
         tokenizer = tokenizer
     )
