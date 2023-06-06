@@ -226,8 +226,10 @@ def break_down_deep(task, depth, cur_depth=0, outline=None):
             else:
                 outline.append(line)
 
-    return task + outline_to_string( outline )
-    # return outline_to_string( outline )
+    outline = outline_to_string( outline )
+    print( type( outline ) )
+    # return task + "\n" + outline_to_string( outline )
+    return outline
     # return outline
 
 print( break_down_deep( task, 1 ) )
