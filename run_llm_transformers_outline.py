@@ -147,21 +147,30 @@ task = "- learning how to play piano"
 generation_attempts = 0
 
 def make_breakdown_prompt( task ):
-    return f"""### Instruction:
+    return f"""### Q1:
+Can you break down the task "- learn how to play the piano" into a flat list
+of 2 to 7 items given the context below?
 
-Break down the task '{ task }' given the context below into a flat list of
-    2 to 7 items. Include _just_ the list in your response.
+Context:
+- learn how to play the piano
 
-Context: - learning how to play the piano
+### A1:
+- Master piano keys and basic exercises
+- Understand music theory and practice songs
+- Maintain daily routine and seek regular feedback
 
-Format:
+### Q2:
+Can you break down the task "{ task }" into a flat list of 2 to 7 items
+given the context below?
 
-- item0 ( not literally, replace with actual item )
-- item1 ( not literally, replace with actual item )
-...
+Context:
+- developing a mobile app for a restaurant
 
-### Response:
+### A2:
 """
+
+task = "- developing a mobile app for a restaurant"
+
 
 def generate_with_predicate(prompt, predicate):
     global generation_attempts
