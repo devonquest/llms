@@ -149,8 +149,10 @@ generation_attempts = 0
 def make_breakdown_prompt( task ):
     return f"""### Instruction:
 
-Break down the task '{ task }' into a flat list of 3 to 7 items.
-Include _just_ the lis in your response.
+Break down the task '{ task }' given the context below into a flat list of
+    1 to 7 items. Include _just_ the list in your response.
+
+Context: - learning how to play the piano
 
 Format:
 
