@@ -146,6 +146,9 @@ generate, tokenizer = \
 task = "- learning how to play piano"
 generation_attempts = 0
 
+# TODO: Continue here. Implement whole outline as context. After that fix runpod
+#   storage deletion issue and then continue implementing techniques for
+#   context in very large outlines.
 def make_breakdown_prompt( task ):
     return f"""### Q1:
 Can you break down the task "- learn how to play the piano" into a flat list
