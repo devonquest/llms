@@ -173,6 +173,7 @@ def generate_with_predicate(prompt, predicate):
         print(f"\nInvalid response: \n\n{response}")
         return generate_with_predicate(prompt, predicate)
 
+    generation_attempts = 0
     return response
 
 def is_flat_list(response):
