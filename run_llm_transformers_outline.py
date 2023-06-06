@@ -173,7 +173,6 @@ def generate_with_predicate(prompt, predicate):
         print(f"\nInvalid response: \n\n{response}")
         return generate_with_predicate(prompt, predicate)
 
-    generation_attempts = 0
     return response
 
 def is_flat_list(response):
@@ -192,10 +191,13 @@ def sanitize_flat_list(response):
     return '\n'.join(sanitized)
 
 def break_down(task):
+    global generation_attempts
+
     prompt = make_breakdown_prompt(task)
     response = generate_with_predicate(prompt, is_flat_list)
-    response = sanitize_flat_list(response)
-    return response
+    generation_attempts = 0
+
+    return sanitize_flat_list(response)
 
 def outline_to_string(outline, depth=0):
     result = ""
