@@ -143,6 +143,9 @@ options = cargs_to_options( sys.argv[ 1: ] )
 generate, tokenizer = \
     setup_pipeline( options[ "model" ], options[ "attn_impl" ] )
 
+task = "- learning how to play piano"
+generation_attempts = 0
+
 def make_breakdown_prompt( task ):
     return f"""### Instruction:
 
@@ -158,47 +161,69 @@ Format:
 ### Response:
 """
 
-generation_attempts = 0
-
-def generate_with_condition( prompt, predicate ):
+def generate_with_predicate(prompt, predicate):
     global generation_attempts
+    response, *_ = generate_once(prompt, 1000, generate, tokenizer)
+    
+    if not predicate(response):
+        generation_attempts += 1
+        if generation_attempts == 10:
+            print("Generation attempts exhausted, exiting...")
+            exit(1)
+        print(f"\nInvalid response: \n\n{response}")
+        return generate_with_predicate(prompt, predicate)
 
-    response, *_ = generate_once( prompt, 1000, generate, tokenizer )
-    lines = response.split( "\n" )
+    return response
+
+def is_flat_list(response):
+    lines = response.split('\n')
     num_usable_lines = 0
-
-    for l in lines:
-        if predicate( l ):
+    for line in lines:
+        if line.startswith("-"):
             num_usable_lines += 1
-
-            if num_usable_lines == 2:
-                return [ l for l in lines if l.startswith( "-" ) ]
         elif num_usable_lines > 0:
             num_usable_lines = 0
-            
-    generation_attempts += 1
-    print( response )
-    print( "Malformed response. Trying again." )
+    return num_usable_lines >= 3
 
-    if generation_attempts < 10:
-        return generate_with_condition( prompt, predicate )
-    else:
-        return response, lines
+def sanitize_flat_list(response):
+    lines = response.split('\n')
+    sanitized = [line for line in lines if line.startswith("-")]
+    return '\n'.join(sanitized)
 
-depth = 0
-task = "- learning how to play piano"
+def break_down(task):
+    prompt = make_breakdown_prompt(task)
+    response = generate_with_predicate(prompt, is_flat_list)
+    response = sanitize_flat_list(response)
+    return response
 
-prompt = make_breakdown_prompt( task )
-lines = generate_with_condition( prompt, lambda l: l.startswith( "-" ) )
+def outline_to_string(outline, depth=0):
+    result = ""
+    tab = '\t' * (depth + 1)
 
-prompt = make_breakdown_prompt( lines[ 0 ] )
-sub_lines = generate_with_condition( prompt, lambda l: l.startswith( "-" ) )
+    for item in outline:
+        if isinstance(item, dict):
+            for task, subtasks in item.items():
+                result += f"{tab}- {task}\n"
+                result += outline_to_string(subtasks, depth + 1)
+        else:
+            result += f"{tab}- {item}\n"
 
-lines[ 0 ] = lines[ 0 ], sub_lines
-for i, l in enumerate( lines ):
-    if isinstance( l, tuple ):
-        lines[ i ] = "\n".join( [ l[ 0 ] ] + [ f"    { l }" for l in l[ 1 ] ] )
-    
-lines = [ task ] + [ f"  { l }" for l in lines ]
-outline = "\n".join( lines )
-print( outline )
+    return result
+
+def break_down_deep(task, depth, cur_depth=0, outline=None):
+    if outline is None:
+        outline = []
+
+    if cur_depth < depth:
+        broken = break_down(task)
+        lines = broken.split('\n')
+
+        for line in lines:
+            new_outline = break_down_deep(line, depth, cur_depth + 1)
+
+            if new_outline:
+                outline.append({line: new_outline})
+            else:
+                outline.append(line)
+
+    return f"{ task }\n{ outline_to_string( outline ) }"
