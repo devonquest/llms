@@ -165,7 +165,7 @@ def generate_with_condition( prompt, predicate ):
             generation_attempts += 1
             print( "Malformed response. Trying again." )
 
-            return generate_with_condition( predicate )
+            return generate_with_condition( prompt, predicate )
     
     generation_attempts = 0
     return response, lines
