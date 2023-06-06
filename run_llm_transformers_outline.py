@@ -210,7 +210,7 @@ def outline_to_string(outline, depth=0):
 
     return result
 
-def break_down_deep(task, depth, cur_depth=0, outline=None):
+def _break_down_deep(task, depth, cur_depth=0, outline=None):
     if outline is None:
         outline = []
 
@@ -219,17 +219,16 @@ def break_down_deep(task, depth, cur_depth=0, outline=None):
         lines = broken.split('\n')
 
         for line in lines:
-            new_outline = break_down_deep(line, depth, cur_depth + 1)
+            new_outline = _break_down_deep(line, depth, cur_depth + 1)
 
             if new_outline:
                 outline.append({line: new_outline})
             else:
                 outline.append(line)
 
-    outline = outline_to_string( outline )
-    print( type( outline ) )
-    # return task + "\n" + outline_to_string( outline )
-    return outline
-    # return outline
+    return outline_to_string( outline )
+
+def break_down_deep(task, depth):
+    return task + "\n" + _break_down_deep(task, depth)
 
 print( break_down_deep( task, 1 ) )
