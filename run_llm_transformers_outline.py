@@ -146,9 +146,6 @@ generate, tokenizer = \
 task = "- learning how to play piano"
 generation_attempts = 0
 
-# TODO: Continue here. Implement whole outline as context. After that fix runpod
-#   storage deletion issue and then continue implementing techniques for
-#   context in very large outlines.
 def make_breakdown_prompt( task ):
     return f"""### Q1:
 Can you break down the task "- learn how to play the piano" into a flat list
@@ -171,9 +168,6 @@ Context:
 
 ### A2:
 """
-
-task = "- developing a mobile app for a restaurant"
-
 
 def generate_with_predicate(prompt, predicate):
     global generation_attempts
@@ -204,6 +198,24 @@ def sanitize_flat_list(response):
     sanitized = [line for line in lines if line.startswith("-")]
     return '\n'.join(sanitized)
 
+def item_from_path( outline, path ):
+    next, *path_tail = path
+    item = outline[ next ]
+
+    if path_tail:
+        return item_from_path( item, path_tail )
+    else:
+        return item
+    
+def set_item_at_path( outline, path, element ):
+    next, *path_tail = path
+    cur_element = outline[ next ]
+
+    if path_tail:
+        set_item_at_path( cur_element, path_tail, element )
+    else:
+        outline[ next ] = element
+
 def break_down(task):
     global generation_attempts
 
@@ -227,25 +239,54 @@ def outline_to_string(outline, depth=0):
 
     return result
 
-def _break_down_deep(task, depth, cur_depth=0, outline=None):
-    if outline is None:
-        outline = []
+# TODO: Consider removing.
+#   - new break_down_deep with context token length limitation
+#       def _break_down_deep(
+#           task,
+#           depth,
+#           cur_depth=0,
+#           outline=[],
+#           outline_path=[0],
+#           cur_line_i=0
+#       ):
+#           - if cur_depth < depth
+#               - break down task, passing outline as context ( returns the block of subtasks as a string )
+#               - split the subtasks into lines
+#               - for each i, line in enumerate( lines )
+#                   - _break_down_deep(
+#                       line,
+#                       depth,
+#                       cur_depth + 1,
+#                       if item at outline_path of outline doesn't exist or is not dict
+#                           outline with item at outline_path set to a dict with
+#                               the task as key and the lines as the value,
+#                       else
+#                           outline
+#                       outline_path + task + i,
+#                       i
+#                     )
+#           - return with outline
 
+def _break_down_deep(
+    task, depth, cur_depth = 0, outline = [], outline_path = [ 0 ],
+):
     if cur_depth < depth:
-        broken = break_down(task)
-        lines = broken.split('\n')
+        children = break_down( task, outline_to_string( outline ) )
+        lines = children.split( "\n" )
 
-        for line in lines:
-            new_outline = _break_down_deep(line, depth, cur_depth + 1)
+        item = item_from_path( outline, outline_path )
+        if not item or not isinstance( item, dict ):
+            set_item_at_path( outline, outline_path, { task: lines } )
 
-            if new_outline:
-                outline.append({line: new_outline})
-            else:
-                outline.append(line)
-
+        for i, line in enumerate( lines ):
+            _break_down_deep(
+                line, depth, cur_depth + 1, outline, outline_path + task + i
+            )
+        
     return outline
 
-def break_down_deep(task, depth):
-    return task + "\n" + outline_to_string( _break_down_deep(task, depth) )
+# TODO: Consider removing.
+# def break_down_deep(task, depth):
+#     return task + "\n" + outline_to_string( _break_down_deep(task, depth) )
 
-print( break_down_deep( task, 3 ) )
+print( _break_down_deep( "- developing a mobile app for a restaurant", 1 ) )
