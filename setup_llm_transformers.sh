@@ -4,7 +4,17 @@ attn_impl="triton"
 
 apt install python3.10-venv
 python -m venv ./
-source ./bin/activate
 
+for cmd in on off; do
+    cat << EOF | sed 's/^\s*//' > "$cmd"
+    #!/bin/bash
+
+    $([ "$cmd" = "on" ] && echo "source ./bin/activate" || echo "deactivate")
+EOF
+
+    chmod +x "$cmd"
+done
+
+source on
 pip install toolz transformers einops accelerate "$triton"
 # python run_llm_transformers.py --model $model --attn_impl $attn_impl
