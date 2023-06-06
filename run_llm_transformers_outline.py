@@ -16,7 +16,6 @@ prev_prompt = ""
 
 def create_pipeline( name, attn_impl, device, tokenizer ):
     config = tf.AutoConfig.from_pretrained( name, trust_remote_code = True )
-    print( f"attn_impl: { attn_impl }" )
     config.attn_config['attn_impl'] = attn_impl
     config.init_device = device
 
@@ -154,10 +153,23 @@ def make_breakdown_prompt( task ):
     ### Response:
     """
 
-response, *_ = generate_once(
-    make_breakdown_prompt( "- learning how to play piano" ),
-    1000,
-    generate,
-    tokenizer
-)
-print( response )
+generation_attempts = 0
+
+def generate_with_condition( predicate ):
+    response, *_ = generate_once(
+        make_breakdown_prompt( "- learning how to play piano" ),
+        1000,
+        generate,
+        tokenizer
+    )
+
+    for l in response.split( "\n" ):
+        if not predicate( l ) and generation_attempts < 5:
+            generation_attempts += 1
+            print( "Malformed response. Trying again." )
+
+            return generate_with_condition( predicate )
+    
+    return response
+        
+print( generate_with_condition( lambda l: l.startswith( "-" ) ) )

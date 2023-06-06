@@ -16,7 +16,6 @@ prev_prompt = ""
 
 def create_pipeline( name, attn_impl, device, tokenizer ):
     config = tf.AutoConfig.from_pretrained( name, trust_remote_code = True )
-    print( f"attn_impl: { attn_impl }" )
     config.attn_config['attn_impl'] = attn_impl
     config.init_device = device
 
