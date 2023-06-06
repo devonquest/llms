@@ -17,4 +17,5 @@ done
 
 source on
 pip install toolz transformers einops accelerate "$triton"
+
 # python run_llm_transformers.py --model $model --attn_impl $attn_impl
