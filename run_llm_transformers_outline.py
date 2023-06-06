@@ -162,19 +162,28 @@ generation_attempts = 0
 
 def generate_with_condition( prompt, predicate ):
     global generation_attempts
+
     response, *_ = generate_once( prompt, 1000, generate, tokenizer )
     lines = response.split( "\n" )
+    num_usable_lines = 0
 
     for l in lines:
-        if not predicate( l ) and generation_attempts < 5:
-            generation_attempts += 1
-            print( response )
-            print( "Malformed response. Trying again." )
+        if predicate( l ):
+            num_usable_lines += 1
 
-            return generate_with_condition( prompt, predicate )
-    
-    generation_attempts = 0
-    return response, lines
+            if num_usable_lines == 2:
+                return response, lines
+        elif num_usable_lines > 0:
+            num_usable_lines = 0
+            
+    generation_attempts += 1
+    print( response )
+    print( "Malformed response. Trying again." )
+
+    if generation_attempts < 10:
+        return generate_with_condition( prompt, predicate )
+    else:
+        return response, lines
 
 depth = 0
 task = "- learning how to play piano"
@@ -182,6 +191,7 @@ prompt = make_breakdown_prompt( task )
 
 outline, lines = \
     generate_with_condition( prompt, lambda l: l.startswith( "-" ) )
-outline = [ f"{ task }" ] + [ f"\t{ l }" for l in lines ]
+print( outline )
 
+outline = [ f"{ task }" ] + [ f"\t{ l }" for l in lines ]
 print( outline )
