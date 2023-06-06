@@ -2,7 +2,7 @@ triton="triton-pre-mlir@git+https://github.com/vchiley/triton.git@triton_pre_mli
 model="mosaicml/mpt-7b-instruct"
 attn_impl="triton"
 
-apt install python3.10-venv
+apt install python3.10-venv -y
 python -m venv ./
 
 for cmd in on off; do
