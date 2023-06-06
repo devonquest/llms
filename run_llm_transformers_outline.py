@@ -156,8 +156,8 @@ Context: - learning how to play the piano
 
 Format:
 
-- item0
-- item1
+- item0 ( not literally, replace with actual item )
+- item1 ( not literally, replace with actual item )
 ...
 
 ### Response:
