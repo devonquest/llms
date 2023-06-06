@@ -187,10 +187,18 @@ def generate_with_condition( prompt, predicate ):
 
 depth = 0
 task = "- learning how to play piano"
+
 prompt = make_breakdown_prompt( task )
-
 lines = generate_with_condition( prompt, lambda l: l.startswith( "-" ) )
-lines = [ f"{ task }" ] + [ f"\t{ l }" for l in lines ]
-outline = "".join( lines )
 
+prompt = make_breakdown_prompt( lines[ 0 ] )
+sub_lines = generate_with_condition( prompt, lambda l: l.startswith( "-" ) )
+
+lines[ 0 ] = lines[ 0 ], sub_lines
+for i, l in enumerate( lines ):
+    if isinstance( l, tuple ):
+        lines[ i ] = "\n".join( [ l[ 0 ] ] + [ f"\t{ l }" for l in l[ 1 ] ] )
+    
+lines = [ task ] + [ f"\t{ l }" for l in lines ]
+outline = "\n".join( lines )
 print( outline )
