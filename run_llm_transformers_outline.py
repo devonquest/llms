@@ -198,7 +198,7 @@ def break_down(task):
 
 def outline_to_string(outline, depth=0):
     result = ""
-    tab = '\t' * (depth + 1)
+    tab = "  " * (depth + 1)
 
     for item in outline:
         if isinstance(item, dict):
@@ -231,4 +231,4 @@ def _break_down_deep(task, depth, cur_depth=0, outline=None):
 def break_down_deep(task, depth):
     return task + "\n" + _break_down_deep(task, depth)
 
-print( break_down_deep( task, 1 ) )
+print( break_down_deep( task, 2 ) )
