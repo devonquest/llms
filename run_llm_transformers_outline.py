@@ -203,10 +203,10 @@ def outline_to_string(outline, depth=0):
     for item in outline:
         if isinstance(item, dict):
             for task, subtasks in item.items():
-                result += f"{tab}- {task}\n"
+                result += f"{tab}{task}\n"
                 result += outline_to_string(subtasks, depth + 1)
         else:
-            result += f"{tab}- {item}\n"
+            result += f"{tab}{item}\n"
 
     return result
 
