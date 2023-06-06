@@ -146,8 +146,8 @@ generate, tokenizer = \
 def make_breakdown_prompt( task ):
     return f"""### Instruction:
 
-Break down the task '{ task }' into a flat list. Include _just_ the list
-in your response.
+Break down the task '{ task }' into a flat list of 3 to 7 items.
+Include _just_ the lis in your response.
 
 Format:
 
@@ -172,7 +172,7 @@ def generate_with_condition( prompt, predicate ):
             num_usable_lines += 1
 
             if num_usable_lines == 2:
-                return response, lines
+                return [ l for l in lines if l.startswith( "-" ) ]
         elif num_usable_lines > 0:
             num_usable_lines = 0
             
@@ -189,9 +189,8 @@ depth = 0
 task = "- learning how to play piano"
 prompt = make_breakdown_prompt( task )
 
-outline, lines = \
-    generate_with_condition( prompt, lambda l: l.startswith( "-" ) )
-print( outline )
+lines = generate_with_condition( prompt, lambda l: l.startswith( "-" ) )
+lines = [ f"{ task }" ] + [ f"\t{ l }" for l in lines ]
+outline = "".join( lines )
 
-outline = [ f"{ task }" ] + [ f"\t{ l }" for l in lines ]
 print( outline )
