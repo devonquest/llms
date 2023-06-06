@@ -2,6 +2,7 @@ triton="triton-pre-mlir@git+https://github.com/vchiley/triton.git@triton_pre_mli
 model="mosaicml/mpt-7b-instruct"
 attn_impl="triton"
 
+apt update
 apt install -y vim python3.10-venv
 python -m venv ./
 
