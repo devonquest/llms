@@ -228,4 +228,4 @@ def break_down_deep(task, depth, cur_depth=0, outline=None):
 
     return f"{ task }\n{ outline_to_string( outline ) }"
 
-print( break_down_deep( task, 1 ) )
+print( break_down_deep( task, 0 ) )
