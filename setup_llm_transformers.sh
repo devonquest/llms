@@ -9,7 +9,7 @@ for cmd in on off; do
     cat << EOF | sed 's/^\s*//' > "$cmd"
     #!/bin/bash
 
-    $([ "$cmd" = "on" ] && echo "source ./bin/activate" || echo "deactivate")
+    $([ "$cmd" = "on" ] && echo "source ./activate" || echo "deactivate")
 EOF
 
     chmod +x "$cmd"
