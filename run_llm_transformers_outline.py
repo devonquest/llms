@@ -182,7 +182,6 @@ prompt = make_breakdown_prompt( task )
 
 outline, lines = \
     generate_with_condition( prompt, lambda l: l.startswith( "-" ) )
-new_outline = [ f"{ task }" ] + []
+outline = [ f"{ task }" ] + [ f"\t{ l }" for l in lines ]
 
 print( outline )
-print( new_outline )
