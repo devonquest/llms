@@ -156,6 +156,8 @@ def make_breakdown_prompt( task ):
 generation_attempts = 0
 
 def generate_with_condition( predicate ):
+    global generation_attempts
+    
     response, *_ = generate_once(
         make_breakdown_prompt( "- learning how to play piano" ),
         1000,
