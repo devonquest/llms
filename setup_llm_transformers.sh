@@ -2,6 +2,7 @@ triton="triton-pre-mlir@git+https://github.com/vchiley/triton.git@triton_pre_mli
 model="mosaicml/mpt-7b-instruct"
 attn_impl="triton"
 
+pip install venv
 pip venv myenv
 source myenv/bin/activate
 # pip install toolz transformers einops accelerate "$triton"
