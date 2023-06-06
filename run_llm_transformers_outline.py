@@ -144,20 +144,19 @@ generate, tokenizer = \
     setup_pipeline( options[ "model" ], options[ "attn_impl" ] )
 
 def make_breakdown_prompt( task ):
-    return f"""
-    ### Instruction:
+    return f"""### Instruction:
 
-    Break down the task '{ task }' into a flat list. Include _just_ the list
-    in your response.
+Break down the task '{ task }' into a flat list. Include _just_ the list
+in your response.
 
-    Format:
-    
-    - item0
-    - item1
-    ...
+Format:
 
-    ### Response:
-    """
+- item0
+- item1
+...
+
+### Response:
+"""
 
 generation_attempts = 0
 
