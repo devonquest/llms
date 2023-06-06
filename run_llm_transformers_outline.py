@@ -150,7 +150,7 @@ def make_breakdown_prompt( task ):
     return f"""### Instruction:
 
 Break down the task '{ task }' given the context below into a flat list of
-    1 to 7 items. Include _just_ the list in your response.
+    2 to 7 items. Include _just_ the list in your response.
 
 Context: - learning how to play the piano
 
@@ -185,7 +185,7 @@ def is_flat_list(response):
             num_usable_lines += 1
         elif num_usable_lines > 0:
             num_usable_lines = 0
-    return num_usable_lines >= 3
+    return num_usable_lines >= 2
 
 def sanitize_flat_list(response):
     lines = response.split('\n')
