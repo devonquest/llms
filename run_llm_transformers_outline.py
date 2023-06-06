@@ -150,6 +150,12 @@ def make_breakdown_prompt( task ):
     Break down the task '{ task }' into a flat list. Include _just_ the list
     in your response.
 
+    Format:
+    
+    - item0
+    - item1
+    ...
+
     ### Response:
     """
 
