@@ -169,6 +169,7 @@ def generate_with_condition( prompt, predicate ):
     for l in lines:
         if not predicate( l ) and generation_attempts < 5:
             generation_attempts += 1
+            print( response )
             print( "Malformed response. Trying again." )
 
             return generate_with_condition( prompt, predicate )
