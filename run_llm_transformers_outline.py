@@ -152,7 +152,7 @@ Can you break down the task "- learn how to play the piano" into a flat list
 of 2 to 7 items given the context below?
 
 Context:
-{ context }
+- learning how to play piano
 
 ### A1:
 - Master piano keys and basic exercises
@@ -164,7 +164,7 @@ Can you break down the task "{ task }" into a flat list of 2 to 7 items
 given the context below?
 
 Context:
-- developing a mobile app for a restaurant
+{ context }
 
 ### A2:
 """
@@ -178,7 +178,7 @@ def generate_with_predicate(prompt, predicate):
         if generation_attempts == 10:
             print("Generation attempts exhausted, exiting...")
             exit(1)
-        print(f"\nInvalid response: \n\n{response}")
+        print(f"\nInvalid response:\n\n{response}")
         return generate_with_predicate(prompt, predicate)
 
     return response
