@@ -3,7 +3,7 @@ model="mosaicml/mpt-7b-instruct"
 git lfs install
 git clone "https://huggingface.co/$model"
 
-apt install -y distutils vim python3.10-venv
+apt install -y vim python3.10-venv
 python -m venv ./
 
 for cmd in on off; do
