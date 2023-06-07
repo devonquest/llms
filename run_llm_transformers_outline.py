@@ -274,7 +274,7 @@ def _break_down_deep(
         children = break_down( task, outline_to_string( outline ) )
         lines = children.split( "\n" )
 
-        item = item_from_path( outline, outline_path )
+        item = item_from_path( outline, outline_path ) if outline else None
         if not item or not isinstance( item, dict ):
             set_item_at_path( outline, outline_path, { task: lines } )
 
