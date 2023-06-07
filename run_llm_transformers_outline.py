@@ -274,10 +274,11 @@ def _break_down_deep(
         children = break_down( task, outline_to_string( outline ) )
         lines = children.split( "\n" )
 
-        if not outline or not isinstance(
-            item_from_path( outline, outline_path ), dict
-        ):
-            set_item_at_path( outline, outline_path, { task: lines } )
+        if not outline:
+            outline.append( { task: lines } )
+        else:
+            if not isinstance( item_from_path( outline, outline_path ), dict ):
+                set_item_at_path( outline, outline_path, { task: lines } )
 
         for i, line in enumerate( lines ):
             _break_down_deep(
