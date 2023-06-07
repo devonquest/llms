@@ -1,7 +1,5 @@
-model="mosaicml/mpt-7b-instruct"
-
-git lfs install
-git clone "https://huggingface.co/$model"
+# git lfs install
+# git clone "https://huggingface.co/$model"
 
 apt install -y vim python3.10-venv
 python -m venv ./
