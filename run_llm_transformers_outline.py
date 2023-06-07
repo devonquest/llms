@@ -7,15 +7,17 @@ import toolz as tz
 import torch as to
 import transformers as tf
 
+cache_dir, prev_prompt = "./cache", ""
+
 def any( predicate, iterable ):
     len( list( filter( predicate, iterable ) ) ) > 0
 
 def isKeyCarg( c ): c.startswith( "--" )
 
-prev_prompt = ""
-
 def create_pipeline( name, attn_impl, device, tokenizer ):
-    config = tf.AutoConfig.from_pretrained( name, trust_remote_code = True )
+    config = tf.AutoConfig.from_pretrained(
+        name, cache_dir = cache_dir, trust_remote_code = True
+    )
     config.attn_config['attn_impl'] = attn_impl
     config.init_device = device
 
@@ -24,14 +26,14 @@ def create_pipeline( name, attn_impl, device, tokenizer ):
         model = tf.AutoModelForCausalLM.from_pretrained(
             name, config=config, torch_dtype=to.bfloat16,
             trust_remote_code=True,
-            device_map = "auto"
+            device_map = "auto", cache_dir = cache_dir
         ),
         tokenizer = tokenizer
     )
 
 def setup_pipeline( name, attn_impl ):
     device = "cuda:0"
-    tokenizer = tf.AutoTokenizer.from_pretrained( name )
+    tokenizer = tf.AutoTokenizer.from_pretrained( name, cache_dir = cache_dir )
 
     return create_pipeline( name, attn_impl, device, tokenizer ), tokenizer
 
