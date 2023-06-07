@@ -146,13 +146,13 @@ generate, tokenizer = \
 task = "- learning how to play piano"
 generation_attempts = 0
 
-def make_breakdown_prompt( task ):
+def make_breakdown_prompt( task, context ):
     return f"""### Q1:
 Can you break down the task "- learn how to play the piano" into a flat list
 of 2 to 7 items given the context below?
 
 Context:
-- learn how to play the piano
+{ context }
 
 ### A1:
 - Master piano keys and basic exercises
@@ -216,10 +216,10 @@ def set_item_at_path( outline, path, element ):
     else:
         outline[ next ] = element
 
-def break_down(task):
+def break_down(task, context):
     global generation_attempts
 
-    prompt = make_breakdown_prompt(task)
+    prompt = make_breakdown_prompt(task, context)
     response = generate_with_predicate(prompt, is_flat_list)
     generation_attempts = 0
 
