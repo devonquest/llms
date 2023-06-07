@@ -22,7 +22,7 @@ def create_pipeline( name, attn_impl, device, tokenizer ):
     return tf.pipeline(
         "text-generation",
         model = tf.AutoModelForCausalLM.from_pretrained(
-            name, config=config, torch_dtype=to.bfloat16,
+            "./mpt-7b-instruct", config=config, torch_dtype=to.bfloat16,
             trust_remote_code=True,
             device_map = "auto"
         ),

@@ -1,8 +1,10 @@
-triton="triton-pre-mlir@git+https://github.com/vchiley/triton.git@triton_pre_mlir_sm90#subdirectory=python"
 model="mosaicml/mpt-7b-instruct"
+git lfs install
+git clone "https://huggingface.co/$model"
+
+triton="triton-pre-mlir@git+https://github.com/vchiley/triton.git@triton_pre_mlir_sm90#subdirectory=python"
 attn_impl="triton"
 
-apt update
 apt install -y vim python3.10-venv
 python -m venv ./
 
