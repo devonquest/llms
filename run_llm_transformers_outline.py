@@ -272,6 +272,8 @@ def _break_down_deep(
 ):
     if cur_depth < depth:
         children = break_down( task, outline_to_string( outline ) )
+        print( outline_to_string( outline ) )
+        print( children )
         lines = children.split( "\n" )
 
         item = item_from_path( outline, outline_path ) if outline else None
