@@ -1,3 +1,7 @@
+### Instruction:
+
+Complete A2 from the dialogue. Do not add more dialogue turns:
+
 Q1:
 
 """
@@ -12,7 +16,7 @@ A1:
 friend.
 """
 
-Q2 ( last question ):
+Q2:
 
 """
 Complete this famous movie one liner from 'Terminator':
@@ -20,6 +24,8 @@ Complete this famous movie one liner from 'Terminator':
 I'll be 
 """
 
-A2 ( last answer ):
+A2:
 
 """
+
+### Response:
