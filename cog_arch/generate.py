@@ -43,10 +43,11 @@ def generate_with_predicate(prompt, predicate, generate, tokenizer):
 
     return response
 
-def generate( prompt, generate, tokenizer ):
-    return generate_with_predicate(
-        prompt, lambda _: True, generate, tokenizer
-    )
+def generate( generate, tokenizer ):
+    with open( "./prompt.txt", "r" ) as f:
+        return generate_with_predicate(
+            f.read(), lambda _: True, generate, tokenizer
+        )
 
 # <!-- TODO: Write outline for following idea -->
 # <!-- - llm receives prompt with new text input -->

@@ -45,12 +45,9 @@ def loop_inference( generate, tokenizer ):
     )
 
     if user_msg == "":
-        with open( "./prompt.txt", "r" ) as f:
-            print( "\nGenerating...\n" )
-
-            prompt = f.read()
-            response = il.reload( gn ).generate( prompt, generate, tokenizer )
-            print( f"\n---\n\nResponse:\n\n{ response }\n\n---" )
+        print( "\nGenerating...\n" )
+        response = il.reload( gn ).generate( generate, tokenizer )
+        print( f"\n---\n\nResponse:\n\n{ response }\n\n---" )
     elif user_msg == "pull":
         git_pull()
     else:
