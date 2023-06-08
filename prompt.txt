@@ -1,8 +1,7 @@
 Q1:
 
 """
-Summarize in a 4 word sentence:
-
+'''
 Tokyo's architecture is a captivating blend of tradition and innovation.
 The cityscape is adorned with towering skyscrapers that showcase
 futuristic designs and cutting-edge technology.
@@ -19,6 +18,9 @@ Hills, each architectural marvel contributes to the city's
 ever-evolving skyline.
 Tokyo's architecture is a reflection of the city's dynamism, creativity,
 and unwavering spirit of innovation.
+'''
+
+Summarize the preceding text in a 4 word sentence.
 """
 
 A1:
