@@ -1,7 +1,9 @@
 ### Instruction:
 
 """
-Scarface: Say hello to my little 
+'Scarface: Say hello to my little'
+
+Complete Scarface's sentence. Reply with just the sentence.
 """
 
 ### Response:
