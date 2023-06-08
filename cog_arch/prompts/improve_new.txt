@@ -9,17 +9,9 @@ the correct length.
 
 ### A1:
 
-That sentence is eight words long, which is too much. Let's create one with
-four words, word by word:
+That sentence is too long. Let's create one with four words, word by word:
 
-One ( one is less than four, so continue ): Preserving
-Two ( two is less than four, so continue ): moments
-Three ( three is less than four, so continue ): through
-Four ( four equals four, so stop ): photography.
-
-Putting it together:
-
-Preserving ( from One ) moments ( from Two ) through ( from Three ) photography. ( from Four )
+One, Preserving, two, moments, three, through, four, photography.
 
 ### Q2:
 
@@ -31,3 +23,7 @@ Is that sentence really exactly four words long? If not, create a new one with
 the correct length.
 
 ### A2 ( no more questions or answers after this one ):
+
+That sentence is too long. Let's create one with four words, word by word:
+
+One, 
