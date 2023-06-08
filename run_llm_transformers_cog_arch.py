@@ -168,18 +168,6 @@ def generate_with_predicate(prompt, predicate):
 
     return response
 
-# - before running script
-#   - create file prompt.txt
-#   - create and save prompt in file
-# - during running script
-#   - prompt user to type enter to perform inference or end to end the program
-#   - if typed enter
-#       - read the prompt from the file
-#       - generate_with_predicate with identity as predicate
-#       - print response
-#   - else
-#       - end program
-
 def loop_inference():
     user_msg = input(
         "\nType enter to perform inference, otherwise the program's " \

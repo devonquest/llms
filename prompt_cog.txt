@@ -1,0 +1,15 @@
+### Instruction:
+
+"""
+Create 4 different summarizations for the following text:
+
+'''
+
+'''
+
+- 
+"""
+
+### Response:
+
+"""
