@@ -26,12 +26,6 @@ Summarize the preceding text in a four word sentence.
 A1:
 
 """
-Checking number of words:
-
-'Traditional,' + 'innovative' + 'Tokyo' + 'architecture.' = 4 words
-
-Result:
-
 Traditional, innovative Tokyo architecture.
 """
 
@@ -65,16 +59,46 @@ Summarize the preceding text in a four word sentence.
 A2:
 
 """
-Checking number of words:
-
-'Hidden' + 'wonders' + 'beneath' + 'waves.' = 4 words
-
-Result:
-
 Hidden wonders beneath waves.
 """
 
 Q3:
+
+"""
+'''
+Modern society is at a crossroads. The age of fossil fuels and unsustainable
+consumption has given way to a new era of innovation and sustainability.
+Wind, solar, and hydroelectric power now promise limitless energy,
+harnessing the natural forces that have always been at our disposal.
+Electric vehicles roam the streets, their silent engines a stark contrast to the
+noisy, polluting vehicles of the past.
+Efficient recycling systems turn waste into valuable materials, creating a
+circular economy that minimizes our footprint on the Earth.
+Cities are becoming smarter, integrating technology into everyday life to
+improve efficiency and convenience.
+From driverless public transport to smart homes that adjust to our habits, the
+benefits of this technological revolution are myriad.
+However, with this progress come challenges. Cybersecurity threats are a
+growing concern, as our reliance on technology makes us more vulnerable to
+attacks.
+Economic inequality persists, with the benefits of innovation often not
+reaching those who need them most.
+Despite these challenges, the future is full of promise. As we navigate this
+new era, it's up to us to harness the benefits of innovation while mitigating
+its risks.
+The decisions we make now will shape the world for generations to come.
+'''
+
+Summarize the preceding text in a four word sentence.
+"""
+
+A3:
+
+"""
+Innovation reshaping sustainable future.
+"""
+
+Q4:
 
 """
 '''
@@ -106,6 +130,6 @@ vibrant embrace of the metropolis.
 Summarize the preceding text in a four word sentence.
 """
 
-A3:
+A4:
 
 """
