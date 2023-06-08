@@ -168,7 +168,33 @@ def generate_with_predicate(prompt, predicate):
 
     return response
 
-# 
+# - before running script
+#   - create file prompt.txt
+#   - create and save prompt in file
+# - during running script
+#   - prompt user to type enter to perform inference or end to end the program
+#   - if typed enter
+#       - read the prompt from the file
+#       - generate_with_predicate with identity as predicate
+#       - print response
+#   - else
+#       - end program
+
+def loop_inference():
+    user_msg = input(
+        "\nType enter to perform inference, otherwise the program's " \
+        "going to end: "
+    )
+
+    if user_msg == "":
+        with open( "./prompt.txt", "r" ) as f:
+            prompt = f.read()
+            response = generate_with_predicate( prompt, lambda _: True )
+
+            print( f"\n---\n\nResponse:\n\n{ response }" )
+            loop_inference()
+
+loop_inference()
 
 # <!-- TODO: Write outline for following idea -->
 # <!-- - llm receives prompt with new text input -->
