@@ -26,13 +26,10 @@ Summarize the preceding text in a 4 word sentence.
 A1:
 
 """
-Traditional, innovative Tokyo architecture.
-
-Let's count:
-
-1. Traditional 2. innovative, 3. Tokyo, 4. architecture
-
+Let's count: 1. Traditional, 2. innovative, 3. Tokyo 4. architecture.
 That's 4 words.
+
+Traditional, innovative Tokyo architecture.
 """
 
 Q2:
@@ -65,13 +62,10 @@ Summarize the preceding text in a 4 word sentence.
 A2:
 
 """
-Hidden wonders beneath waves.
-
-Let's count:
-
-1. Hidden 2. wonders, 3. beneath, 4. waves
-
+Let's count: 1. Hidden 2. wonders, 3. beneath, 4. waves.
 That's 4 words.
+
+Hidden wonders beneath waves.
 """
 
 Q3:

@@ -1,8 +1,7 @@
 Q1:
 
 """
-Summarize in a 4 word sentence:
-
+'''
 Tokyo's architecture is a captivating blend of tradition and innovation.
 The cityscape is adorned with towering skyscrapers that showcase
 futuristic designs and cutting-edge technology.
@@ -19,6 +18,9 @@ Hills, each architectural marvel contributes to the city's
 ever-evolving skyline.
 Tokyo's architecture is a reflection of the city's dynamism, creativity,
 and unwavering spirit of innovation.
+'''
+
+Summarize the preceding text in a 4 word sentence.
 """
 
 A1:
@@ -36,8 +38,7 @@ That's 4 words.
 Q2:
 
 """
-Summarize in a 4 word sentence:
-
+'''
 Beneath the ocean's surface, a hidden world awaits, brimming with awe-inspiring
 wonders.
 Coral reefs bloom with vibrant life, as schools of tropical fish glide through
@@ -56,7 +57,12 @@ Explorers venture into this enigmatic world, discovering new species and
 unraveling the mysteries of the deep.
 The ocean's architecture is a testament to nature's ingenuity, inviting us to
 marvel at its splendor and protect its delicate balance for generations to come.
+'''
+
+Summarize the preceding text in a 4 word sentence.
 """
+
+A2:
 
 """
 Hidden wonders beneath waves.
@@ -71,8 +77,7 @@ That's 4 words.
 Q3:
 
 """
-Summarize in a 4 word sentence:
-
+'''
 In the heart of a bustling metropolis, a captivating tapestry of urban
 life unfolds before your eyes. Majestic skyscrapers reach toward the heavens,
 their sleek facades reflecting the vibrant energy that permeates the streets
@@ -96,8 +101,11 @@ forged, and the city's pulse beats with endless possibilities. It is a place
 where the past and the future converge, inviting all who enter to embrace the
 energy, seize the opportunities, and create their own unique story within the
 vibrant embrace of the metropolis.
+'''
+
+Summarize the preceding text in a 4 word sentence.
 """
 
-A3 ( no more questions after this one ):
+A3:
 
 """
