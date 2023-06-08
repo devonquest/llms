@@ -25,6 +25,12 @@ A1:
 
 """
 Traditional, innovative Tokyo architecture.
+
+Let's count:
+
+1. Traditional 2. innovative, 3. Tokyo, 4. architecture
+
+That's 4 words.
 """
 
 Q2:
@@ -52,10 +58,14 @@ The ocean's architecture is a testament to nature's ingenuity, inviting us to
 marvel at its splendor and protect its delicate balance for generations to come.
 """
 
-A2:
-
 """
 Hidden wonders beneath waves.
+
+Let's count:
+
+1. Hidden 2. wonders, 3. beneath, 4. waves
+
+That's 4 words.
 """
 
 Q3:

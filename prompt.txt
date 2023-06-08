@@ -26,3 +26,42 @@ Summarize the preceding text in a 4 word sentence.
 A1:
 
 """
+Traditional, innovative Tokyo architecture.
+
+Let's count:
+
+1. Traditional 2. innovative, 3. Tokyo, 4. architecture
+
+That's 4 words.
+"""
+
+Q2:
+
+"""
+'''
+Beneath the ocean's surface, a hidden world awaits, brimming with awe-inspiring
+wonders.
+Coral reefs bloom with vibrant life, as schools of tropical fish glide through
+their intricate branches.
+Gentle sea turtles navigate the currents, their graceful movements a testament
+to the harmony of this underwater realm.
+Dazzling arrays of colors sparkle as sunlight pierces the water, illuminating
+the mesmerizing beauty below.
+Majestic creatures like dolphins and whales grace these depths, their presence
+leaving a profound sense of awe.
+Amidst the silence, the ocean's architecture unfolds—a delicate balance of
+sandbanks, seagrass meadows, and majestic underwater cliffs.
+Ancient shipwrecks provide refuge for diverse marine life, creating underwater
+havens filled with secrets of the past.
+Explorers venture into this enigmatic world, discovering new species and
+unraveling the mysteries of the deep.
+The ocean's architecture is a testament to nature's ingenuity, inviting us to
+marvel at its splendor and protect its delicate balance for generations to come.
+'''
+
+Summarize the preceding text in a 4 word sentence.
+"""
+
+A2:
+
+"""
