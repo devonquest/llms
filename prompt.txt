@@ -1,11 +1,7 @@
-### Instruction:
+Q1:
 
 """
-'Scarface: Say hello to my little'
+Complete this famous movie one liner:
 
-Complete Scarface's sentence. Reply with just the sentence.
-"""
-
-### Response:
-
+'Say hello to my little'
 """
