@@ -16,7 +16,7 @@ def generate_once( prompt, max_new_tokens, generate, tokenizer ):
     before = tm.time()
     response = generate(
         prompt,
-        temperature=0.2, top_p=0.95, top_k=50, max_new_tokens=max_new_tokens,
+        temperature=0.4, top_p=0.95, top_k=50, max_new_tokens=max_new_tokens,
         use_cache=True, do_sample=True,
         eos_token_id=tokenizer.eos_token_id,
         pad_token_id=tokenizer.pad_token_id,
