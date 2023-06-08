@@ -1,6 +1,8 @@
 import time as tm
 import re
 
+def to_true( _ ): True
+
 def count_words( text ):
     words = re.split( r'\s+', text )
 
@@ -47,11 +49,14 @@ def generate_with_predicate(prompt, predicate, generate, tokenizer):
 
     return response
 
+def make_prompt( base, element ):
+    pass
+
 def generate( generate, tokenizer ):
-    with open( "./prompts/improve.txt", "r" ) as f:
-        return generate_with_predicate(
-            f.read(), lambda _: True, generate, tokenizer
-        )
+    args = generate, tokenizer
+    text = generate_with_predicate( sum, to_true, *args )
+    while count_words( text ) > 4:
+        text = generate_with_predicate( imp, to_true, *args )
 
 # <!-- TODO: Write outline for following idea -->
 # <!-- - llm receives prompt with new text input -->

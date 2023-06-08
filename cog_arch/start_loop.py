@@ -1,5 +1,6 @@
 import importlib as il
 import subprocess
+from contextlib import ExitStack
 
 import torch as to
 import transformers as tf
@@ -38,22 +39,37 @@ def setup_pipeline( name, attn_impl ):
 
     return create_pipeline( name, attn_impl, device, tokenizer ), tokenizer
 
-def loop_inference( generate, tokenizer ):
-    user_msg = input(
-        "\nOptions:\n\n- enter to generate\n- pull to update prompt" \
-        "\n- anything else to exit\n\nType an option: "
-    )
-
-    if user_msg == "":
-        print( "\nGenerating...\n" )
-        response = il.reload( gn ).generate( generate, tokenizer )
-        print( f"\n---\n\nResponse:\n\n{ response }\n\n---" )
-    elif user_msg == "pull":
-        git_pull()
-    else:
-        return
+def load_prompts():
+    with ExitStack() as stack:
+        names = [ "summarize", "improve" ]
+        return dict(
+            zip(
+                names,
+                [
+                    stack.enter_context( open( f"./prompts/{ n }.txt" ) ).read()
+                    for n in names
+                ]
+            )
+        )
     
-    loop_inference( generate, tokenizer )
+prompts = load_prompts()
+print( prompts )
+# def loop_inference( generate, tokenizer ):
+#     user_msg = input(
+#         "\nOptions:\n\n- enter to generate\n- pull to update prompt" \
+#         "\n- anything else to exit\n\nType an option: "
+#     )
 
-generate, tokenizer = setup_pipeline( "mosaicml/mpt-7b-instruct", "triton" )
-loop_inference( generate, tokenizer )
+#     if user_msg == "":
+#         print( "\nGenerating...\n" )
+#         response = il.reload( gn ).generate( generate, tokenizer )
+#         print( f"\n---\n\nResponse:\n\n{ response }\n\n---" )
+#     elif user_msg == "pull":
+#         git_pull()
+#     else:
+#         return
+    
+#     loop_inference( generate, tokenizer )
+
+# generate, tokenizer = setup_pipeline( "mosaicml/mpt-7b-instruct", "triton" )
+# loop_inference( generate, tokenizer )
