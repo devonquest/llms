@@ -41,7 +41,7 @@ def setup_pipeline( name, attn_impl ):
 
 def load_prompts():
     with ExitStack() as stack:
-        names = [ "summarize", "compress_4" ]
+        names = [ "summarize", "compress" ]
 
         return dict(
             zip(
