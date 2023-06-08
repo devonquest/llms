@@ -1,39 +1,57 @@
 Q1:
 
 """
-Complete this famous movie one liner from 'Scarface':
+Summarize in a 4 word sentence:
 
-Say hello to my little...
+Tokyo's architecture is a captivating blend of tradition and innovation.
+The cityscape is adorned with towering skyscrapers that showcase
+futuristic designs and cutting-edge technology.
+Amidst the modern marvels, historic temples and shrines stand as a
+testament to Japan's rich cultural heritage.
+The harmonious coexistence of ancient and contemporary architecture
+creates a unique visual tapestry.
+Tokyo's streets are lined with sleek glass facades, intricate geometric
+structures, and vibrant neon signs that illuminate the night.
+The city's architects push boundaries, creating awe-inspiring structures
+that redefine urban landscapes.
+From the iconic Tokyo Tower to the contemporary brilliance of Roppongi
+Hills, each architectural marvel contributes to the city's
+ever-evolving skyline.
+Tokyo's architecture is a reflection of the city's dynamism, creativity,
+and unwavering spirit of innovation.
 """
 
 A1:
 
 """
-friend.
+Traditional, innovative Tokyo architecture.
 """
 
 Q2:
 
 """
-Complete this famous movie one-liner from 'The Wizard of Oz':
+Summarize in a 4 word sentence:
 
-Toto, I've got a feeling we're...
+Beneath the ocean's surface, a hidden world awaits, brimming with awe-inspiring
+wonders.
+Coral reefs bloom with vibrant life, as schools of tropical fish glide through
+their intricate branches.
+Gentle sea turtles navigate the currents, their graceful movements a testament
+to the harmony of this underwater realm.
+Dazzling arrays of colors sparkle as sunlight pierces the water, illuminating
+the mesmerizing beauty below.
+Majestic creatures like dolphins and whales grace these depths, their presence
+leaving a profound sense of awe.
+Amidst the silence, the ocean's architecture unfolds—a delicate balance of
+sandbanks, seagrass meadows, and majestic underwater cliffs.
+Ancient shipwrecks provide refuge for diverse marine life, creating underwater
+havens filled with secrets of the past.
+Explorers venture into this enigmatic world, discovering new species and
+unraveling the mysteries of the deep.
+The ocean's architecture is a testament to nature's ingenuity, inviting us to
+marvel at its splendor and protect its delicate balance for generations to come.
 """
 
-A2:
-
-"""
-not in Kansas anymore.
-"""
-
-Q3:
-
-"""
-Complete this famous movie one liner from 'Terminator':
-
-I'll be...
-"""
-
-A3 ( no more questions after this one ):
+A2 ( no more questions after this one ):
 
 """
