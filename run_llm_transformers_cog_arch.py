@@ -136,8 +136,9 @@ def generate_once( prompt, max_new_tokens, generate, tokenizer ):
     )
 
     after = tm.time()
-    text = response[ 0 ][ "generated_text" ].replace( prompt, "" )
-    text = text.replace( "\"\"\"", "" ).strip()
+    text = response[ 0 ][ "generated_text" ]
+    print( text )
+    text = text.replace( prompt, "" ).replace( "\"\"\"", "" ).strip()
 
     return text, *measure( text, before, after )
 
