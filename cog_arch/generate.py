@@ -32,9 +32,8 @@ def generate_once( prompt, max_new_tokens, generate, tokenizer ):
 def generate_with_predicate(prompt, predicate, generate, tokenizer):
     generation_attempts = 0
     response, *_ = generate_once(prompt, 3, generate, tokenizer)
-    
+    exit(1)
     if not predicate(response):
-        exit(1)
         generation_attempts += 1
         if generation_attempts == 10:
             print("Generation attempts exhausted, exiting...")
