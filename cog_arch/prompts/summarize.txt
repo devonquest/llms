@@ -4,7 +4,8 @@
 { substitution }
 """
 
-Summarize the preceding quoted text in a four word sentence.
+Summarize the preceding quoted text in a four word sentence. Here are a couple
+of optimal example texts and results:
 
 Example 1 text:
 
