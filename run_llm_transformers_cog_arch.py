@@ -1,4 +1,7 @@
 import sys
+import subprocess
+import os
+
 import time as tm
 import re
 
@@ -76,6 +79,17 @@ def cargs_to_options( cargs ):
                     options[ k ] = v
 
     return options
+
+def git_pull():
+    # script_dir = os.path.dirname( os.path.abspath(__file__) )
+    # os.chdir( script_dir )
+    
+    try:
+        subprocess.check_output( ['git', 'pull'] )
+        print( "Git pull successful!" )
+    except subprocess.CalledProcessError as e:
+        print( "Error: Git pull failed." )
+        print( e.output )
 
 def create_pipeline( name, attn_impl, device, tokenizer ):
     config = tf.AutoConfig.from_pretrained(
@@ -170,8 +184,10 @@ def generate_with_predicate(prompt, predicate):
 
 def loop_inference():
     user_msg = input(
-        "\nType enter to perform inference, otherwise the program's " \
-        "going to end: "
+        # "\nType enter to perform inference, otherwise the program's " \
+        # "going to end: "
+        "\nType one of:\n\n- enter to generate\n-pull to update prompt" \
+        "\n-anything else to exit"
     )
 
     if user_msg == "":
