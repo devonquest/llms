@@ -91,7 +91,7 @@ def generate( generate, tokenizer, prompts ):
         text = generate_with_predicate(
             customize_prompt( prompts[ "summarize" ], text ), to_true, *args
         )
-        print( text )
+        # print( text )
         count += 1
 
     return text

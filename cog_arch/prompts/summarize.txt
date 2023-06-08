@@ -33,12 +33,28 @@ Q2:
 
 """
 '''
-{ substitution }
+The ocean's depths conceal mysteries that captivate our imagination.
 '''
 
 Summarize the preceding text in a four word sentence.
 """
 
 A2:
+
+"""
+Enigmatic ocean depths intrigue.
+"""
+
+Q3:
+
+"""
+'''
+{ substitution }
+'''
+
+Summarize the preceding text in a four word sentence.
+"""
+
+A3:
 
 """
