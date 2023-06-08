@@ -59,6 +59,7 @@ def generate( generate, tokenizer, prompts ):
 
     while count < 10 and count_words( text ) > 4:
         text = generate_with_predicate( comp, to_true, *args )
+        print( text )
         count += 1
 
     return text
