@@ -75,7 +75,8 @@ def generate_with_predicate(prompt, predicate, generate, tokenizer):
     return response
 
 def customize_prompt( prompt, substitution ):
-    # print(prompt.replace( "{ substitution }", substitution ))
+    print(prompt.replace( "{ substitution }", substitution ))
+    input( "Continue." )
     return prompt.replace( "{ substitution }", substitution )
 
 def generate( generate, tokenizer, prompts ):
@@ -91,7 +92,6 @@ def generate( generate, tokenizer, prompts ):
         text = generate_with_predicate(
             customize_prompt( prompts[ "summarize" ], text ), to_true, *args
         )
-        # print( text )
         count += 1
 
     return text
