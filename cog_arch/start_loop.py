@@ -53,23 +53,35 @@ def load_prompts():
         )
     
 prompts = load_prompts()
-print( prompts )
-# def loop_inference( generate, tokenizer ):
-#     user_msg = input(
-#         "\nOptions:\n\n- enter to generate\n- pull to update prompt" \
-#         "\n- anything else to exit\n\nType an option: "
-#     )
 
-#     if user_msg == "":
-#         print( "\nGenerating...\n" )
-#         response = il.reload( gn ).generate( generate, tokenizer )
-#         print( f"\n---\n\nResponse:\n\n{ response }\n\n---" )
-#     elif user_msg == "pull":
-#         git_pull()
-#     else:
-#         return
+def loop_inference( generate, tokenizer ):
+    global prompts
+
+    user_msg = input(
+        "\nOptions:"
+        "\n\n- nothing to generate"
+        "\n- r to pull repo"
+        "\n- p to reload prompts"
+        "\n- rp to join two previous options"
+        "\n- anything else to exit"
+        "\n\nType an option and press enter: "
+    )
+
+    if user_msg == "":
+        print( "\nGenerating...\n" )
+        response = il.reload( gn ).generate( generate, tokenizer, prompts )
+        print( f"\n---\n\nResponse:\n\n{ response }\n\n---" )
+    elif user_msg == "r":
+        git_pull()
+    elif user_msg == "p":
+        prompts = load_prompts()
+    elif user_msg == "rp":
+        git_pull()
+        prompts = load_prompts()
+    else:
+        return
     
-#     loop_inference( generate, tokenizer )
+    loop_inference( generate, tokenizer )
 
-# generate, tokenizer = setup_pipeline( "mosaicml/mpt-7b-instruct", "triton" )
-# loop_inference( generate, tokenizer )
+generate, tokenizer = setup_pipeline( "mosaicml/mpt-7b-instruct", "triton" )
+loop_inference( generate, tokenizer )

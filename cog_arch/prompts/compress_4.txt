@@ -13,7 +13,7 @@ Preserving moments through photography.
 ### Q2:
 
 '''
-{ sentence }
+{ substitution }
 '''
 
 This sentence is too long. Compress it to four words.

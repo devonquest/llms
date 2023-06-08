@@ -49,14 +49,19 @@ def generate_with_predicate(prompt, predicate, generate, tokenizer):
 
     return response
 
-def make_prompt( base, element ):
-    pass
+def customize_prompt( prompt, substitution ):
+    return prompt.replace( "{ substitution }", substitution )
 
-def generate( generate, tokenizer ):
+def generate( generate, tokenizer, prompts ):
     args = generate, tokenizer
     text = generate_with_predicate( sum, to_true, *args )
-    while count_words( text ) > 4:
-        text = generate_with_predicate( imp, to_true, *args )
+    count, comp = 0, customize_prompt( prompts[ "compress_4" ], text )
+
+    while count < 5 and count_words( text ) > 4:
+        text = generate_with_predicate( comp, to_true, *args )
+        count += 1
+
+    return text
 
 # <!-- TODO: Write outline for following idea -->
 # <!-- - llm receives prompt with new text input -->
