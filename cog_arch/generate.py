@@ -44,7 +44,7 @@ def generate_with_predicate(prompt, predicate, generate, tokenizer):
     return response
 
 def generate( generate, tokenizer ):
-    with open( "./prompts/summarize.txt", "r" ) as f:
+    with open( "./prompts/improve.txt", "r" ) as f:
         return generate_with_predicate(
             f.read(), lambda _: True, generate, tokenizer
         )
