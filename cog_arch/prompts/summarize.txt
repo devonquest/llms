@@ -19,7 +19,7 @@ Tokyo's architecture is a reflection of the city's dynamism, creativity,
 and unwavering spirit of innovation.
 '''
 
-Summarize the preceding text in a four word sentence.
+Summarize the previously quoted text in a four word sentence.
 
 ### A1:
 
@@ -31,7 +31,7 @@ Traditional, innovative Tokyo architecture.
 The ocean's depths conceal mysteries that captivate our imagination.
 '''
 
-Summarize the preceding text in a four word sentence.
+Summarize the previously quoted text in a four word sentence.
 
 ### A2:
 
@@ -43,6 +43,6 @@ Enigmatic ocean depths intrigue.
 { substitution }
 '''
 
-Summarize the preceding text in a four word sentence.
+Summarize the previously quoted text in a four word sentence.
 
 ### A3:
