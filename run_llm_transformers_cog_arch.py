@@ -127,7 +127,7 @@ def generate_once( prompt, max_new_tokens, generate, tokenizer ):
 
     return inferred_response, *measure( inferred_response, before, after )
 
-def make_breakdown_prompt( task, context ):
+def make_suggestion_prompt( task, context ):
     return f"""### Q1:
 Can you break down the task "- learn how to play the piano" into a flat list
 of 2 to 7 items given the context below?
@@ -168,41 +168,107 @@ def generate_with_predicate(prompt, predicate):
 
     return response
 
-# - cognitive architecture based on prompting LLMs
-#     - Perception
-#     - Input Processing:
-#         - Text Structuring
-#         - Encoding for Interaction
-#         - Prompt Design
-#     - Working Memory Activation:
-#         - Transfer Encoded Information
-#         - Working Memory Processing:
-#             - Storage and Retrieval
-#             - Contextual Integration
-#             - Temporary Computation
-#             - Communication with Other Components
-#     - Memory Index Creation:
-#         - Analyzing Semantic Relationships
-#         - Clustering Similar Concepts
-#         - Identifying Key Themes or Categories
-#     - Sparse Path Generation:
-#         - Determining Possible Relevant Paths from Memory Index
-#         - Assessing Relevancy of Paths to the Current Context or Query
-#     - Reasoning and Knowledge Retrieval:
-#         - Formulating Specific Prompts for the LLM
-#         - Retrieving and Interpreting LLM Responses
-#         - Integration with Decision-Making:
-#             - Evaluation of Retrieved Information
-#             - Consideration of Working Memory Contents
-#     - Recursive Refinement:
-#         - Assessing Satisfaction with Preliminary Decision
-#         - If Unsatisfied, Return to Sparse Path Generation Stage
-#     - Output Generation:
-#         - Translate Decision into Output
-#     - Long-Term Memory Interaction (interwoven throughout steps 3-8):
-#         - Identify and Record Important or Relevant Information for Future
-#             Reference
-#         - Trigger 'Reset' to Memory Index Creation if Repeated Failure to
-#             Satisfy
-#     - Output Decision:
-#         - Communicate Final Decision or Conclusion
+# 
+
+# <!-- TODO: Write outline for following idea -->
+# <!-- - llm receives prompt with new text input -->
+# <!-- - llm creates 4 different summarizations -->
+# <!--    - 1 word -->
+# <!--    - 3 words -->
+# <!--    - 6 words -->
+# <!--    - 50 words -->
+# <!-- - these summarizations are stored in persistent storage in a fixed 4
+#         layer hierarchy -->
+# <!--    - exact number may be iterated on, point is non-growing for constant
+#             lookup -->
+# <!-- - a sufficiently brief conversational history summarization is
+#         maintained -->
+# <!--    - summarization is created once conversational history size is deemed
+#             large enogh by LLM -->
+# <!--    - with ( included in ) each new text input prompt the LLM judges
+#             whether that summarization is still roughly in line with the context
+#             of the new input ( enables among other things tangents ) -->
+# <!--    - if it's deemed not in line, a new one is created and pushed into
+#             the summarization list ( head most recent ) -->
+# <!--    - once an array of these exists, each new text input prompt will be
+#             followed up by an intermediate inference pass that determines the
+#             most appropriate summarization from the array -->
+# <!--        - if none is found appropriate a new one will be created as usual
+#                 -->
+# <!--    - each newly created summarization will be linked to a set or subset
+#             of text input summarizations on the lower ( more detailed )
+#             summarization layers using a dict ( one per layer ) -->
+# <!--        - if a dict already has the key ( can occur in some necessary
+#                 performance related techniques later described ), a new,
+#                 slightly different summarization and a new corresponding
+#                 subset will be created and linked -->
+# <!--    - the purpose of this is key to a cognition mechanism with constant
+#             time memory lookup -->
+# <!--        - new summarizations will ( relatively ) infrequently be created ->
+# <!--        - no need to iterate all text input summarizations in a given
+#                 layer in order to gather relevant inference details ->
+# <!--        - summarization is non-changing during a given conversation and
+#                 therefore provides deterministic, layer-subset limited lookup ->
+# <!--        - rich distant knowledge base associations are still included by
+#                 LLM pickig various different one word summarizations in the 
+#                 first inference pass ->
+# <!--        - once history summarization array exceeds context window,
+#                 the array is split in half and the new parts are linked
+#                 at the cutting point ->
+# <!--            - for the case in which the LLM chooses the oldest ( tail end )
+#                     summary of the curent array ->
+# <!--                - a subsequent inference pass is performed on the tail
+#                         linked ( from previous split ) array ->
+# <!--                - this kind of array jumping can possibly occur in streaks
+#                         , which may be reasonably pointed towards in a prompt ->
+# <!--                - in order to make very old lookup efficient, the jumping
+#                         gap will be increased based on an exponential
+#                         function ->
+# <!--                - the previous makes practically infinitely old memory
+#                         lookup possible ->
+# <!--                - once an inference chooses a summarization in an older
+#                         array as appropriate, that array will be inserted
+#                         before the head as a memory reinforcement ->
+# <!-- - each input text summarization nests the more detailed ones -->
+# <!-- - abstraction and pruning is performed only on the top level ones -->
+# <!--    - once multiple one word summarizations occur -->
+# <!--        - merge their 3 word summarizations under one  -->
+# <!--        - if 3 words aren't enough to semi-guarantee ( ignoring rare
+#                 edge cases as a reasonable tradeoff ), that number can be
+#                 increased  -->
+# <!-- - once one of the lower level summarization layers or subsets therein
+#         exceed the context window -->
+# <!--    - its least relevant summarizations will be extracted into a new subset
+#             -->
+# <!--    - if the current / original layer / subset is not yet linked to the
+#             current history summarization, it will be  -->
+# <!--    - a new, slightly different ( as influenced by the new subset )
+#             history summarization will be created for and linked to the subset
+#             -->
+# <!--    - this mechanism along with the maintenance of the flat, linked
+#             structure of history summarizations provides constant time memory
+#             lookup where each subset has relevance to a period in time
+#             -->
+# <!-- - using the above described mechanisms each relevant memory retrieval
+#         phase for text input processing
+#         only ever involves 4 inference passes plus a couple infrequent ones
+#         in cases of detected history summarization change, subset
+#         extraction / split and appropriate history summarization lookup -->
+# <!--    - on each integration, the max available tokens ( as determined
+#             by context window ) will be distributed based on relevance to the
+#             one word summarizations and similar distributions are done in the
+#             three deeper layers
+#             -->
+# <!--    - it must be made clear to the LLM that it may be necessary, even usual
+#             to distribute large amounts of tokens to individual summarizations
+#             due to strong topic foci -->
+# <!--    - it must also be made clear that some summarization inclusions may be
+#             prematurely stopped at early layers -->
+# <!--    - this leads to a mix of summarizations in very different detail levels
+#             based on relevance which provides rich associations across the
+#             whole knowledge base-->
+# <!--    - this leads to a mix of summarizations in very different detail levels
+#             based on relevance which provides rich associations across the
+#             whole knowledge base -->
+# <!--    - a relevant completion can then be provided based on the assembled
+#             context -->
