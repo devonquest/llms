@@ -1,5 +1,3 @@
-### Instruction:
-
 Q1:
 
 """
@@ -25,9 +23,7 @@ Summarize the quoted text in a four word sentence.
 
 A1:
 
-"""
 Traditional, innovative Tokyo architecture.
-"""
 
 Q2:
 
@@ -39,6 +35,8 @@ Summarize the quoted text in a four word sentence.
 
 A2:
 
-"""
+### Instruction:
+
+Complete A2 in the preceding dialogue.
 
 ### Response:
