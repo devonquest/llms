@@ -5,12 +5,33 @@ Q1:
 Photography preserves moments, emotions, and beauty for generations.
 '''
 
-Is that sentence really exactly four words long? If not, correct it.
+Is that sentence really exactly four words long? If not, correct it. Think
+step by step as follows to get the correct result:
+
+- set your count to 0
+- start from the first word
+- increment your count
+- go to the next word
+- increment your count
+- repeat until last word
+- if count = 4, then the result is correct
 """
 
 A1:
 
 """
+- Set your count to 0.
+- Start from the first word, which is "Photography." Increment your count to 1.
+- Go to the next word, which is "preserves." Increment your count to 2.
+- Continue to the next word, "moments," and increment your count to 3.
+- Move on to the next word, "emotions," and increment your count to 4.
+- Finally, reach the last word, "and," and increment your count to 5.
+
+Since the count is already 5, which is not equal to 4, the result is
+not correct.
+
+Correct result:
+
 Preserving moments through photography.
 """
 
@@ -21,7 +42,16 @@ Q2:
 Music transcends boundaries, uniting souls with harmonious melodies.
 '''
 
-Is that sentence really exactly four words long? If not, correct it.
+Is that sentence really exactly four words long? If not, correct it. Think
+step by step as follows to get the correct result:
+
+- set your count to 0
+- start from the first word
+- increment your count
+- go to the next word
+- increment your count
+- repeat until last word
+- if count = 4, then the result is correct
 """
 
 A2:
