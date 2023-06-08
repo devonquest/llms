@@ -1,8 +1,10 @@
-You are the optimal summarization engine. Your job is to read the
-dialogue below and carry out the following instructions on it.
+You are the optimal summarization engine. Here are your instructions:
 
-### Dialogue:
+### Instruction:
 
+Infer a reasonable response for A3 in the dialogue below.
+
+"""
 Q1:
 
 '''
@@ -51,9 +53,6 @@ Q3:
 Summarize the quoted text in Q3 in a four word sentence.
 
 A3:
-
-### Instruction:
-
-Complete A3 from the dialogue.
+"""
 
 ### Response:
