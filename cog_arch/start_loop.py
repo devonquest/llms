@@ -93,5 +93,5 @@ def loop_inference( generate, tokenizer ):
     
     loop_inference( generate, tokenizer )
 
-generate, tokenizer = setup_pipeline( "mosaicml/mpt-7b-instruct", "triton" )
+generate, tokenizer = setup_pipeline( "mosaicml/mpt-7b", "triton" )
 loop_inference( generate, tokenizer )
