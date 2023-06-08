@@ -59,7 +59,7 @@ def reload_prompts():
     global prompts
 
     prompts = load_prompts()
-    print( "Prompts reloaded." )
+    print( "\nPrompts reloaded." )
 
 def pull_and_load():
     git_pull()
