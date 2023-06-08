@@ -76,7 +76,7 @@ def generate_with_predicate(prompt, predicate, generate, tokenizer):
 
 def customize_prompt( prompt, substitution ):
     print(prompt.replace( "{ substitution }", substitution ))
-    input( "Continue." )
+    # input( "Continue." )
     return prompt.replace( "{ substitution }", substitution )
 
 def generate( generate, tokenizer, prompts ):
