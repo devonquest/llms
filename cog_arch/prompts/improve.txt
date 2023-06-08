@@ -25,5 +25,3 @@ the correct length.
 ### A2 ( no more questions or answers after this one ):
 
 That sentence is too long. Let's create one with four words, word by word:
-
-One, 
