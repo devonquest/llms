@@ -33,75 +33,6 @@ Q2:
 
 """
 '''
-Beneath the ocean's surface, a hidden world awaits, brimming with awe-inspiring
-wonders.
-Coral reefs bloom with vibrant life, as schools of tropical fish glide through
-their intricate branches.
-Gentle sea turtles navigate the currents, their graceful movements a testament
-to the harmony of this underwater realm.
-Dazzling arrays of colors sparkle as sunlight pierces the water, illuminating
-the mesmerizing beauty below.
-Majestic creatures like dolphins and whales grace these depths, their presence
-leaving a profound sense of awe.
-Amidst the silence, the ocean's architecture unfolds—a delicate balance of
-sandbanks, seagrass meadows, and majestic underwater cliffs.
-Ancient shipwrecks provide refuge for diverse marine life, creating underwater
-havens filled with secrets of the past.
-Explorers venture into this enigmatic world, discovering new species and
-unraveling the mysteries of the deep.
-The ocean's architecture is a testament to nature's ingenuity, inviting us to
-marvel at its splendor and protect its delicate balance for generations to come.
-'''
-
-Summarize the preceding text in a four word sentence.
-"""
-
-A2:
-
-"""
-Hidden wonders beneath waves.
-"""
-
-Q3:
-
-"""
-'''
-Modern society is at a crossroads. The age of fossil fuels and unsustainable
-consumption has given way to a new era of innovation and sustainability.
-Wind, solar, and hydroelectric power now promise limitless energy,
-harnessing the natural forces that have always been at our disposal.
-Electric vehicles roam the streets, their silent engines a stark contrast to the
-noisy, polluting vehicles of the past.
-Efficient recycling systems turn waste into valuable materials, creating a
-circular economy that minimizes our footprint on the Earth.
-Cities are becoming smarter, integrating technology into everyday life to
-improve efficiency and convenience.
-From driverless public transport to smart homes that adjust to our habits, the
-benefits of this technological revolution are myriad.
-However, with this progress come challenges. Cybersecurity threats are a
-growing concern, as our reliance on technology makes us more vulnerable to
-attacks.
-Economic inequality persists, with the benefits of innovation often not
-reaching those who need them most.
-Despite these challenges, the future is full of promise. As we navigate this
-new era, it's up to us to harness the benefits of innovation while mitigating
-its risks.
-The decisions we make now will shape the world for generations to come.
-'''
-
-Summarize the preceding text in a four word sentence.
-"""
-
-A3:
-
-"""
-Innovation reshaping sustainable future.
-"""
-
-Q4:
-
-"""
-'''
 In the heart of a bustling metropolis, a captivating tapestry of urban
 life unfolds before your eyes. Majestic skyscrapers reach toward the heavens,
 their sleek facades reflecting the vibrant energy that permeates the streets
@@ -130,6 +61,6 @@ vibrant embrace of the metropolis.
 Summarize the preceding text in a four word sentence.
 """
 
-A4:
+A2:
 
 """
