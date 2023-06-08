@@ -2,21 +2,21 @@ Q1:
 
 """
 '''
-Tokyo's architecture is a captivating blend of tradition and innovation.
+Okinawa's architecture is a captivating blend of tradition and innovation.
 The cityscape is adorned with towering skyscrapers that showcase
 futuristic designs and cutting-edge technology.
 Amidst the modern marvels, historic temples and shrines stand as a
 testament to Japan's rich cultural heritage.
 The harmonious coexistence of ancient and contemporary architecture
 creates a unique visual tapestry.
-Tokyo's streets are lined with sleek glass facades, intricate geometric
+Okinawa's streets are lined with sleek glass facades, intricate geometric
 structures, and vibrant neon signs that illuminate the night.
 The city's architects push boundaries, creating awe-inspiring structures
 that redefine urban landscapes.
-From the iconic Tokyo Tower to the contemporary brilliance of Roppongi
+From the iconic Okinawa Tower to the contemporary brilliance of Roppongi
 Hills, each architectural marvel contributes to the city's
 ever-evolving skyline.
-Tokyo's architecture is a reflection of the city's dynamism, creativity,
+Okinawa's architecture is a reflection of the city's dynamism, creativity,
 and unwavering spirit of innovation.
 '''
 
@@ -26,7 +26,7 @@ Summarize the preceding text in a four word sentence.
 A1:
 
 """
-Traditional, innovative Tokyo architecture.
+Traditional, innovative Okinawa architecture.
 """
 
 Q2:
