@@ -4,7 +4,7 @@
 Photography preserves moments, emotions, and beauty for generations.
 '''
 
-This sentence is too long. Compress it to four words.
+This sentence is too long. Make it a bit shorter by compressing it.
 
 ### A1:
 
@@ -16,6 +16,6 @@ Preserving moments through photography.
 { substitution }
 '''
 
-This sentence is too long. Compress it to four words.
+This sentence is too long. Make it a bit shorter by compressing it.
 
 ### A2 ( no more questions or answers after this one ):
