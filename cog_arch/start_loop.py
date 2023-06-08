@@ -12,7 +12,7 @@ cache_dir = "../cache"
 def git_pull():
     try:
         subprocess.check_output( ['git', 'pull'] )
-        print( "\nGit pull successful!" )
+        print( "\nGit pull successful." )
     except subprocess.CalledProcessError as e:
         print( f"\nError: Git pull failed.\n\nMessage:\n\n{ e.output }" )
 
@@ -42,6 +42,7 @@ def setup_pipeline( name, attn_impl ):
 def load_prompts():
     with ExitStack() as stack:
         names = [ "summarize", "compress_4" ]
+
         return dict(
             zip(
                 names,
@@ -53,6 +54,16 @@ def load_prompts():
         )
     
 prompts = load_prompts()
+
+def reload_prompts():
+    global prompts
+
+    prompts = load_prompts()
+    print( "Prompts reloaded." )
+
+def pull_and_load():
+    git_pull()
+    reload_prompts()
 
 def loop_inference( generate, tokenizer ):
     global prompts
@@ -74,10 +85,9 @@ def loop_inference( generate, tokenizer ):
     elif user_msg == "r":
         git_pull()
     elif user_msg == "p":
-        prompts = load_prompts()
+        reload_prompts()
     elif user_msg == "rp":
-        git_pull()
-        prompts = load_prompts()
+        pull_and_load()
     else:
         return
     
