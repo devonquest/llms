@@ -1,7 +1,7 @@
 import time as tm
 import re
 
-def to_true( _ ): True
+def to_true( _ ): return True
 
 def count_words( text ):
     words = re.split( r'\s+', text )
@@ -45,7 +45,7 @@ def generate_with_predicate(prompt, predicate, generate, tokenizer):
             print("Generation attempts exhausted, exiting...")
             exit(1)
         print(f"\nInvalid response:\n\n{response}")
-        return generate_with_predicate(prompt, predicate)
+        return generate_with_predicate(prompt, predicate, generate, tokenizer)
 
     return response
 
@@ -53,11 +53,12 @@ def customize_prompt( prompt, substitution ):
     return prompt.replace( "{ substitution }", substitution )
 
 def generate( generate, tokenizer, prompts ):
-    text = generate_with_predicate( prompts[ "summarize" ], to_true, generate, tokenizer )
+    args = generate, tokenizer
+    text = generate_with_predicate( prompts[ "summarize" ], to_true, *args )
     count, comp = 0, customize_prompt( prompts[ "compress_4" ], text )
 
     while count < 5 and count_words( text ) > 4:
-        text = generate_with_predicate( comp, to_true, generate, tokenizer )
+        text = generate_with_predicate( comp, to_true, *args )
         count += 1
 
     return text
