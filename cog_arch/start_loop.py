@@ -49,11 +49,7 @@ def loop_inference( generate, tokenizer ):
             print( "\nGenerating...\n" )
 
             prompt = f.read()
-            
-            response = il.reload( gn ).generate_with_predicate(
-                prompt, lambda _: True, generate, tokenizer
-            )
-
+            response = il.reload( gn ).generate( prompt, generate, tokenizer )
             print( f"\n---\n\nResponse:\n\n{ response }\n\n---" )
     elif user_msg == "pull":
         git_pull()
