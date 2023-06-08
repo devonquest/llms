@@ -20,7 +20,7 @@ Tokyo's architecture is a reflection of the city's dynamism, creativity,
 and unwavering spirit of innovation.
 '''
 
-Summarize the preceding text in a four word sentence.
+Summarize the preceding text in a four word sentence. No more, no less.
 """
 
 A1:
@@ -53,7 +53,7 @@ The ocean's architecture is a testament to nature's ingenuity, inviting us to
 marvel at its splendor and protect its delicate balance for generations to come.
 '''
 
-Summarize the preceding text in a four word sentence.
+Summarize the preceding text in a four word sentence. No more, no less.
 """
 
 A2:
@@ -91,7 +91,7 @@ energy, seize the opportunities, and create their own unique story within the
 vibrant embrace of the metropolis.
 '''
 
-Summarize the preceding text in a four word sentence.
+Summarize the preceding text in a four word sentence. No more, no less.
 """
 
 A3:
