@@ -84,8 +84,6 @@ def git_pull():
     # script_dir = os.path.dirname( os.path.abspath(__file__) )
     # os.chdir( script_dir )
     
-    print( "" )
-
     try:
         subprocess.check_output( ['git', 'pull'] )
         print( "\nGit pull successful!" )
@@ -199,9 +197,12 @@ def loop_inference():
             response = generate_with_predicate( prompt, lambda _: True )
 
             print( f"\n---\n\nResponse:\n{ response }\n---" )
-            loop_inference()
     elif user_msg == "pull":
         git_pull()
+    else:
+        return
+    
+    loop_inference()
 
 loop_inference()
 
