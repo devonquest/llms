@@ -16,7 +16,7 @@ def generate_once( prompt, max_new_tokens, generate, tokenizer ):
     before = tm.time()
     response = generate(
         prompt,
-        temperature=0.8, top_p=0.95, top_k=50, max_new_tokens=max_new_tokens,
+        temperature=0.2, top_p=0.95, top_k=50, max_new_tokens=max_new_tokens,
         use_cache=True, do_sample=True,
         eos_token_id=tokenizer.eos_token_id,
         pad_token_id=tokenizer.pad_token_id,
@@ -31,7 +31,7 @@ def generate_once( prompt, max_new_tokens, generate, tokenizer ):
 
 def generate_with_predicate(prompt, predicate, generate, tokenizer):
     generation_attempts = 0
-    response, *_ = generate_once(prompt, 2, generate, tokenizer)
+    response, *_ = generate_once(prompt, 2048, generate, tokenizer)
 
     if not predicate(response):
         generation_attempts += 1
