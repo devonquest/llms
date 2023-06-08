@@ -4,14 +4,11 @@
 Photography preserves moments, emotions, and beauty for generations.
 '''
 
-Is that sentence really exactly four words long? If not, create a new one with
-the correct length.
+This sentence is too long. Compress it to four words.
 
 ### A1:
 
-That sentence is too long. Let's create one with four words, word by word:
-
-One, Preserving, two, moments, three, through, four, photography.
+Preserving moments through photography.
 
 ### Q2:
 
@@ -19,11 +16,6 @@ One, Preserving, two, moments, three, through, four, photography.
 Music transcends boundaries, uniting souls with harmonious melodies.
 '''
 
-Is that sentence really exactly four words long? If not, create a new one with
-the correct length.
+This sentence is too long. Compress it to four words.
 
 ### A2 ( no more questions or answers after this one ):
-
-That sentence is too long. Let's create one with four words, word by word:
-
-One, 
