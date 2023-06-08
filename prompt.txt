@@ -15,11 +15,25 @@ friend.
 Q2:
 
 """
+Complete this famous movie one-liner from 'The Wizard of Oz':
+
+Toto, I've got a feeling we're...
+"""
+
+A2:
+
+"""
+not in Kansas anymore.
+"""
+
+Q3:
+
+"""
 Complete this famous movie one liner from 'Terminator':
 
 I'll be...
 """
 
-A2 ( no more questions after this one ):
+A3 ( no more questions after this one ):
 
 """
