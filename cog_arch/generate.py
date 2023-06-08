@@ -1,6 +1,31 @@
 import time as tm
 import re
 
+example_summarize = """In the heart of a bustling metropolis, a captivating tapestry of urban
+life unfolds before your eyes. Majestic skyscrapers reach toward the heavens,
+their sleek facades reflecting the vibrant energy that permeates the streets
+below. The rhythm of life pulses through every corner, as a kaleidoscope of
+diverse cultures intertwines, creating a vibrant mosaic of human experiences.
+Sidewalks teem with a symphony of sounds, from the chatter of passersby to
+the enticing melodies spilling out from cozy cafes and lively music venues.
+The air is alive with the aromas of world cuisines, wafting from bustling food
+carts and acclaimed restaurants, offering a tantalizing culinary journey for
+adventurous palates. Vibrant street art adorns the walls, transforming once
+ordinary spaces into canvases of creativity, telling stories of passion,
+resilience, and the human spirit. Parks and green spaces provide a sanctuary
+amidst the urban bustle, inviting city dwellers to reconnect with nature and
+find solace in the midst of the concrete jungle. Technology hums in the
+background, driving innovation and connecting people in ways never before
+imagined. Markets bustle with activity, where the vibrant colors of fresh
+produce, the intricate craftsmanship of local artisans, and the friendly
+banter of vendors create a sensory feast for visitors and locals alike. In
+this vibrant tapestry of urban life, dreams take flight, connections are
+forged, and the city's pulse beats with endless possibilities. It is a place
+where the past and the future converge, inviting all who enter to embrace the
+energy, seize the opportunities, and create their own unique story within the
+vibrant embrace of the metropolis.
+"""
+
 def to_true( _ ): return True
 
 def count_words( text ):
@@ -54,12 +79,16 @@ def customize_prompt( prompt, substitution ):
 
 def generate( generate, tokenizer, prompts ):
     args = generate, tokenizer
-    text = generate_with_predicate( prompts[ "summarize" ], to_true, *args )
+    text = generate_with_predicate(
+        customize_prompt( prompts[ "summarize" ], example_summarize ),
+        to_true,
+        *args
+    )
     count = 0
 
     while count < 10 and count_words( text ) > 4:
         text = generate_with_predicate(
-            customize_prompt( prompts[ "compress" ], text ), to_true, *args
+            customize_prompt( prompts[ "summarize" ], text ), to_true, *args
         )
         print( text )
         count += 1
