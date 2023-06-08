@@ -84,12 +84,13 @@ def git_pull():
     # script_dir = os.path.dirname( os.path.abspath(__file__) )
     # os.chdir( script_dir )
     
+    print( "" )
+
     try:
         subprocess.check_output( ['git', 'pull'] )
-        print( "Git pull successful!" )
+        print( "\nGit pull successful!" )
     except subprocess.CalledProcessError as e:
-        print( "Error: Git pull failed." )
-        print( e.output )
+        print( f"\nError: Git pull failed.\n\nMessage:\n\n{ e.output }" )
 
 def create_pipeline( name, attn_impl, device, tokenizer ):
     config = tf.AutoConfig.from_pretrained(
