@@ -34,8 +34,9 @@ def generate_with_predicate(prompt, predicate, generate, tokenizer):
     response, *_ = generate_once(prompt, 3, generate, tokenizer)
     
     if not predicate(response):
+        exit(1)
         generation_attempts += 1
-        if generation_attempts == 1:
+        if generation_attempts == 1-:
             print("Generation attempts exhausted, exiting...")
             exit(1)
         print(f"\nInvalid response:\n\n{response}")
