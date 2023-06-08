@@ -46,5 +46,3 @@ Enigmatic ocean depths intrigue.
 Summarize the preceding text in a four word sentence.
 
 ### A3:
-
-"""
