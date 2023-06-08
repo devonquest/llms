@@ -138,9 +138,9 @@ def generate_once( prompt, max_new_tokens, generate, tokenizer ):
     )
 
     after = tm.time()
-    inferred_response = response[ 0 ][ "generated_text" ].replace( prompt, "" )
+    text = response[ 0 ][ "generated_text" ].replace( prompt, "" )
 
-    return inferred_response, *measure( inferred_response, before, after )
+    return text, *measure( text, before, after )
 
 def make_suggestion_prompt( task, context ):
     return f"""### Q1:
