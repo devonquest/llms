@@ -197,6 +197,8 @@ def loop_inference():
 
             print( f"\n---\n\nResponse:\n\n{ response }" )
             loop_inference()
+    elif user_msg == "pull":
+        git_pull()
 
 loop_inference()
 
