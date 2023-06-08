@@ -3,7 +3,7 @@ import subprocess
 import torch as to
 import transformers as tf
 
-cache_dir = "./cache"
+cache_dir = "../cache"
 
 def git_pull():
     try:
