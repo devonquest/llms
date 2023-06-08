@@ -87,7 +87,7 @@ def generate( generate, tokenizer, prompts ):
     )
     count = 0
 
-    while count < 10 and count_words( text ) > 4:
+    while count < 10 and ( ( l := count_words( text ) ) == 0 or l > 4 ):
         text = generate_with_predicate(
             customize_prompt( prompts[ "summarize" ], text ), to_true, *args
         )
