@@ -1,7 +1,3 @@
-### Instruction:
-
-Complete A2 from the dialogue. Do not add more dialogue turns:
-
 Q1:
 
 """
@@ -27,5 +23,3 @@ I'll be...
 A2:
 
 """
-
-### Response:
