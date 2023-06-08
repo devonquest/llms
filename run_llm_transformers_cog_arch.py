@@ -184,18 +184,18 @@ def generate_with_predicate(prompt, predicate):
 
 def loop_inference():
     user_msg = input(
-        # "\nType enter to perform inference, otherwise the program's " \
-        # "going to end: "
         "\nType one of:\n\n- enter to generate\n- pull to update prompt" \
-        "\n- anything else to exit"
+        "\n- anything else to exit\n\n"
     )
 
     if user_msg == "":
         with open( "./prompt.txt", "r" ) as f:
+            print( "\nGenerating..." )
+
             prompt = f.read()
             response = generate_with_predicate( prompt, lambda _: True )
 
-            print( f"\n\n---\n\nResponse:\n\n{ response }\n\n---" )
+            print( f"\n---\n\nResponse:\n\n{ response }\n\n---" )
             loop_inference()
     elif user_msg == "pull":
         git_pull()
