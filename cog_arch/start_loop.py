@@ -1,7 +1,10 @@
+import importlib as il
 import subprocess
 
 import torch as to
 import transformers as tf
+
+import generate as gn
 
 cache_dir = "../cache"
 
@@ -46,8 +49,8 @@ def loop_inference( generate, tokenizer ):
             print( "\nGenerating...\n" )
 
             prompt = f.read()
-            from generate import generate_with_predicate
-            response = generate_with_predicate(
+            
+            response = il.reload( gn ).generate_with_predicate(
                 prompt, lambda _: True, generate, tokenizer
             )
 
