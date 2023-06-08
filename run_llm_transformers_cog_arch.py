@@ -170,7 +170,7 @@ generate, tokenizer = \
 
 def generate_with_predicate(prompt, predicate):
     global generation_attempts
-    response, *_ = generate_once(prompt, 6, generate, tokenizer)
+    response, *_ = generate_once(prompt, 8, generate, tokenizer)
     
     if not predicate(response):
         generation_attempts += 1
