@@ -1,14 +1,18 @@
 import time as tm
 import re
 
-def count_tokens( message ):
-    words = re.split( r'\s+', message )
-    num_tokens = len( words ) / 0.75
+def count_words( text ):
+    words = re.split( r'\s+', text )
+
+    return len( words )
+
+def count_tokens( text ):
+    num_tokens = count_words( text ) / 0.75
 
     return int( num_tokens )
 
-def measure( inferred_text, before, after ):
-    num_tokens = count_tokens( inferred_text )
+def measure_tokens( text, before, after ):
+    num_tokens = count_tokens( text )
 
     return num_tokens, num_tokens / ( after - before )
 
@@ -27,7 +31,7 @@ def generate_once( prompt, max_new_tokens, generate, tokenizer ):
     text = response[ 0 ][ "generated_text" ]
     text = text.replace( prompt, "" ).replace( "\"\"\"", "" ).strip()
 
-    return text, *measure( text, before, after )
+    return text, *measure_tokens( text, before, after )
 
 def generate_with_predicate(prompt, predicate, generate, tokenizer):
     generation_attempts = 0
