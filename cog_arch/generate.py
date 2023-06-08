@@ -55,7 +55,7 @@ def customize_prompt( prompt, substitution ):
 def generate( generate, tokenizer, prompts ):
     args = generate, tokenizer
     text = generate_with_predicate( prompts[ "summarize" ], to_true, *args )
-    count, comp = 0, customize_prompt( prompts[ "compress_4" ], text )
+    count, comp = 0, customize_prompt( prompts[ "compress" ], text )
 
     while count < 10 and count_words( text ) > 4:
         text = generate_with_predicate( comp, to_true, *args )
