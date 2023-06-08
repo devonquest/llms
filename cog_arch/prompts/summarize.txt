@@ -1,13 +1,6 @@
 ### Instruction:
 
-"""
-{ substitution }
-"""
-
-Summarize the preceding quoted text in a four word sentence. Here are a couple
-of optimal example texts and results:
-
-Example 1 text:
+Q1:
 
 """
 Tokyo's architecture is a captivating blend of tradition and innovation.
@@ -28,8 +21,24 @@ Tokyo's architecture is a reflection of the city's dynamism, creativity,
 and unwavering spirit of innovation.
 """
 
-Example 1 result:
+Summarize the quoted text in a four word sentence.
 
+A1:
+
+"""
 Traditional, innovative Tokyo architecture.
+"""
+
+Q2:
+
+"""
+{ substitution }
+"""
+
+Summarize the quoted text in a four word sentence.
+
+A2:
+
+"""
 
 ### Response:
