@@ -1,117 +1,5 @@
-import sys
-import subprocess
-import os
-
 import time as tm
 import re
-
-import toolz as tz
-
-import torch as to
-import transformers as tf
-
-cache_dir = "./cache"
-
-task = "- learning how to play piano"
-generation_attempts = 0
-
-def any( predicate, iterable ):
-    len( list( filter( predicate, iterable ) ) ) > 0
-
-def item_from_path( outline, path ):
-    next, *path_tail = path
-    item = outline[ next ]
-
-    if path_tail:
-        return item_from_path( item, path_tail )
-    else:
-        return item
-    
-def set_item_at_path( outline, path, element ):
-    next, *path_tail = path
-    cur_element = outline[ next ]
-
-    if path_tail:
-        set_item_at_path( cur_element, path_tail, element )
-    else:
-        outline[ next ] = element
-
-def isKeyCarg( c ): c.startswith( "--" )
-
-def print_cargs_config( names, defaults ):
-    defaults_msg = "\n---\n\nConfig:\n"
-    for n, d in zip( names, defaults ):
-        defaults_msg += f"\nKey: { n }\t, Value: { d }"
-
-    print( defaults_msg )
-
-def cargs_to_options( cargs ):
-    options = { "model": "mosaicml/mpt-7b-instruct", "attn_impl": "triton" }
-    valid_attn_impls = "torch", "triton"
-
-    if len( cargs ) == 0: return options
-    
-    grouped = tz.groupby( lambda e: e[ 0 ] % 2 == 0, enumerate( cargs ) )
-    if len( grouped ) % 2 != 0:
-        print( "Error: Uneven number of command line arguments." )
-        sys.exit()
-    else:
-        keys, values = \
-            tz.map( lambda g: list( tz.map( tz.second, g ) ), grouped.values() )
-
-        if any( lambda s: not isKeyCarg( s ), keys ) \
-                or any( isKeyCarg, values ) :
-            print( "Error: Wrong order of command line arguments." )
-            sys.exit()
-        else:
-            keys = map( lambda k: k.replace( "--", "" ), keys )
-            for k, v in zip( keys, values ):
-                if k not in options:
-                    print( f"Error: Wrong command line argument key: { k }" )
-                    sys.exit()
-                elif k == "attn_impl" and v not in valid_attn_impls:
-                    print(
-                        f"Error: Wrong command line argument value: { v }. " \
-                        + f"Valid: { valid_attn_impls }"
-                    )
-                    sys.exit()
-                else:
-                    options[ k ] = v
-
-    return options
-
-def git_pull():
-    # script_dir = os.path.dirname( os.path.abspath(__file__) )
-    # os.chdir( script_dir )
-    
-    try:
-        subprocess.check_output( ['git', 'pull'] )
-        print( "\nGit pull successful!" )
-    except subprocess.CalledProcessError as e:
-        print( f"\nError: Git pull failed.\n\nMessage:\n\n{ e.output }" )
-
-def create_pipeline( name, attn_impl, device, tokenizer ):
-    config = tf.AutoConfig.from_pretrained(
-        name, cache_dir = cache_dir, trust_remote_code = True
-    )
-    config.attn_config['attn_impl'] = attn_impl
-    config.init_device = device
-
-    return tf.pipeline(
-        "text-generation",
-        model = tf.AutoModelForCausalLM.from_pretrained(
-            name, config=config, torch_dtype=to.bfloat16,
-            trust_remote_code=True,
-            device_map = "auto", cache_dir = cache_dir
-        ),
-        tokenizer = tokenizer
-    )
-
-def setup_pipeline( name, attn_impl ):
-    device = "cuda:0"
-    tokenizer = tf.AutoTokenizer.from_pretrained( name, cache_dir = cache_dir )
-
-    return create_pipeline( name, attn_impl, device, tokenizer ), tokenizer
 
 def count_tokens( message ):
     words = re.split( r'\s+', message )
@@ -141,35 +29,8 @@ def generate_once( prompt, max_new_tokens, generate, tokenizer ):
 
     return text, *measure( text, before, after )
 
-def make_suggestion_prompt( task, context ):
-    return f"""### Q1:
-Can you break down the task "- learn how to play the piano" into a flat list
-of 2 to 7 items given the context below?
-
-Context:
-- learning how to play piano
-
-### A1:
-- Master piano keys and basic exercises
-- Understand music theory and practice songs
-- Maintain daily routine and seek regular feedback
-
-### Q2:
-Can you break down the task "{ task }" into a flat list of 2 to 7 items
-given the context below?
-
-Context:
-{ context }
-
-### A2:
-"""
-
-options = cargs_to_options( sys.argv[ 1: ] )
-generate, tokenizer = \
-    setup_pipeline( options[ "model" ], options[ "attn_impl" ] )
-
-def generate_with_predicate(prompt, predicate):
-    global generation_attempts
+def generate_with_predicate(prompt, predicate, generate, tokenizer):
+    generation_attempts = 0
     response, *_ = generate_once(prompt, 2048, generate, tokenizer)
     
     if not predicate(response):
@@ -181,31 +42,6 @@ def generate_with_predicate(prompt, predicate):
         return generate_with_predicate(prompt, predicate)
 
     return response
-
-def loop_inference():
-    user_msg = input(
-        # "\nType one of:\n\n- enter to generate\n- pull to update prompt" \
-        # "\n- anything else to exit\n\n"
-        "\nOptions:\n\n- enter to generate\n- pull to update prompt" \
-        "\n- anything else to exit\n\nType an option: "
-    )
-
-    if user_msg == "":
-        with open( "./prompt.txt", "r" ) as f:
-            print( "\nGenerating...\n" )
-
-            prompt = f.read()
-            response = generate_with_predicate( prompt, lambda _: True )
-
-            print( f"\n---\n\nResponse:\n\n{ response }\n\n---" )
-    elif user_msg == "pull":
-        git_pull()
-    else:
-        return
-    
-    loop_inference()
-
-loop_inference()
 
 # <!-- TODO: Write outline for following idea -->
 # <!-- - llm receives prompt with new text input -->
