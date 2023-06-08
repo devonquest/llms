@@ -184,8 +184,10 @@ def generate_with_predicate(prompt, predicate):
 
 def loop_inference():
     user_msg = input(
-        "\nType one of:\n\n- enter to generate\n- pull to update prompt" \
-        "\n- anything else to exit\n\n"
+        # "\nType one of:\n\n- enter to generate\n- pull to update prompt" \
+        # "\n- anything else to exit\n\n"
+        "\nOptions:\n\n- enter to generate\n- pull to update prompt" \
+        "\n- anything else to exit\n\nType an option: "
     )
 
     if user_msg == "":
