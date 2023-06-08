@@ -186,8 +186,8 @@ def loop_inference():
     user_msg = input(
         # "\nType enter to perform inference, otherwise the program's " \
         # "going to end: "
-        "\nType one of:\n\n- enter to generate\n-pull to update prompt" \
-        "\n-anything else to exit"
+        "\nType one of:\n\n- enter to generate\n- pull to update prompt" \
+        "\n- anything else to exit\n\n"
     )
 
     if user_msg == "":
@@ -195,7 +195,7 @@ def loop_inference():
             prompt = f.read()
             response = generate_with_predicate( prompt, lambda _: True )
 
-            print( f"\n---\n\nResponse:\n\n{ response }" )
+            print( f"\n---\n\nResponse:\n\n{ response }\n\n---\n" )
             loop_inference()
     elif user_msg == "pull":
         git_pull()
