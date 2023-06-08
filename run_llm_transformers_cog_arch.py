@@ -193,12 +193,12 @@ def loop_inference():
 
     if user_msg == "":
         with open( "./prompt.txt", "r" ) as f:
-            print( "\nGenerating..." )
+            print( "\nGenerating...\n" )
 
             prompt = f.read()
             response = generate_with_predicate( prompt, lambda _: True )
 
-            print( f"\n---\n\nResponse:\n\n{ response }\n\n---" )
+            print( f"\n---\n\nResponse:\n\n{ response }\n---" )
             loop_inference()
     elif user_msg == "pull":
         git_pull()
