@@ -3,5 +3,23 @@ Q1:
 """
 Complete this famous movie one liner:
 
-'Say hello to my little'
+'Say hello to my little '
+"""
+
+A1:
+
+"""
+friend.
+"""
+
+Q2:
+
+"""
+Complete this famous movie one liner:
+
+'May the Force be '
+"""
+
+A2:
+
 """
