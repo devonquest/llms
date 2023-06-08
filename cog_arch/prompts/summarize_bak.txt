@@ -1,4 +1,9 @@
-### Q1:
+You are the optimal summarization engine. Your job is to read the
+dialogue below and carry out the following instructions on it.
+
+### Dialogue:
+
+Q1:
 
 '''
 Tokyo's architecture is a captivating blend of tradition and innovation.
@@ -21,11 +26,11 @@ and unwavering spirit of innovation.
 
 Summarize the quoted text in Q1 in a four word sentence.
 
-### A1:
+A1:
 
 Traditional, innovative Tokyo architecture.
 
-### Q2:
+Q2:
 
 '''
 The ocean's depths conceal mysteries that captivate our imagination.
@@ -33,11 +38,11 @@ The ocean's depths conceal mysteries that captivate our imagination.
 
 Summarize the quoted text in Q2 in a four word sentence.
 
-### A2:
+A2:
 
 Enigmatic ocean depths intrigue.
 
-### Q3:
+Q3:
 
 '''
 { substitution }
@@ -45,4 +50,8 @@ Enigmatic ocean depths intrigue.
 
 Summarize the quoted text in Q3 in a four word sentence.
 
-### A3:
+A3:
+
+### Instruction:
+
+Complete A3 from the dialogue.
