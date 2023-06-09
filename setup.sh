@@ -16,8 +16,7 @@ done
 
 source on
 
-triton="triton-pre-mlir@git+https://github.com/vchiley/triton.git@triton_pre_mlir_sm90#subdirectory=python"
-pip install toolz transformers einops accelerate "$triton"
+# triton="triton-pre-mlir@git+https://github.com/vchiley/triton.git@triton_pre_mlir_sm90#subdirectory=python"
+# pip install toolz transformers einops accelerate "$triton"
 
-# attn_impl="triton"
-# python run_llm_transformers.py --model $model --attn_impl $attn_impl
+pip install toolz transformers einops accelerate
