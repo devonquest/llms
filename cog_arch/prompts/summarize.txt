@@ -1,6 +1,6 @@
 ### Instruction:
 
-Summarize the input text in 50 words.
+Summarize the input text in a single word.
 
 ### Input:
 
