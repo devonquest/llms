@@ -2,12 +2,65 @@
 
 Summarize the input text in 3 different lengths:
 
-- a single word
-- 4 words
 - 50 words
+- 4 words
+- a single word
+
+### Input:
+
+Tokyo's architecture is a mesmerizing blend of tradition and innovation,
+showcasing the city's unique character. Walking through the bustling streets,
+one is captivated by the seamless juxtaposition of ancient temples and
+ultramodern skyscrapers. The iconic Tokyo Tower stands tall, reminiscent of
+the Eiffel Tower, offering panoramic views of the city's architectural marvels.
+The imperial palace, surrounded by lush gardens, presents a stunning display
+of classical Japanese design, with its intricate wooden structures and tranquil
+moats. Tokyo's skyline is dominated by sleek glass towers that house
+futuristic offices and luxury apartments, reflecting the city's status as a
+global economic powerhouse. The vibrant Shibuya crossing is not just a
+bustling intersection but a testament to Tokyo's architectural innovation, with
+its illuminated billboards and towering facades. Traditional wooden machiya
+townhouses, with their distinctive latticed windows and tiled roofs, can still
+be found tucked away in the historic neighborhoods, providing a glimpse into
+Tokyo's past. Architectural wonders like the Meiji Shrine, with its majestic
+torii gates and serene forest surroundings, offer a serene escape from the urban
+chaos. Tokyo's architectural landscape constantly evolves, with cutting-edge
+designs such as the iconic Tokyo Skytree, a towering communication tower that
+boasts a futuristic aesthetic and serves as a symbol of Japan's technological
+advancements. From ancient temples to modern skyscrapers, Tokyo's architecture
+is a testament to the city's rich heritage and its unwavering embrace of
+progress.
+
+### Response:
+
+# 50 words
+
+Tokyo's architecture seamlessly blends tradition and innovation, showcasing
+    ancient temples, ultramodern skyscrapers, iconic landmarks like Tokyo
+    Tower and Meiji Shrine, and vibrant neighborhoods like Shibuya. The city's
+    architectural marvels reflect its rich heritage and commitment to
+    progress, making it a captivating global hub of design.
+
+# 4 words
+
+Traditional and modern Tokyo.
+
+# a single word
+
+Tokyo
+
+### Instruction:
+
+Summarize the input text in 3 different lengths:
+
+- 50 words
+- 4 words
+- a single word
 
 ### Input:
 
 { input }
 
 ### Response:
+
+# 50 words

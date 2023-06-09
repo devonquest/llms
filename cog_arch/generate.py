@@ -73,12 +73,11 @@ def generate_with_predicate(prompt, predicate, generate, tokenizer):
 
     return response
 
-def customize_prompt( prompt, input, count = 1 ):
+def customize_prompt( prompt, input ):
     # print(prompt.replace( "{ substitution }", substitution ))
     # input( "Continue." )
-    prompt = prompt.replace( "{ input }", input )
 
-    return prompt.replace( "{ count }", f"{ count }" ) 
+    return prompt.replace( "{ input }", input )
 
 def generate( generate, tokenizer, prompts ):
     args = generate, tokenizer
