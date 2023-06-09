@@ -93,5 +93,7 @@ def loop_inference( generate, tokenizer ):
     
     loop_inference( generate, tokenizer )
 
-generate, tokenizer = setup_pipeline( "mosaicml/mpt-7b-chat", "triton" )
+generate, tokenizer = setup_pipeline(
+    "TheBloke/gpt4-x-vicuna-13B-HF", "triton"
+)
 loop_inference( generate, tokenizer )
