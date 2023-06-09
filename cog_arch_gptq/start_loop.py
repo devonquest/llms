@@ -25,25 +25,21 @@ def get_config( has_desc_act ):
     )
 
 def get_model( hf_repo, name, has_desc_act, triton ):
-    if has_desc_act:
-        model_suffix = "latest.act-order"
-    else:
-        model_suffix = "compat.act-order"
-
+    model_suffix = ""
     device = "cuda:0"
 
     # f"/workspace/llms/cache/models--{ hf_repo.replace( '/', '--' ) }"
 
     return aq.AutoGPTQForCausalLM.from_quantized(
-        hf_repo, model_basename = f"{ name }.{ model_suffix }",
+        hf_repo, model_basename = f"{ name }{ model_suffix }",
         device = device, init_device = device, device_map = "auto",
-        use_safetensors = True, use_triton = triton,
+        use_safetensors = False, use_triton = triton,
         quantize_config = get_config( has_desc_act )
     )
 
 def create_pipeline( hf_repo, name ):
     tokenizer = tf.AutoTokenizer.from_pretrained(
-        hf_repo, cache_dir = cache_dir, use_fast = True
+        hf_repo, cache_dir = cache_dir, use_fast = False
     )
 
     generate = tf.pipeline(
@@ -130,6 +126,6 @@ import os
 print( os.getcwd() )
 
 generate, tokenizer = create_pipeline(
-    "TheBloke/gpt4-x-vicuna-13B-GPTQ", "GPT4-x-Vicuna-13B-GPTQ-4bit-128g"
+    "NousResearch/GPT4-x-Vicuna-13b-4bit", "gpt4-x-vicuna-13b-GPTQ4bit-g128.pt"
 )
 loop_inference( generate, tokenizer )
