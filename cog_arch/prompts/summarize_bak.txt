@@ -1,7 +1,7 @@
 Question 1:
 
 """
-Summarize the following text in 4 words:
+Summarize the following text in 4 words.
 
 Tokyo's architecture is a captivating blend of tradition and innovation.
 The cityscape is adorned with towering skyscrapers that showcase
@@ -24,7 +24,16 @@ and unwavering spirit of innovation.
 Answer 1:
 
 """
+Summarization:
+
 Traditional, innovative Tokyo architecture.
+
+Reflection:
+
+As a summarizer, I carefully analyzed the text about traditional and
+innovative Tokyo architecture. Through my expert judgment, I synthesized
+the key points and main ideas, highlighting the unique aspects of Tokyo's
+architectural scene.
 """
 
 Question 2:
@@ -38,7 +47,16 @@ The ocean's depths conceal mysteries that captivate our imagination.
 Answer 2:
 
 """
+Summarization:
+
 Enigmatic ocean depths intrigue.
+
+Reflection:
+
+As the summarizer, I approached the text about enigmatic ocean depths with
+a sense of curiosity and fascination. Drawing from my vast knowledge base,
+I condensed the information into a concise summary that captures the essence
+of the mysterious allure of the deep sea.
 """
 
 Question 3 ( last question ):
@@ -50,3 +68,6 @@ Summarize the following text in 4 words:
 """
 
 Answer 3 ( last answer, no more questions and answers beyond this one ):
+
+"""
+Summarization:
