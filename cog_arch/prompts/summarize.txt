@@ -1,6 +1,6 @@
 ### Instruction:
 
-Summarize the input text using at max { count } words. Be extremely brief.
+Summarize the input text using at max { count } words.
 
 ### Input:
 
