@@ -1,50 +1,12 @@
 Question 1:
 
 """
-Summarize the following text in 4 words.
-
-Tokyo's architecture is a captivating blend of tradition and innovation.
-The cityscape is adorned with towering skyscrapers that showcase
-futuristic designs and cutting-edge technology.
-Amidst the modern marvels, historic temples and shrines stand as a
-testament to Japan's rich cultural heritage.
-The harmonious coexistence of ancient and contemporary architecture
-creates a unique visual tapestry.
-Tokyo's streets are lined with sleek glass facades, intricate geometric
-structures, and vibrant neon signs that illuminate the night.
-The city's architects push boundaries, creating awe-inspiring structures
-that redefine urban landscapes.
-From the iconic Tokyo Tower to the contemporary brilliance of Roppongi
-Hills, each architectural marvel contributes to the city's
-ever-evolving skyline.
-Tokyo's architecture is a reflection of the city's dynamism, creativity,
-and unwavering spirit of innovation.
-"""
-
-Answer 1:
-
-"""
-Summarization:
-
-Traditional, innovative Tokyo architecture.
-
-Reflection:
-
-As a summarizer, I carefully analyzed the text about traditional and
-innovative Tokyo architecture. Through my expert judgment, I synthesized
-the key points and main ideas, highlighting the unique aspects of Tokyo's
-architectural scene.
-"""
-
-Question 2:
-
-"""
 Summarize the following text in 4 words:
 
 The ocean's depths conceal mysteries that captivate our imagination.
 """
 
-Answer 2:
+Answer 1:
 
 """
 Summarization:
@@ -53,13 +15,11 @@ Enigmatic ocean depths intrigue.
 
 Reflection:
 
-As the summarizer, I approached the text about enigmatic ocean depths with
-a sense of curiosity and fascination. Drawing from my vast knowledge base,
-I condensed the information into a concise summary that captures the essence
-of the mysterious allure of the deep sea.
+I summarized the text on enigmatic ocean depths, capturing the fascination and
+mystery of the deep sea.
 """
 
-Question 3 ( last question ):
+Question 2:
 
 """
 Summarize the following text in 4 words:
@@ -67,7 +27,7 @@ Summarize the following text in 4 words:
 { substitution }
 """
 
-Answer 3 ( last answer, no more questions and answers beyond this one ):
+Answer 3:
 
 """
 Summarization:
