@@ -9,7 +9,7 @@ Summarize the following text using at max 4 words. Be extremely brief.
 Answer 1:
 
 """
-Enigmatic ocean depths intrigue. / END
+Enigmatic ocean depths intrigue.
 """
 
 Question 2:
