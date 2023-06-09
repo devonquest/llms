@@ -36,5 +36,3 @@ Summarize the following text:
 """
 
 Answer 2:
-
-"""
