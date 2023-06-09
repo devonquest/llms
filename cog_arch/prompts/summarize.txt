@@ -62,5 +62,3 @@ Summarize the input text in 3 different lengths:
 { input }
 
 ### Response:
-
-# 50 words
