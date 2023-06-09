@@ -9,8 +9,6 @@ Briefly summarize the following text. Use at max 4 words.
 Answer 1:
 
 """
-Summarization:
-
 Enigmatic ocean depths intrigue. / END
 """
 
