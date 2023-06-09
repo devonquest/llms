@@ -17,6 +17,6 @@ done
 source on
 
 triton="triton-pre-mlir@git+https://github.com/vchiley/triton.git@triton_pre_mlir_sm90#subdirectory=python"
-pip install toolz transformers auto-gptq einops accelerate "$triton"
+pip install toolz transformers sentencepiece auto-gptq einops accelerate "$triton"
 
 # pip install toolz transformers einops accelerate

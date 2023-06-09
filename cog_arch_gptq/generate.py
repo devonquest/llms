@@ -88,23 +88,13 @@ def generate( generate, tokenizer, prompts ):
     )
     count = 0
 
-    while count < 10 and count_words( text ) > 10000:
-        text = generate_with_predicate(
-            customize_prompt( prompts[ "summarize" ], text ), to_true, *args
-        )
-        count += 1
+    # while count < 10 and count_words( text ) > 10000:
+    #     text = generate_with_predicate(
+    #         customize_prompt( prompts[ "summarize" ], text ), to_true, *args
+    #     )
+    #     count += 1
 
     return text
-
-# def generate( generate, tokenizer, prompts ):
-#     args = generate, tokenizer
-#     text = generate_with_predicate(
-#         customize_prompt( prompts[ "summarize" ], example_summarize ),
-#         to_true,
-#         *args
-#     )
-
-#     return text
 
 # <!-- TODO: Write outline for following idea -->
 # <!-- - llm receives prompt with new text input -->
