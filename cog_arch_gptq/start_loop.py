@@ -43,12 +43,12 @@ def get_model( hf_repo, name, has_desc_act, triton ):
 
 def create_pipeline( hf_repo, name ):
     tokenizer = tf.AutoTokenizer.from_pretrained(
-        hf_repo, cache_dir = cache_dir, use_fast = False
+        hf_repo, cache_dir = cache_dir, use_fast = True
     )
 
     generate = tf.pipeline(
         "text-generation",
-        model = get_model( hf_repo, name, False, False ),
+        model = get_model( hf_repo, name, False, True ),
         tokenizer = tokenizer
     )
 
