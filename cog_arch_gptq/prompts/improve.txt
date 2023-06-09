@@ -1,0 +1,9 @@
+### Instruction:
+
+Summarize the input text using at max 4 words. Be extremely brief.
+
+### Input:
+
+{ substitution }
+
+### Response:
