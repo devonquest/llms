@@ -1,0 +1,38 @@
+Question 1:
+
+"""
+Summarize the following text in 4 words:
+
+Tokyo's architecture is a captivating blend of tradition and innovation.
+The cityscape is adorned with towering skyscrapers that showcase
+futuristic designs and cutting-edge technology.
+Amidst the modern marvels, historic temples and shrines stand as a
+testament to Japan's rich cultural heritage.
+The harmonious coexistence of ancient and contemporary architecture
+creates a unique visual tapestry.
+Tokyo's streets are lined with sleek glass facades, intricate geometric
+structures, and vibrant neon signs that illuminate the night.
+The city's architects push boundaries, creating awe-inspiring structures
+that redefine urban landscapes.
+From the iconic Tokyo Tower to the contemporary brilliance of Roppongi
+Hills, each architectural marvel contributes to the city's
+ever-evolving skyline.
+Tokyo's architecture is a reflection of the city's dynamism, creativity,
+and unwavering spirit of innovation.
+"""
+
+Answer 1:
+
+"""
+Traditional, innovative Tokyo architecture.
+"""
+
+Question 2:
+
+"""
+Summarize the following text in 4 words:
+
+{ substitution }
+"""
+
+Answer 2:
