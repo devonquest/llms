@@ -1,6 +1,14 @@
 ### Instruction:
 
 """
+{ substitution }
+"""
+
+Summarize the preceding quoted text briefly according to the following examples.
+
+Example text:
+
+"""
 Tokyo's architecture is a captivating blend of tradition and innovation.
 The cityscape is adorned with towering skyscrapers that showcase
 futuristic designs and cutting-edge technology.
@@ -19,16 +27,8 @@ Tokyo's architecture is a reflection of the city's dynamism, creativity,
 and unwavering spirit of innovation.
 """
 
-Summarize the quoted text briefly.
-
-### Response:
+Example result:
 
 Traditional, innovative Tokyo architecture.
-
-### Instruction:
-
-{ substitution }
-
-Summarize the quoted text briefly.
 
 ### Response:
