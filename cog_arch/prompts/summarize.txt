@@ -1,3 +1,5 @@
+### Dialogue:
+
 SYS1:
 
 Tokyo's architecture is a captivating blend of tradition and innovation.
@@ -37,6 +39,6 @@ A2:
 
 ### Instruction:
 
-Infer A2.
+Complete A2 in "### Dialogue".
 
 ### Response:
