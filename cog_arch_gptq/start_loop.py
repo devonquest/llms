@@ -102,7 +102,7 @@ def generate_timed():
     num_tokens, tps = measure_tokens( response, before, tm.time() )
 
     print( f"\n---\n\nResponse:\n\n{ response }\n\n---" )
-    print( f"\n---\n\nNum tokens: { num_tokens }\ttps: { tps }\n\n---" )
+    print( f"\nNum tokens: { num_tokens }\ttps: { tps }\n\n---" )
 
 def loop_inference( generate, tokenizer ):
     global prompts
