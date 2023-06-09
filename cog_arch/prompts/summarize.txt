@@ -1,7 +1,7 @@
 Question 1:
 
 """
-Summarize the following text in 4 words:
+Briefly summarize the following text in a four word sentence:
 
 The ocean's depths conceal mysteries that captivate our imagination.
 """
@@ -22,7 +22,7 @@ mystery of the deep sea.
 Question 2:
 
 """
-Summarize the following text in 4 words:
+Briefly summarize the following text in a four word sentence:
 
 { substitution }
 """
