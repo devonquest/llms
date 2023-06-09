@@ -126,7 +126,7 @@ def loop_inference( generate, tokenizer ):
 tf.logging.set_verbosity( tf.logging.CRITICAL )
 
 import os
-print( os.curdir() )
+print( os.curdir )
 
 generate, tokenizer = create_pipeline(
     "TheBloke/gpt4-x-vicuna-13B-GPTQ", "GPT4-x-Vicuna-13B-GPTQ-4bit-128g"
