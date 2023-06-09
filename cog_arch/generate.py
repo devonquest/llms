@@ -61,7 +61,7 @@ def generate_once( prompt, max_new_tokens, generate, tokenizer ):
 
 def generate_with_predicate(prompt, predicate, generate, tokenizer):
     generation_attempts = 0
-    response, *_ = generate_once(prompt, 16, generate, tokenizer)
+    response, *_ = generate_once(prompt, 50, generate, tokenizer)
 
     if not predicate(response):
         generation_attempts += 1
