@@ -1,1 +1,5 @@
-Yesterday I wanted to
+Summarize the following text briefly.
+
+"""
+{ substitution }
+"""
