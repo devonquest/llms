@@ -1,0 +1,25 @@
+Question 1:
+
+"""
+Summarize the following text using at max 4 words. Be extremely brief.
+
+'The ocean's depths conceal mysteries that captivate our imagination.'
+"""
+
+Answer 1:
+
+"""
+Enigmatic ocean depths intrigue.
+"""
+
+Question 2:
+
+"""
+Summarize the following text using at max 4 words. Be extremely brief.
+
+'{ substitution }'
+"""
+
+Answer 2:
+
+"""
