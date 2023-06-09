@@ -1,6 +1,3 @@
-The following dialogue is missing Answer 3. Please fill it in. Do not respond
-with anything else besides the content for Answer 3.
-
 Question 1:
 
 """
