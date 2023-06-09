@@ -1,9 +1,9 @@
 Question 1:
 
 """
-Briefly summarize the following text in a four word sentence:
+Briefly summarize the following text. Use at max 4 words.
 
-The ocean's depths conceal mysteries that captivate our imagination.
+'The ocean's depths conceal mysteries that captivate our imagination.'
 """
 
 Answer 1:
@@ -17,9 +17,9 @@ Enigmatic ocean depths intrigue. / END
 Question 2:
 
 """
-Briefly summarize the following text in a four word sentence:
+Briefly summarize the following text. Use at max 4 words.
 
-{ substitution }
+'{ substitution }'
 """
 
 Answer 2:
