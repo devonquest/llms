@@ -1,7 +1,7 @@
 Question 1:
 
 """
-Summarize the following text:
+Summarize the following text in 4 words:
 
 Tokyo's architecture is a captivating blend of tradition and innovation.
 The cityscape is adorned with towering skyscrapers that showcase
@@ -30,7 +30,7 @@ Traditional, innovative Tokyo architecture.
 Question 2:
 
 """
-Summarize the following text:
+Summarize the following text in 4 words:
 
 { substitution }
 """
