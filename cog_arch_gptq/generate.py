@@ -1,6 +1,3 @@
-import time as tm
-import re
-
 example_summarize = """In the heart of a bustling metropolis, a captivating tapestry of urban
 life unfolds before your eyes. Majestic skyscrapers reach toward the heavens,
 their sleek facades reflecting the vibrant energy that permeates the streets
@@ -27,23 +24,8 @@ vibrant embrace of the metropolis."""
 
 def to_true( _ ): return True
 
-def count_words( text ):
-    words = re.split( r'\s+', text )
-
-    return len( words )
-
-def count_tokens( text ):
-    num_tokens = count_words( text ) / 0.75
-
-    return int( num_tokens )
-
-def measure_tokens( text, before, after ):
-    num_tokens = count_tokens( text )
-
-    return num_tokens, num_tokens / ( after - before )
 
 def generate_once( prompt, max_new_tokens, generate, tokenizer ):
-    before = tm.time()
     response = generate(
         prompt,
         temperature=0.7, top_p=0.95, top_k=50, max_new_tokens=max_new_tokens,
@@ -53,15 +35,13 @@ def generate_once( prompt, max_new_tokens, generate, tokenizer ):
         repetition_penalty=1.15
     )
 
-    after = tm.time()
     text = response[ 0 ][ "generated_text" ]
-    text = text.replace( prompt, "" ).replace( "\"\"\"", "" ).strip()
-
-    return text, *measure_tokens( text, before, after )
+    
+    return text.replace( prompt, "" ).replace( "\"\"\"", "" ).strip()
 
 def generate_with_predicate(prompt, predicate, generate, tokenizer):
     generation_attempts = 0
-    response, *_ = generate_once(prompt, 512, generate, tokenizer)
+    response = generate_once(prompt, 512, generate, tokenizer)
 
     if not predicate(response):
         generation_attempts += 1
@@ -74,9 +54,6 @@ def generate_with_predicate(prompt, predicate, generate, tokenizer):
     return response
 
 def customize_prompt( prompt, input ):
-    # print(prompt.replace( "{ substitution }", substitution ))
-    # input( "Continue." )
-
     return prompt.replace( "{ input }", input )
 
 def generate( generate, tokenizer, prompts ):
@@ -86,8 +63,8 @@ def generate( generate, tokenizer, prompts ):
         to_true,
         *args
     )
-    count = 0
 
+    # count = 0
     # while count < 10 and count_words( text ) > 10000:
     #     text = generate_with_predicate(
     #         customize_prompt( prompts[ "summarize" ], text ), to_true, *args

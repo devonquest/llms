@@ -1,3 +1,6 @@
+import time as tm
+import re
+
 import importlib as il
 import subprocess
 from contextlib import ExitStack
@@ -76,6 +79,31 @@ def pull_and_load():
     git_pull()
     reload_prompts()
 
+def count_words( text ):
+    words = re.split( r'\s+', text )
+
+    return len( words )
+
+def count_tokens( text ):
+    num_tokens = count_words( text ) / 0.75
+
+    return int( num_tokens )
+
+def measure_tokens( text, before, after ):
+    num_tokens = count_tokens( text )
+
+    return num_tokens, num_tokens / ( after - before )
+
+def generate_timed():
+    print( "\nGenerating...\n" )
+
+    before = tm.time()
+    response = il.reload( gn ).generate( generate, tokenizer, prompts )
+    num_tokens, tps = measure_tokens( response, before, tm.time() )
+
+    print( f"\n---\n\nResponse:\n\n{ response }\n\n---" )
+    print( f"\n---\n\nNum tokens: { num_tokens }\ttps: { tps }\n\n---" )
+
 def loop_inference( generate, tokenizer ):
     global prompts
 
@@ -91,11 +119,8 @@ def loop_inference( generate, tokenizer ):
         pull_and_load()
     elif user_msg == "end":
         return
-    else:
-        print( "\nGenerating...\n" )
-        response = il.reload( gn ).generate( generate, tokenizer, prompts )
-        print( f"\n---\n\nResponse:\n\n{ response }\n\n---" )
-    
+
+    generate_timed()
     loop_inference( generate, tokenizer )
 
 tf.logging.set_verbosity( tf.logging.CRITICAL )
