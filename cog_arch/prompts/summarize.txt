@@ -4,10 +4,6 @@ Question 1:
 Briefly summarize the following text in a four word sentence:
 
 The ocean's depths conceal mysteries that captivate our imagination.
-
-Fill it in here:
-
-*Start*                                *End*
 """
 
 Answer 1:
@@ -15,12 +11,7 @@ Answer 1:
 """
 Summarization:
 
-*Start*Enigmatic ocean depths intrigue.*End*
-
-Reflection:
-
-I summarized the text on enigmatic ocean depths, capturing the fascination and
-mystery of the deep sea.
+Enigmatic ocean depths intrigue. / END
 """
 
 Question 2:
@@ -29,15 +20,8 @@ Question 2:
 Briefly summarize the following text in a four word sentence:
 
 { substitution }
-
-Fill it in here:
-
-*Start*                                *End*
 """
 
 Answer 2:
 
 """
-Summarization:
-
-*Start*
