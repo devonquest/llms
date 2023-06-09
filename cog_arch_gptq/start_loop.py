@@ -47,7 +47,7 @@ def create_pipeline( hf_repo, name ):
 
     generate = tf.pipeline(
         "text-generation",
-        model = get_model( hf_repo, name, False, True ),
+        model = get_model( hf_repo, name, False, False ),
         tokenizer = tokenizer
     )
 
