@@ -1,9 +1,9 @@
+### System:
+
+{ substitution }
+
 ### Human:
 
-Summarize the following text briefly.
-
-"""
-{ substitution }
-"""
+Summarize the text posted by the system briefly.
 
 ### Assistant:
