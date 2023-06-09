@@ -27,7 +27,7 @@ Summarize the following text in 4 words:
 { substitution }
 """
 
-Answer 3:
+Answer 2:
 
 """
 Summarization:
