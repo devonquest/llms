@@ -77,8 +77,8 @@ def customize_prompt( prompt, input, count = 3 ):
     # print(prompt.replace( "{ substitution }", substitution ))
     # input( "Continue." )
     prompt = prompt.replace( "{ input }", input )
-    
-    return prompt.replace( "{ count }", count ) 
+
+    return prompt.replace( "{ count }", f"{ count }" ) 
 
 def generate( generate, tokenizer, prompts ):
     args = generate, tokenizer
