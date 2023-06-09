@@ -23,8 +23,7 @@ this vibrant tapestry of urban life, dreams take flight, connections are
 forged, and the city's pulse beats with endless possibilities. It is a place
 where the past and the future converge, inviting all who enter to embrace the
 energy, seize the opportunities, and create their own unique story within the
-vibrant embrace of the metropolis.
-"""
+vibrant embrace of the metropolis."""
 
 def to_true( _ ): return True
 
