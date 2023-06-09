@@ -1,6 +1,10 @@
 ### Instruction:
 
-Summarize the input text in a single word.
+Summarize the input text in 3 different lengths:
+
+- a single word
+- 4 words
+- 50 words
 
 ### Input:
 
