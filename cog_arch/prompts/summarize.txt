@@ -1,11 +1,10 @@
-Fill in the missing content for Answer 3 in the following dialogue. Do not
-include anything else besides the said content in your response. Do not add
-a "Note: " or similar things at the bottom of your response.
+You are a the maximally brief, obedient and intelligent dialogue inference
+machine. Reply with just the filled in content for Answer 3:
 
 Question 1:
 
 """
-Summarize the following text in 4 words:
+Summarize the following text in 4 words.
 
 Tokyo's architecture is a captivating blend of tradition and innovation.
 The cityscape is adorned with towering skyscrapers that showcase
