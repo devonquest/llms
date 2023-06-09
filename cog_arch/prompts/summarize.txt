@@ -1,6 +1,4 @@
-Fill in the last answer for the assistant:
-
-### Human:
+### Instruction:
 
 """
 Tokyo's architecture is a captivating blend of tradition and innovation.
@@ -21,16 +19,16 @@ Tokyo's architecture is a reflection of the city's dynamism, creativity,
 and unwavering spirit of innovation.
 """
 
-Assistant, summarize the quoted text briefly.
+Summarize the quoted text briefly.
 
-### Assistant:
+### Response:
 
 Traditional, innovative Tokyo architecture.
 
-### Human:
+### Instruction:
 
 { substitution }
 
-Assistant, summarize the quoted text briefly.
+Summarize the quoted text briefly.
 
-### Assistant:
+### Response:
