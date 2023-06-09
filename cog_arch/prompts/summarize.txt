@@ -3,7 +3,7 @@
 Summarize the input text in 3 different lengths:
 
 - 50 words
-- 4 words
+- 5 words
 - a single word
 
 ### Input:
@@ -54,7 +54,7 @@ Tokyo
 Summarize the input text in 3 different lengths:
 
 - 50 words
-- 4 words
+- 5 words
 - a single word
 
 ### Input:
