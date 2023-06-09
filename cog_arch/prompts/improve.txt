@@ -32,7 +32,21 @@ Question 2:
 """
 Summarize the following text in 4 words:
 
-{ substitution }
+The ocean's depths conceal mysteries that captivate our imagination.
 """
 
 Answer 2:
+
+"""
+Enigmatic ocean depths intrigue.
+"""
+
+Question 3:
+
+"""
+Summarize the following text in 4 words:
+
+{ substitution }
+"""
+
+Answer 3:
