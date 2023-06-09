@@ -1,7 +1,8 @@
 Question 1:
 
 """
-Summarize the following text in a proper sentence of 4 words:
+Summarize the following text in a proper sentence of 4 words. Don't answer with
+an unfinished sentence:
 
 Traditional and futuristic architecture coexist harmoniously, creating a
 captivating visual tapestry in Tokyo's ever-evolving skyline.
@@ -16,7 +17,8 @@ Traditional, innovative Tokyo architecture.
 Question 2:
 
 """
-Summarize the following text in a proper sentence of 4 words:
+Summarize the following text in a proper sentence of 4 words. Don't answer with
+an unfinished sentence:
 
 The ocean's depths conceal mysteries that captivate our imagination.
 """
@@ -30,7 +32,8 @@ Enigmatic ocean depths intrigue.
 Question 3:
 
 """
-Summarize the following text in a proper sentence of 4 words:
+Summarize the following text in a proper sentence of 4 words. Don't answer with
+an unfinished sentence:
 
 { substitution }
 """
