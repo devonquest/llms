@@ -33,7 +33,7 @@ def get_model( hf_repo, name, has_desc_act, triton ):
     device = "cuda:0"
 
     return aq.AutoGPTQForCausalLM.from_quantized(
-        hf_repo, cache_dir = cache_dir,
+        f"models--{ hf_repo.replace( '/', '--' ) }",
         model_basename = f"{ name }.{ model_suffix }",
         device = device, init_device = device, device_map = "auto",
         use_safetensors = True, use_triton = triton,
