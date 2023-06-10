@@ -218,7 +218,7 @@ Sarah: 'Elephant'
 Example 4:
 
 Teacher: 'Mark, name an animal.'
-Mark: '"""
+Mark: 'Gir"""
 
 def generate( device, model, tokenizer, input_text ):
     used_input_text = test_prompt
