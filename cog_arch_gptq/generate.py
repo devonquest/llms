@@ -124,6 +124,8 @@ progress.
 
 ### Response 1:
 
+Summarizations for Instruction 1:
+
 # 50 words
 
 Tokyo's architecture seamlessly blends tradition and innovation, showcasing
@@ -177,7 +179,9 @@ energy, seize the opportunities, and create their own unique story within the
 vibrant embrace of the metropolis.
 '''
 
-### Response 2:"""
+### Response 2:
+
+Summarizations for Instruction 2:"""
 
 def generate( device, model, tokenizer, input_text ):
     used_input_text = test_prompt
