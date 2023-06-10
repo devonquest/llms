@@ -32,7 +32,9 @@ bash ./script.deb.sh
 apt install git-lfs
 
 git lfs install
-git clone https://huggingface.co/TheBloke/gpt4-x-vicuna-13B-GPTQ
+# toggle between models
+# git clone https://huggingface.co/TheBloke/gpt4-x-vicuna-13B-GPTQ
+git clone https://huggingface.co/TheBloke/wizardLM-7B-GPTQ
 
 cd /workspace/llms/cog_arch_gptq
 python start_loop.py
