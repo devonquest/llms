@@ -1,6 +1,6 @@
 import torch as to
 
-test_prompt = """### Instruction:
+test_prompt = """### Instruction 1:
 
 Summarize the input text in 3 different lengths:
 
@@ -8,7 +8,7 @@ Summarize the input text in 3 different lengths:
 - 5 words
 - a single word
 
-### Input:
+### Input 1:
 
 Tokyo's architecture is a mesmerizing blend of tradition and innovation,
 showcasing the city's unique character. Walking through the bustling streets,
@@ -33,7 +33,7 @@ advancements. From ancient temples to modern skyscrapers, Tokyo's architecture
 is a testament to the city's rich heritage and its unwavering embrace of
 progress.
 
-### Response:
+### Response 1:
 
 # 50 words
 
@@ -51,7 +51,7 @@ Traditional and modern Tokyo.
 
 Tokyo
 
-### Instruction:
+### Instruction 1:
 
 Summarize the input text in 3 different lengths:
 
@@ -59,7 +59,7 @@ Summarize the input text in 3 different lengths:
 - 5 words
 - a single word
 
-### Input:
+### Input 1:
 
 In the heart of a bustling metropolis, a captivating tapestry of urban
 life unfolds before your eyes. Majestic skyscrapers reach toward the heavens,
@@ -85,7 +85,7 @@ where the past and the future converge, inviting all who enter to embrace the
 energy, seize the opportunities, and create their own unique story within the
 vibrant embrace of the metropolis.
 
-### Response:"""
+### Response 1:"""
 
 def generate( device, model, tokenizer, input_text ):
     used_input_text = test_prompt
