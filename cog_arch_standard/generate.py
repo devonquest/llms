@@ -196,7 +196,7 @@ import torch as to
 
 # test_prompt = """Alice was so tired when she got back home so she went"""
 
-test_prompt = """'I need to write a summary for a text about animals, mom.
+test_prompt = """'I need to write a summary of a text about animals, mom.
 Can you explain to me what this means?', Tom asked his mother.
 """
 
