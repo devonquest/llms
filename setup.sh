@@ -18,8 +18,8 @@ cd GPTQ-for-LLaMa
 # toggle between branches
 # git checkout triton
 # git checkout cuda
-# git checkout fastest-inference-4bit
-git checkout old-cuda
+git checkout fastest-inference-4bit
+# git checkout old-cuda
 
 sed -i "s/safetensors==0.3.0/safetensors==0.3.1/g" requirements.txt
 pip install -r requirements.txt
@@ -34,5 +34,5 @@ apt install git-lfs
 git lfs install
 git clone https://huggingface.co/TheBloke/gpt4-x-vicuna-13B-GPTQ
 
-cd llms/cog_arch_gptq
+cd /workspace/llms/cog_arch_gptq
 python start_loop.py

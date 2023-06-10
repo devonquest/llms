@@ -88,7 +88,7 @@ vibrant embrace of the metropolis.
 ### Response:"""
 
 def generate( device, model, tokenizer, input_text ):
-    used_input_text = "Within this decade "
+    used_input_text = input_text
     input_ids = tokenizer.encode( used_input_text, return_tensors = "pt" ) \
         .to( device )
 
