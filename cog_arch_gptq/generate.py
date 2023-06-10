@@ -195,7 +195,7 @@ def generate( device, model, tokenizer, input_text ):
             pad_token_id=tokenizer.pad_token_id,
             # min_length = 400,
             # max_length = 512,
-            max_new_tokens = 300,
+            max_new_tokens = 250,
             top_p = 0.95,
             top_k = 50,
             temperature = 0.8,
