@@ -25,7 +25,7 @@ def get_config( has_desc_act ):
     )
 
 def get_model( hf_repo, name, has_desc_act, triton ):
-    model_suffix = ""
+    model_suffix = ".act-order"
     device = "cuda:0"
 
     # f"/workspace/llms/cache/models--{ hf_repo.replace( '/', '--' ) }"
@@ -34,9 +34,9 @@ def get_model( hf_repo, name, has_desc_act, triton ):
         hf_repo, model_basename = f"{ name }{ model_suffix }",
         device = device,
         init_device = device,
-        # device_map = "auto",
-        use_safetensors = False,
-        use_triton = False,
+        device_map = "auto",
+        use_safetensors = True,
+        use_triton = triton,
         quantize_config = get_config( has_desc_act )
     )
 
