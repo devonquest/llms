@@ -190,7 +190,7 @@ import torch as to
 test_prompt = """Ron: My buddy Donald is going to visit me tomorrow. My buddy's name is Donald.
 Mark: My buddy Stephen is going to visit me tomorrow. My buddy's name is Timmy.
 Ron: I don't think that's right, Mark. Tell me again what your buddy's name is.
-Mark: My buddy's name is """
+Mark: My buddy Stephen is going to visit me tomorrow. My buddy's name is """
 
 # test_prompt = """Alice was so tired when she got back home so she went"""
 
