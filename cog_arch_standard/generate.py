@@ -202,7 +202,7 @@ import torch as to
 
 test_prompt = """### Instruction:
 
-Count from 1 to 3.
+Say what a giraffe is.
 
 ### Response:"""
 
