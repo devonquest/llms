@@ -216,7 +216,7 @@ def generate( device, model, tokenizer, input_text ):
             # top_k = 50,
             # temperature = 0.3,
             # repetition_penalty=1.02,
-            # num_beams = 1
+            num_beams = 1
         )
 
     output_text = tokenizer.decode(
