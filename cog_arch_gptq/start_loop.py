@@ -110,8 +110,8 @@ model = lm.load_quant(
     ".compat.act-order.safetensors",
     4,
     128,
-    "cuda:0"
-).to( "cuda:0" )
+    "cuda"
+).to( "cuda" )
 tokenizer = tf.AutoTokenizer.from_pretrained( model_dir, use_fast = False )
 
 loop_inference( device, model, tokenizer, "Within this decade, AI will" )
