@@ -36,7 +36,7 @@ def get_model( hf_repo, name, has_desc_act, triton ):
         init_device = device,
         # device_map = "auto",
         use_safetensors = True,
-        use_triton = triton,
+        use_triton = False,
         quantize_config = get_config( has_desc_act )
     )
 
