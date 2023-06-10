@@ -22,7 +22,8 @@ apt install git-lfs
 
 git lfs install
 # toggle between models
-git clone https://huggingface.co/roneneldan/TinyStories-33M
+# git clone https://huggingface.co/roneneldan/TinyStories-33M
+git clone https://huggingface.co/RWKV/rwkv-4-169m-pile
 
 cd /workspace/llms/cog_arch_standard
 python start_loop.py

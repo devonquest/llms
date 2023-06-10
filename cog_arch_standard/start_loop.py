@@ -91,18 +91,16 @@ def loop_inference( device, model, tokenizer, input_text ):
 device_name = "cuda:0"
 device = to.device( device_name )
 
-model_repo = "roneneldan/TinyStories-33M"
-tokenizer_repo = "EleutherAI/gpt-neo-125M"
+model_repo = "RWKV/rwkv-4-169m-pile"
 
 config = tf.AutoConfig.from_pretrained( model_repo )
 # config.attn_config[ "attn_impl" ] = "triton"
 config.init_device = device_name
 
-model = tf.AutoModelForCausalLM.from_pretrained( model_repo, config = config ) \
-    .to( device )
-tokenizer = tf.AutoTokenizer.from_pretrained( "EleutherAI/gpt-neo-125M" )
+model = tf.AutoModelForCausalLM.from_pretrained(
+    model_repo, config = config, torch_dtype = to.float16
+).to( device )
+tokenizer = tf.AutoTokenizer.from_pretrained( model_repo ).to( device )
 
-input_text = "Once upon a time there was a pumpkin. It was a very special " \
-    "pumpkin, it could speak. It was sad because it couldn’t move. Every day" \
-    ", it would say"
+input_text = "Hey, man, "
 loop_inference( device, model, tokenizer, input_text )

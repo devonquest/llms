@@ -178,34 +178,6 @@ import torch as to
 # '''
 # \"\"\"
 
-# A2:
-
-# \"\"\""""
-
-# test_prompt = """Ron: If I have an apple and a pear, how many fruits do I have?
-# Mary: One apple plus one pear makes two pieces of fruit.
-# Ron: If I have a peach and a strawberry, how many fruits do I have?
-# Mary: One peach plus"""
-
-# test_prompt = """Ron: My buddy Donald is going to visit me tomorrow. My buddy's name is Donald.
-# Mark: My buddy Stephen is going to visit me tomorrow. My buddy's name is Stephen.
-
-# _Stephen calls._
-
-# Stephen: Hey, Mark, """
-
-# test_prompt = """Alice was so tired when she got back home so she went"""
-
-# test_prompt = """'I need to write a summary of a text about animals, mom.
-# Can you explain to me what this means?', Tom asked his mother.
-# """
-
-test_prompt = """### Instruction:
-
-Say what a giraffe is.
-
-### Response:"""
-
 def generate( device, model, tokenizer, input_text ):
     used_input_text = test_prompt
     input_ids = tokenizer.encode( used_input_text, return_tensors = "pt" ) \
