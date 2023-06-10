@@ -90,7 +90,7 @@ vibrant embrace of the metropolis.
 def generate( device, model, tokenizer, input_text ):
     used_input_text = "Within this decade "
     input_ids = tokenizer.encode( used_input_text, return_tensors = "pt" ) \
-        .to( device )
+        .to( "cuda:0" )
 
     with to.no_grad():
         generated_ids = model.generate(

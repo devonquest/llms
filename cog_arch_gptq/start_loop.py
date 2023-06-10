@@ -111,7 +111,7 @@ model = lm.load_quant(
     4,
     128,
     "cuda:0"
-).to( device )
+).to( "cuda:0" )
 tokenizer = tf.AutoTokenizer.from_pretrained( model_dir, use_fast = False )
 
 loop_inference( device, model, tokenizer, "Within this decade, AI will" )
