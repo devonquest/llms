@@ -62,9 +62,11 @@ def measure_tokens( text, before, after ):
     return num_tokens, num_tokens / ( after - before )
 
 def generate_timed( device, model, tokenizer, input_text ):
-    print( "\nGenerating...\n" )
+    global gn
 
+    print( "\nGenerating...\n" )
     gn = il.reload( gn )
+    
     before = tm.time()
     output_text = gn.generate( device, model, tokenizer, input_text )
     num_tokens, tps = measure_tokens( output_text, before, tm.time() )
