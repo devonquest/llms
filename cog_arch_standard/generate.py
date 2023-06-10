@@ -203,6 +203,8 @@ def generate( device, model, tokenizer, input_text ):
             num_beams = 1
         )
 
-    output_text = tokenizer.decode( [ el.item() for el in generated_ids[ 0 ] ], skip_special_tokens = True )
+    output_text = tokenizer.decode(
+        [ el.item() for el in generated_ids[ 0 ] ], skip_special_tokens = True
+    )
     return output_text.replace( "<s>", "" ).replace( "</s>", "" ) \
         .replace( used_input_text, "" ).strip()
