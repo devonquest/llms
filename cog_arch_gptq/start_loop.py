@@ -36,7 +36,7 @@ def get_model( hf_repo, name, has_desc_act, triton ):
         init_device = device,
         # device_map = "auto",
         use_safetensors = False,
-        # use_triton = triton,
+        use_triton = triton,
         quantize_config = get_config( has_desc_act )
     )
 
@@ -47,7 +47,7 @@ def create_pipeline( hf_repo, name ):
 
     generate = tf.pipeline(
         "text-generation",
-        model = get_model( hf_repo, name, False, True ),
+        model = get_model( hf_repo, name, False, False ),
         tokenizer = tokenizer
     )
 
