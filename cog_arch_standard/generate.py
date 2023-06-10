@@ -208,7 +208,12 @@ Tom: 'Horse'
 Example 2:
 
 Teacher: 'Mary, name an animal. '
-Mary: '"""
+Mary: 'Monkey'
+
+Example 3:
+
+Teacher: 'Sarah, name an animal. '
+Sarah: '"""
 
 def generate( device, model, tokenizer, input_text ):
     used_input_text = test_prompt
