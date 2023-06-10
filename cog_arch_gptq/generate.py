@@ -51,7 +51,7 @@ Traditional and modern Tokyo.
 
 Tokyo
 
-### Instruction 1:
+### Instruction 2:
 
 Summarize the input text in 3 different lengths:
 
@@ -59,7 +59,7 @@ Summarize the input text in 3 different lengths:
 - 5 words
 - a single word
 
-### Input 1:
+### Input 2:
 
 In the heart of a bustling metropolis, a captivating tapestry of urban
 life unfolds before your eyes. Majestic skyscrapers reach toward the heavens,
@@ -85,7 +85,7 @@ where the past and the future converge, inviting all who enter to embrace the
 energy, seize the opportunities, and create their own unique story within the
 vibrant embrace of the metropolis.
 
-### Response 1:"""
+### Response 2:"""
 
 def generate( device, model, tokenizer, input_text ):
     used_input_text = test_prompt
