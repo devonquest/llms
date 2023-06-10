@@ -196,7 +196,9 @@ import torch as to
 
 # test_prompt = """Alice was so tired when she got back home so she went"""
 
-test_prompt = """'What language do they speak in France?', Tom asked his mother."""
+test_prompt = """'I need to write a summary for a text about animals, mom.
+How can I do this?', Tom asked his mother.
+"""
 
 def generate( device, model, tokenizer, input_text ):
     used_input_text = test_prompt
@@ -216,7 +218,7 @@ def generate( device, model, tokenizer, input_text ):
             # top_k = 50,
             # temperature = 0.3,
             # repetition_penalty=1.02,
-            num_beams = 1
+            # num_beams = 1
         )
 
     output_text = tokenizer.decode(
