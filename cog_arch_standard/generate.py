@@ -182,45 +182,8 @@ import torch as to
 
 # \"\"\""""
 
-test_prompt = """Q1:
-
-\"\"\"
-Summarize:
-
-'''
-Tokyo's buildings are like a big, exciting puzzle! When we walk around,
-we see old and new things mixed together. Some buildings are very, very old,
-like ancient temples. They have pretty designs made of wood and are
-surrounded by calm moats.
-But wait, there are also really tall and shiny buildings called
-skyscrapers! They look like they touch the sky and have lots of windows.
-They are where people work and live in fancy apartments.
-One special tower called Tokyo Tower looks a bit like the Eiffel Tower and
-lets us see the whole city from up high! It's like being on a big slide, but
-we don't actually slide. We just see everything from way up there.
-In Tokyo, there is also a palace where the emperor lives. It has beautiful
-gardens with lots of plants and flowers. The palace is made of wood and
-looks like a special house.
-When we go to a place called Shibuya, we see a very busy street where lots of
-people cross the road at the same time. It's like a big party with bright
-lights and big signs. It's so fun to watch!
-In some neighborhoods, we can find cute old houses made of wood. They have
-special windows and roofs that look like puzzles. They remind us of a long
-time ago.
-Sometimes, we need a break from the busy city. That's when we go to places
-like the Meiji Shrine. It's like a magical forest with big gates. We can
-relax and enjoy the peacefulness.
-Tokyo always has something new to see! One super tall tower called Tokyo
-Skytree is like a really, really, really tall tree. It looks so cool and
-shows how Japan is very good with technology.
-From old temples to tall skyscrapers, Tokyo's buildings are like a storybook
-of Japan's history and how it keeps getting better and better.
-'''
-\"\"\"
-
-A1:
-
-\"\"\""""
+test_prompt = """Ron: Hey, tell me about you.
+Mary: """
 
 def generate( device, model, tokenizer, input_text ):
     used_input_text = test_prompt
