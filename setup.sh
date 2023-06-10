@@ -8,7 +8,7 @@ bash Miniconda3-py310_23.3.1-0-Linux-x86_64.sh
 export PATH=$PATH:/workspace/miniconda3/bin # repeat after restart
 
 conda create --name gptq python=3.9 pip -y
-conda init bash
+source /workspace/miniconda3/etc/profile.d/conda.sh
 conda activate gptq
 conda install pytorch torchvision torchaudio pytorch-cuda=11.7 -c pytorch -c nvidia
 
