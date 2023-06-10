@@ -15,14 +15,15 @@ conda install pytorch torchvision torchaudio pytorch-cuda=11.7 -c pytorch -c nvi
 
 git clone https://github.com/qwopqwop200/GPTQ-for-LLaMa
 cd GPTQ-for-LLaMa
-git checkout triton
-# uncomment for fastest-inference-4bit instead of triton
+# toggle between branches
+# git checkout triton
+git checkout cuda
 # git checkout fastest-inference-4bit
 
 sed -i "s/safetensors==0.3.0/safetensors==0.3.1/g" requirements.txt
 pip install -r requirements.txt
-# uncomment for cuda or fastest-inference-4bit instead of triton
-# python setup_cuda.py install
+# toggle between branches
+python setup_cuda.py install
 
 cd /workspace
 wget https://packagecloud.io/install/repositories/github/git-lfs/script.deb.sh

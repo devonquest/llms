@@ -10,8 +10,8 @@ import torch as to
 import transformers as tf
 
 sys.path.append( "/workspace/GPTQ-for-LLaMa/" )
+# toggle between branches
 lm = il.import_module( "llama_inference" )
-# uncomment for cuda or fastest-inference-4bit instead of triton
 # lm = il.import_module( "llama" )
 gn = il.import_module( "generate" )
 
