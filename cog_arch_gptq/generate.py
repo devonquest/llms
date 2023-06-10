@@ -142,11 +142,10 @@ Traditional and modern Tokyo.
 Tokyo
 \"\"\"
 
-Q2:
+Q2 ( new topic ):
 
 \"\"\"
-Summarize the below quoted text ( distinct from Q1 ) in 
-different lengths:
+Summarize the below quoted text in different lengths:
 
 - 50 words
 - 5 words
