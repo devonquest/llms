@@ -187,14 +187,18 @@ import torch as to
 # Ron: If I have a peach and a strawberry, how many fruits do I have?
 # Mary: One peach plus"""
 
-test_prompt = """Ron: My buddy Donald is going to visit me tomorrow. My buddy's name is Donald.
-Mark: My buddy Stephen is going to visit me tomorrow. My buddy's name is Stephen.
+# test_prompt = """Ron: My buddy Donald is going to visit me tomorrow. My buddy's name is Donald.
+# Mark: My buddy Stephen is going to visit me tomorrow. My buddy's name is Stephen.
 
-_Stephen calls._
+# _Stephen calls._
 
-Stephen: Hey, Mark, """
+# Stephen: Hey, Mark, """
 
 # test_prompt = """Alice was so tired when she got back home so she went"""
+
+test_prompt = """”What language do they
+speak in France?”, Tom
+asked his mother"""
 
 def generate( device, model, tokenizer, input_text ):
     used_input_text = test_prompt
