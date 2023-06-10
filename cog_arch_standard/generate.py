@@ -196,7 +196,7 @@ import torch as to
 
 # test_prompt = """Alice was so tired when she got back home so she went"""
 
-test_prompt = """”What language do they speak in France?”, Tom asked his mother."""
+test_prompt = """'What language do they speak in France?', Tom asked his mother."""
 
 def generate( device, model, tokenizer, input_text ):
     used_input_text = test_prompt
