@@ -71,7 +71,7 @@ def generate( device, model, tokenizer, input_text ):
             min_length = 20,
             max_length = 100,
             top_p = 0.95,
-            temperature = 0.8,
+            temperature = 0.6,
         )
 
     return tokenizer.decode( [ el.item() for el in generated_ids[ 0 ] ] )
