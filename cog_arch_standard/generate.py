@@ -196,9 +196,17 @@ import torch as to
 
 # test_prompt = """Alice was so tired when she got back home so she went"""
 
-test_prompt = """'I need to write a summary of a text about animals, mom.
-Can you explain to me what this means?', Tom asked his mother.
-"""
+# test_prompt = """'I need to write a summary of a text about animals, mom.
+# Can you explain to me what this means?', Tom asked his mother.
+# """
+
+test_prompt = """Example 1:
+
+Animal: Horse
+
+Example 2:
+
+Animal: """
 
 def generate( device, model, tokenizer, input_text ):
     used_input_text = test_prompt
