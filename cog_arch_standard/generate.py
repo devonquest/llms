@@ -200,27 +200,17 @@ import torch as to
 # Can you explain to me what this means?', Tom asked his mother.
 # """
 
-test_prompt = """Example 1:
-
-Teacher: 'Tom, name an animal.'
+test_prompt = """Teacher: 'Tom, name an animal.'
 Tom: 'Horse'
-
-Example 2:
 
 Teacher: 'Mary, name an animal. Answer like Tom did.'
 Mary: 'Monkey'
 
-Example 3:
-
 Teacher: 'Sarah, name an animal. Answer like Mary did.'
 Sarah: 'Elephant'
 
-Example 4:
-
 Teacher: 'Mark, name an animal. Answer like Sarah did.'
 Mark: 'Giraffe'
-
-Example 5:
 
 Teacher: 'Bryan, name an animal. Answer like Mark did.'
 Bryan: 'Rabbi"""
