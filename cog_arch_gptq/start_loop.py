@@ -96,15 +96,22 @@ def loop_inference( device, model, tokenizer, input_text ):
 device = to.device( "cuda:0" )
 model_dir = "/workspace/gpt4-x-vicuna-13B-GPTQ"
 
+# toggle between branches
+# model = lm.load_quant(
+#     model_dir,
+#     f"{ model_dir }/GPT4-x-Vicuna-13B-GPTQ-4bit-128g" \
+#     ".compat.act-order.safetensors",
+#     4,
+#     128
+# ).to( device )
 model = lm.load_quant(
     model_dir,
     f"{ model_dir }/GPT4-x-Vicuna-13B-GPTQ-4bit-128g" \
     ".compat.act-order.safetensors",
     4,
     128,
-    # toggle between branches
     0
-).to( device )
+)
 tokenizer = tf.AutoTokenizer.from_pretrained( model_dir, use_fast = False )
 
 loop_inference( device, model, tokenizer, "Within this decade, AI will" )
