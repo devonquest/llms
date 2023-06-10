@@ -99,8 +99,7 @@ model_dir = "/workspace/Project-Baize-v2-7B-GPTQ"
 # toggle between branches
 model = lm.load_quant(
     model_dir,
-    f"{ model_dir }/Baize-v2-7B-4bit-128g.no-act-order.safetensors" \
-    ".compat.act-order.safetensors",
+    f"{ model_dir }/Baize-v2-7B-4bit-128g.no-act-order.safetensors",
     4,
     128
 ).to( device )
