@@ -91,7 +91,7 @@ def loop_inference( device, model, tokenizer, input_text ):
 device_name = "cuda:0"
 device = to.device( device_name )
 
-model_repo = "RWKV/rwkv-4-169m-pile"
+model_repo = "RWKV/rwkv-raven-7b"
 
 config = tf.AutoConfig.from_pretrained( model_repo )
 # config.attn_config[ "attn_impl" ] = "triton"
