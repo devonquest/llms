@@ -102,4 +102,4 @@ model = tf.AutoModelForCausalLM.from_pretrained( model_repo, config = config ) \
     .to( device )
 tokenizer = tf.AutoTokenizer.from_pretrained( "EleutherAI/gpt-neo-125M" )
 
-loop_inference( device, model, tokenizer, "Within this decade, AI will" )
+loop_inference( device, model, tokenizer, "Mary looked at him and" )
