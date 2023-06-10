@@ -200,11 +200,11 @@ import torch as to
 # Can you explain to me what this means?', Tom asked his mother.
 # """
 
-test_prompt = """Teacher: 'Tom, name an animal.'
-Tom: 'Horse'
+test_prompt = """### Instruction:
 
-Teacher: 'Tom named an animal. Now, Mary, name an animal.'
-Mary: '"""
+Say hello.
+
+### Response:"""
 
 def generate( device, model, tokenizer, input_text ):
     used_input_text = test_prompt
