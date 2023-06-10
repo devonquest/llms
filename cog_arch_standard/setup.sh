@@ -11,7 +11,9 @@ export PATH=$PATH:/workspace/miniconda3/bin
 conda create --name gptq python=3.10 pip -y
 source /workspace/miniconda3/etc/profile.d/conda.sh
 conda activate gptq
-conda install pytorch triton transformers
+
+conda install pytorch torchvision torchaudio pytorch-cuda=11.7 -c pytorch -c nvidia
+conda install triton transformers
 
 cd /workspace
 wget https://packagecloud.io/install/repositories/github/git-lfs/script.deb.sh
