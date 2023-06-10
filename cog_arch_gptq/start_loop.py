@@ -10,7 +10,7 @@ import torch as to
 import transformers as tf
 
 sys.path.append( "/workspace/GPTQ-for-LLaMa/" )
-lm = il.import_module( "llama_inference" )
+lm = il.import_module( "llama" )
 
 def git_pull():
     try:
