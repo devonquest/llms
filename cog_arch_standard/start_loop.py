@@ -98,9 +98,12 @@ config = tf.AutoConfig.from_pretrained( model_repo )
 config.init_device = device_name
 
 model = tf.AutoModelForCausalLM.from_pretrained(
-    model_repo, config = config, torch_dtype = to.float16
+    model_repo, config = config, torch_dtype = to.float16,
+    cache_dir = "/workspace/llms/cache"
 ).to( device )
-tokenizer = tf.AutoTokenizer.from_pretrained( model_repo )
+tokenizer = tf.AutoTokenizer.from_pretrained(
+    model_repo, cache_dir = "/workspace/llms/cache"
+)
 
 input_text = "Hey, man, "
 loop_inference( device, model, tokenizer, input_text )
