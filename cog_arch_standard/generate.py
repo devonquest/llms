@@ -223,7 +223,7 @@ Mark: 'Giraffe'
 Example 5:
 
 Teacher: 'Bryan, name an animal. Answer like Mark did.'
-Bryan: 'Ra"""
+Bryan: 'Rabbi"""
 
 def generate( device, model, tokenizer, input_text ):
     used_input_text = test_prompt
