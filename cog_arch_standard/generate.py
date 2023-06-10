@@ -202,6 +202,6 @@ def generate( device, model, tokenizer, input_text ):
             repetition_penalty=1.02
         )
 
-    output_text = tokenizer.decode( [ el.item() for el in generated_ids[ 0 ] ] )
+    output_text = tokenizer.decode( [ el.item() for el in generated_ids[ 0 ] ], skip_special_tokens = True )
     return output_text.replace( "<s>", "" ).replace( "</s>", "" ) \
         .replace( used_input_text, "" ).strip()
