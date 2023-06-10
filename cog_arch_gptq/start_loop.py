@@ -103,7 +103,7 @@ model = lm.load_quant(
     4,
     128,
     # toggle between branches
-    device
+    0
 ).to( device )
 tokenizer = tf.AutoTokenizer.from_pretrained( model_dir, use_fast = False )
 
