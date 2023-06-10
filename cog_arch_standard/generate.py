@@ -202,18 +202,23 @@ import torch as to
 
 test_prompt = """Example 1:
 
-Teacher: 'Tom, name an animal. '
+Teacher: 'Tom, name an animal.'
 Tom: 'Horse'
 
 Example 2:
 
-Teacher: 'Mary, name an animal. '
+Teacher: 'Mary, name an animal.'
 Mary: 'Monkey'
 
 Example 3:
 
-Teacher: 'Sarah, name an animal. '
-Sarah: '"""
+Teacher: 'Sarah, name an animal.'
+Sarah: 'Elephant'
+
+Example 4:
+
+Teacher: 'Mark, name an animal.'
+Mark: '"""
 
 def generate( device, model, tokenizer, input_text ):
     used_input_text = test_prompt
