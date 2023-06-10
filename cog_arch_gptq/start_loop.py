@@ -10,7 +10,9 @@ import torch as to
 import transformers as tf
 
 sys.path.append( "/workspace/GPTQ-for-LLaMa/" )
-lm = il.import_module( "llama" )
+lm = il.import_module( "llama_inference" )
+# uncomment for cuda or fastest-inference-4bit instead of triton
+# lm = il.import_module( "llama" )
 gn = il.import_module( "generate" )
 
 def git_pull():
@@ -66,7 +68,7 @@ def generate_timed( device, model, tokenizer, input_text ):
 
     print( "\nGenerating...\n" )
     gn = il.reload( gn )
-    
+
     before = tm.time()
     output_text = gn.generate( device, model, tokenizer, input_text )
     num_tokens, tps = measure_tokens( output_text, before, tm.time() )
