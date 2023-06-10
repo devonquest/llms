@@ -11,8 +11,8 @@ import transformers as tf
 
 sys.path.append( "/workspace/GPTQ-for-LLaMa/" )
 # toggle between branches
-# lm = il.import_module( "llama_inference" )
-lm = il.import_module( "llama" )
+lm = il.import_module( "llama_inference" )
+# lm = il.import_module( "llama" )
 gn = il.import_module( "generate" )
 
 def git_pull():
@@ -105,7 +105,7 @@ model = lm.load_quant(
 ).to( device )
 # model = lm.load_quant(
 #     model_dir,
-#     f"{ model_dir }/GPT4-x-Vicuna-13B-GPTQ-4bit-128g" \
+#     f"{ model_dir }/vicuna-7B-1.1-GPTQ-4bit-128g.no-act-order.pt" \
 #     ".compat.act-order.safetensors",
 #     4,
 #     128,
