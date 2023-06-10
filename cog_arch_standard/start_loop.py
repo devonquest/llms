@@ -95,7 +95,7 @@ model_repo = "roneneldan/TinyStories-33M"
 tokenizer_repo = "EleutherAI/gpt-neo-125M"
 
 config = tf.AutoConfig.from_pretrained( model_repo )
-config.attn_config[ "attn_impl" ] = "triton"
+# config.attn_config[ "attn_impl" ] = "triton"
 config.init_device = device_name
 
 model = tf.AutoModelForCausalLM.from_pretrained( model_repo, config = config )
