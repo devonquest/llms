@@ -183,7 +183,7 @@ import torch as to
 # \"\"\""""
 
 test_prompt = """Ron: If I have an apple and a pear, how many fruits do I have?
-Mary: """
+Mary: Then you have """
 
 def generate( device, model, tokenizer, input_text ):
     used_input_text = test_prompt
