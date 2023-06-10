@@ -186,16 +186,16 @@ def generate( device, model, tokenizer, input_text ):
     with to.no_grad():
         generated_ids = model.generate(
             input_ids,
-            # use_cache=True, do_sample=True,
-            # eos_token_id=tokenizer.eos_token_id,
-            # pad_token_id=tokenizer.pad_token_id,
-            # min_length = 500,
+            use_cache=True, do_sample=True,
+            eos_token_id=tokenizer.eos_token_id,
+            pad_token_id=tokenizer.pad_token_id,
+            min_length = 500,
             # max_length = 512,
             max_new_tokens = 1000,
-            # top_p = 0.95,
-            # top_k = 50,
-            # temperature = 0.3,
-            # repetition_penalty=1.02,
+            top_p = 0.95,
+            top_k = 50,
+            temperature = 0.8,
+            repetition_penalty=1.02,
             # num_beams = 1
         )
 
