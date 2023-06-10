@@ -193,7 +193,7 @@ def generate( device, model, tokenizer, input_text ):
             # use_cache=True, do_sample=True,
             # eos_token_id=tokenizer.eos_token_id,
             # pad_token_id=tokenizer.pad_token_id,
-            min_length = 500,
+            # min_length = 500,
             # max_length = 512,
             max_new_tokens = 1000,
             # top_p = 0.95,
