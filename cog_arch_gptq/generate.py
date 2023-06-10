@@ -103,7 +103,7 @@ def generate( device, model, tokenizer, input_text ):
             max_new_tokens = 200,
             top_p = 0.95,
             top_k = 50,
-            temperature = 0.3,
+            temperature = 0.8,
             repetition_penalty=1.02
         )
 
