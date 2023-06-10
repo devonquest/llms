@@ -94,12 +94,12 @@ def loop_inference( device, model, tokenizer, input_text ):
     loop_inference( device, model, tokenizer, input_text )
 
 device = to.device( "cuda:0" )
-model_dir = "/workspace/wizardLM-7B-GPTQ"
+model_dir = "/workspace/vicuna-7B-1.1-GPTQ-4bit-128g"
 
 # toggle between branches
 model = lm.load_quant(
     model_dir,
-    f"{ model_dir }/wizardLM-7B-GPTQ-4bit.compat.no-act-order.safetensors",
+    f"{ model_dir }/vicuna-7B-1.1-GPTQ-4bit-128g.no-act-order.pt",
     4,
     128
 ).to( device )

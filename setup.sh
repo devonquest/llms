@@ -34,7 +34,8 @@ apt install git-lfs
 git lfs install
 # toggle between models
 # git clone https://huggingface.co/TheBloke/gpt4-x-vicuna-13B-GPTQ
-git clone https://huggingface.co/TheBloke/wizardLM-7B-GPTQ
+# git clone https://huggingface.co/TheBloke/wizardLM-7B-GPTQ
+git clone https://huggingface.co/TheBloke/vicuna-7B-1.1-GPTQ-4bit-128g
 
 cd /workspace/llms/cog_arch_gptq
 python start_loop.py
