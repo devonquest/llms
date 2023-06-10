@@ -87,11 +87,27 @@ import torch as to
 
 # ### Response:"""
 
-test_prompt = """### Instruction:
+test_prompt = """Q1:
 
-Say hello.
+'''
+What is a giraffe?
+'''
 
-### Response:
+A1:
+
+'''
+An animal.
+'''
+
+Q2:
+
+'''
+What is a monkey?
+'''
+
+A2:
+
+'''
 """
 
 def generate( device, model, tokenizer, input_text ):
