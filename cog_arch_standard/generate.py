@@ -207,17 +207,17 @@ Tom: 'Horse'
 
 Example 2:
 
-Teacher: 'Mary, name an animal.'
+Teacher: 'Mary, name an animal. Answer like Tom did.'
 Mary: 'Monkey'
 
 Example 3:
 
-Teacher: 'Sarah, name an animal.'
+Teacher: 'Sarah, name an animal. Answer like Mary did.'
 Sarah: 'Elephant'
 
 Example 4:
 
-Teacher: 'Mark, name an animal.'
+Teacher: 'Mark, name an animal. Answer like Sarah did.'
 Mark: 'G"""
 
 def generate( device, model, tokenizer, input_text ):
