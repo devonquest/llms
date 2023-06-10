@@ -99,7 +99,7 @@ config = tf.AutoConfig.from_pretrained( model_repo )
 config.init_device = device_name
 
 model = tf.AutoModelForCausalLM.from_pretrained( model_repo, config = config ) \
-    .to( device )
+    # .to( device )
 tokenizer = tf.AutoTokenizer.from_pretrained( "EleutherAI/gpt-neo-125M" )
 
 input_text = "Once upon a time there was a pumpkin. It was a very special " \
