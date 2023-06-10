@@ -187,7 +187,7 @@ import torch as to
 # Ron: If I have a peach and a strawberry, how many fruits do I have?
 # Mary: One peach plus"""
 
-test_prompt = """My buddy Donald is going to visit me tomorrow. His name is"""
+test_prompt = """My buddy Donald is going to visit me tomorrow. My buddy's name is"""
 
 # test_prompt = """Alice was so tired when she got back home so she went"""
 
