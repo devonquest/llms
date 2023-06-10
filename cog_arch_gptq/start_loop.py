@@ -110,7 +110,7 @@ model = lm.load_quant(
     ".compat.act-order.safetensors",
     4,
     128,
-    device
+    0
 ).to( device )
 tokenizer = tf.AutoTokenizer.from_pretrained( model_dir, use_fast = False )
 
