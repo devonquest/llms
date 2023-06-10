@@ -202,7 +202,7 @@ import torch as to
 
 test_prompt = """### Instruction:
 
-Say hello.
+Count from 1 to 3.
 
 ### Response:"""
 
