@@ -64,8 +64,8 @@ def measure_tokens( text, before, after ):
 def generate_timed( device, model, tokenizer, input_text ):
     print( "\nGenerating...\n" )
 
-    before = tm.time()
     gn = il.reload( gn )
+    before = tm.time()
     output_text = gn.generate( device, model, tokenizer, input_text )
     num_tokens, tps = measure_tokens( output_text, before, tm.time() )
 
