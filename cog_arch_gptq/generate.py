@@ -7,11 +7,15 @@ def generate( device, model, tokenizer, input_text ):
     with to.no_grad():
         generated_ids = model.generate(
             input_ids,
-            do_sample = True,
-            min_length = 20,
-            max_length = 100,
+            use_cache=True, do_sample=True,
+            eos_token_id=tokenizer.eos_token_id,
+            pad_token_id=tokenizer.pad_token_id,
+            min_length = 400,
+            max_length = 512,
             top_p = 0.95,
-            temperature = 0.6,
+            top_k = 50,
+            temperature = 0.8,
+            repetition_penalty=1.02
         )
 
     return tokenizer.decode( [ el.item() for el in generated_ids[ 0 ] ] )
