@@ -108,6 +108,18 @@ What is a monkey?
 A2:
 
 '''
+An animal.
+'''
+
+Q3:
+
+'''
+What is a mouse?
+'''
+
+A3:
+
+'''
 """
 
 def generate( device, model, tokenizer, input_text ):
