@@ -25,7 +25,7 @@ def get_config( has_desc_act ):
     )
 
 def get_model( hf_repo, name, has_desc_act, triton ):
-    model_suffix = ".act-order"
+    model_suffix = ".compat.act-order"
     device = "cuda:0"
 
     # f"/workspace/llms/cache/models--{ hf_repo.replace( '/', '--' ) }"
@@ -129,6 +129,6 @@ import os
 print( os.getcwd() )
 
 generate, tokenizer = create_pipeline(
-    "NousResearch/GPT4-x-Vicuna-13b-4bit", "gpt4-x-vicuna-13b-GPTQ4bit-g128"
+    "TheBloke/gpt4-x-vicuna-13B-GPTQ", "GPT4-x-Vicuna-13B-GPTQ-4bit-128g"
 )
 loop_inference( generate, tokenizer )
