@@ -104,7 +104,7 @@ def loop_inference( device, model, tokenizer, input_text ):
     loop_inference( device, model, tokenizer, input_text )
 
 device = to.device( "cuda:0" )
-model_dir = "gpt4-x-vicuna-13B-GPTQ"
+model_dir = "/workspace/gpt4-x-vicuna-13B-GPTQ"
 
 model = lm.load_quant(
     model_dir,
