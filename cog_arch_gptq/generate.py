@@ -87,7 +87,7 @@ import torch as to
 
 # ### Response:"""
 
-test_prompt = """### Instruction:
+test_prompt = """### Instruction 1:
 
 Summarize the below quoted text in 3 different lengths:
 
@@ -120,7 +120,7 @@ is a testament to the city's rich heritage and its unwavering embrace of
 progress.
 '''
 
-### Response:
+### Response 1:
 
 # 50 words
 
@@ -138,9 +138,10 @@ Traditional and modern Tokyo.
 
 Tokyo
 
-### Instruction:
+### Instruction 2:
 
-Summarize the below quoted text in 3 different lengths:
+Summarize the below quoted text ( distinct from Instruction 1 ) in 
+different lengths:
 
 - 50 words
 - 5 words
@@ -172,7 +173,7 @@ energy, seize the opportunities, and create their own unique story within the
 vibrant embrace of the metropolis.
 '''
 
-### Response:"""
+### Response 2:"""
 
 def generate( device, model, tokenizer, input_text ):
     used_input_text = test_prompt
