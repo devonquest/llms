@@ -105,4 +105,4 @@ tokenizer = tf.AutoTokenizer.from_pretrained( "EleutherAI/gpt-neo-125M" )
 input_text = "Once upon a time there was a pumpkin. It was a very special " \
     "pumpkin, it could speak. It was sad because it couldn’t move. Every day" \
     ", it would say"
-loop_inference( device, model, tokenizer, "Mary said:" )
+loop_inference( device, model, tokenizer, input_text )
