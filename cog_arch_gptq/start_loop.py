@@ -101,7 +101,9 @@ model = lm.load_quant(
     f"{ model_dir }/GPT4-x-Vicuna-13B-GPTQ-4bit-128g" \
     ".compat.act-order.safetensors",
     4,
-    128
+    128,
+    # toggle between branches
+    device
 ).to( device )
 tokenizer = tf.AutoTokenizer.from_pretrained( model_dir, use_fast = False )
 
