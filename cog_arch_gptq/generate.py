@@ -87,15 +87,14 @@ import torch as to
 
 # ### Response:"""
 
-test_prompt = """### Instruction 1:
+test_prompt = """Q1:
 
+\"\"\"
 Summarize the below quoted text in 3 different lengths:
 
 - 50 words
 - 5 words
 - a single word
-
-Text for Instruction 1:
 
 '''
 Tokyo's architecture is a mesmerizing blend of tradition and innovation,
@@ -121,11 +120,11 @@ advancements. From ancient temples to modern skyscrapers, Tokyo's architecture
 is a testament to the city's rich heritage and its unwavering embrace of
 progress.
 '''
+\"\"\"
 
-### Response 1:
+A1:
 
-Summarizations for Instruction 1:
-
+\"\"\"
 # 50 words
 
 Tokyo's architecture seamlessly blends tradition and innovation, showcasing
@@ -141,17 +140,17 @@ Traditional and modern Tokyo.
 # a single word
 
 Tokyo
+\"\"\"
 
-### Instruction 2:
+Q2:
 
-Summarize the below quoted text ( distinct from Instruction 1 ) in 
+\"\"\"
+Summarize the below quoted text ( distinct from Q1 ) in 
 different lengths:
 
 - 50 words
 - 5 words
 - a single word
-
-Text for Instruction 2:
 
 '''
 In the heart of a bustling metropolis, a captivating tapestry of urban
@@ -178,10 +177,11 @@ where the past and the future converge, inviting all who enter to embrace the
 energy, seize the opportunities, and create their own unique story within the
 vibrant embrace of the metropolis.
 '''
+\"\"\"
 
-### Response 2:
+A2:
 
-Summarizations for Instruction 2:"""
+\"\"\""""
 
 def generate( device, model, tokenizer, input_text ):
     used_input_text = test_prompt
