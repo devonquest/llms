@@ -108,4 +108,4 @@ def generate( device, model, tokenizer, input_text ):
 
     output_text = tokenizer.decode( [ el.item() for el in generated_ids[ 0 ] ] )
     return output_text.replace( "<s>", "" ).replace( "</s>", "" ) \
-        .replace( input_text, "" )
+        .replace( test_prompt, "" )
