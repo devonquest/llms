@@ -24,7 +24,7 @@ git checkout fastest-inference-4bit
 sed -i "s/safetensors==0.3.0/safetensors==0.3.1/g" requirements.txt
 pip install -r requirements.txt
 # toggle between branches
-python setup_cuda.py install
+# python setup_cuda.py install
 
 cd /workspace
 wget https://packagecloud.io/install/repositories/github/git-lfs/script.deb.sh
