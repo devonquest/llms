@@ -66,12 +66,10 @@ def init_model( device ):
     config.init_device = device
 
     model = tf.AutoModelForCausalLM.from_pretrained(
-        name, config = config, torch_dtype = to.bfloat16, device = device,
+        name, config = config, torch_dtype = to.bfloat16,
         trust_remote_code = True
-    )
-    tokenizer = tf.AutoTokenizer.from_pretrained(
-        "EleutherAI/gpt-neox-20b", device = device
-    )
+    ).to( device )
+    tokenizer = tf.AutoTokenizer.from_pretrained( "EleutherAI/gpt-neox-20b" )
 
     return model, tokenizer
 
