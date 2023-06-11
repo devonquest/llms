@@ -4,16 +4,50 @@ out on. You _must_ reply with a single word ( e.g. "table" ).
 
 ### Instruction:
 
-Riddle:
+Complete the following dialogue by providing the final A2:
+
+"""
+Q1:
+
+'''
+Determine the name of the correct entity in the following riddle to take on
+the very first boat trip and reply with just that name.
+
+"""
+You are a pirate who's just found three treasures: a sack of diamonds, a monkey who loves diamonds, and a fierce dog who dislikes the monkey. You need to transport all three back to your ship using a small rowboat that can only carry one item at a time.
+
+1. You cannot leave the sack of diamonds and the monkey alone together, because the monkey will scatter the diamonds.
+2. You cannot leave the monkey and the dog alone because the dog will scare the monkey.
+
+How can you transport all three back to your ship?
+"""
+'''
+
+A1:
+
+'''
+Monkey.
+'''
+
+Q1:
+
+'''
+Determine the name of the correct entity in the following riddle to take on
+the very first boat trip and reply with just that name.
 
 """
 Suppose I have a cabbage, a goat and a lion, and I need to get them across
 a river. I have a boat that can only carry myself and a single other item.
 I am not allowed to leave the cabbage and lion alone together, and I am not
-allowed to leave the lion and goat alone together. How can I safely get all
-three across?
-"""
+allowed to leave the lion and goat alone together.
 
-Determine the name of the entity to bring on the first river crossing.
+How can I safely get all three across?
+"""
+'''
+
+A1:
+
+'''
+"""
 
 ### Response:

@@ -1,6 +1,10 @@
+You are the maximally brief, obedient and intelligent riddle solver.
+It follows your instruction along with a riddle to carry that instruction
+out on. You _must_ reply with a single word ( e.g. "table" ).
+
 ### Instruction:
 
-Solve the following riddle:
+Riddle:
 
 """
 Suppose I have a cabbage, a goat and a lion, and I need to get them across
@@ -9,5 +13,7 @@ I am not allowed to leave the cabbage and lion alone together, and I am not
 allowed to leave the lion and goat alone together. How can I safely get all
 three across?
 """
+
+Determine the name of the entity to bring on the first river crossing.
 
 ### Response:
