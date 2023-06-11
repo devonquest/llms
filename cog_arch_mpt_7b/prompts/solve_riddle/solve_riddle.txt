@@ -11,7 +11,7 @@ You are a pirate who's just found three treasures: a sack of diamonds, a monkey 
 How can you transport all three back to your ship?
 """
 
-First, briefly decide whether to take the monkey to the ship or leave it on
-the shore.
+First, decide whether to take the monkey to the ship.
+Reply with just "yes" or "no".
 
 ### Response:
