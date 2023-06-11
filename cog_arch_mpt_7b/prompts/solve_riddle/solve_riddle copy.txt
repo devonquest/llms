@@ -1,6 +1,6 @@
 ### Instruction:
 
-In the following riddle, who to bring on the first river crossing with me?
+Solve the following riddle:
 
 """
 Suppose I have a cabbage, a goat and a lion, and I need to get them across
