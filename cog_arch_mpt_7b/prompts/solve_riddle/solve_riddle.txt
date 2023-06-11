@@ -1,9 +1,11 @@
 ### Instruction:
 
-In the following riddle, who to bring on the first river crossing with me?
-Remember, only me plus one other can be on the boat at any given time.
+Consider the following riddle. Then decide who to bring on the first river
+crossing with me and determine the name of the entity.
 
-Include nothing else besides the name in your response.
+Include nothing else besides that name in your response.
+
+Remember, only me plus one other can be on the boat at any given time.
 
 """
 Suppose I have a cabbage, a goat and a lion, and I need to get them across
