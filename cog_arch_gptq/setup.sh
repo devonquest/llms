@@ -31,12 +31,12 @@ wget https://packagecloud.io/install/repositories/github/git-lfs/script.deb.sh
 bash ./script.deb.sh
 apt install git-lfs
 
-# toggle between included or wget model file download
-# git lfs install
+git lfs install
 # toggle between models
 # git clone https://huggingface.co/TheBloke/gpt4-x-vicuna-13B-GPTQ
 # git clone https://huggingface.co/TheBloke/wizardLM-7B-GPTQ
 # git clone https://huggingface.co/TheBloke/vicuna-7B-1.1-GPTQ-4bit-128g
+GIT_LFS_SKIP_SMUDGE=1
 git clone https://huggingface.co/MetaIX/GPT4-X-Alpaca-30B-4bit
 # toggle between included or wget model file download
 cd GPT4-X-Alpaca-30B-4bit
