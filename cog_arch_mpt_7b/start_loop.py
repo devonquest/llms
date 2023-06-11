@@ -1,4 +1,3 @@
-import sys
 import importlib as il
 import subprocess as sp
 import contextlib as cl

@@ -11,7 +11,7 @@ export PATH=$PATH:/workspace/miniconda3/bin
 conda create --name mpt-7b python=3.9 pip -y
 source /workspace/miniconda3/etc/profile.d/conda.sh
 conda activate mpt-7b
-conda install transformers
+conda install transformers einops -y
 
 cd /workspace/llms/cog_arch_mpt_7b
 python start_loop.py
