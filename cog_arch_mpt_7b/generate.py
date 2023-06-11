@@ -1,6 +1,6 @@
 import torch as to
 
-def generate( model, tokenizer, device, prompts, input_text ):
+def generate( model, tokenizer, device, prompts ):
     used_input_text = prompts[ "solve_riddle" ]
     encoded_ids  = tokenizer.encode( used_input_text, return_tensors = "pt" )
     input_ids = encoded_ids.to( device )
