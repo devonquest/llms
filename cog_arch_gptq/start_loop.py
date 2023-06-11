@@ -11,8 +11,8 @@ import transformers as tf
 
 sys.path.append( "/workspace/GPTQ-for-LLaMa/" )
 # toggle between branches
-# lm = il.import_module( "llama_inference" )
-lm = il.import_module( "llama" )
+lm = il.import_module( "llama_inference" )
+# lm = il.import_module( "llama" )
 gn = il.import_module( "generate" )
 
 def git_pull():
