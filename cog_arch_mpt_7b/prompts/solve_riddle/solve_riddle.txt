@@ -24,7 +24,7 @@ A1:
 Who to bring on the first trip to the destination.
 '''
 
-Q1:
+Q2:
 
 '''
 In the following riddle, what is the first thing to decide? Answer briefly.
@@ -39,7 +39,7 @@ How can I safely get all three across?
 """
 '''
 
-A1:
+A2:
 
 '''
 """
