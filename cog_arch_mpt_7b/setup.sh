@@ -13,7 +13,7 @@ source /workspace/miniconda3/etc/profile.d/conda.sh
 conda activate mpt-7b
 
 conda install pytorch torchvision torchaudio pytorch-cuda=11.7 -c pytorch -c nvidia -y
-triton = "triton-pre-mlir@git+https://github.com/vchiley/triton.git@triton_pre_mlir_sm90#subdirectory=python"
+triton="triton-pre-mlir@git+https://github.com/vchiley/triton.git@triton_pre_mlir_sm90#subdirectory=python"
 yes | pip install transformers einops "$triton"
 
 cd /workspace/llms/cog_arch_mpt_7b
