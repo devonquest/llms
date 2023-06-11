@@ -97,19 +97,18 @@ device = to.device( "cuda:0" )
 model_dir = "/workspace/GPT4-X-Alpaca-30B-4bit"
 
 # toggle between branches
+# model = lm.load_quant(
+#     model_dir,
+#     f"{ model_dir }/gpt4-x-alpaca-30b-4bit.safetensors",
+#     4
+# ).to( device )
 model = lm.load_quant(
     model_dir,
     f"{ model_dir }/gpt4-x-alpaca-30b-4bit.safetensors",
-    4
+    4,
+    -1,
+    "cuda:0"
 ).to( device )
-# model = lm.load_quant(
-#     model_dir,
-#     f"{ model_dir }/vicuna-7B-1.1-GPTQ-4bit-128g.no-act-order.pt" \
-#     ".compat.act-order.safetensors",
-#     4,
-#     128,
-#     "cuda:0"
-# ).to( device )
 
 tokenizer = tf.AutoTokenizer.from_pretrained( model_dir, use_fast = False )
 
