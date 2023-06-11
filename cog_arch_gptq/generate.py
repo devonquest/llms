@@ -183,7 +183,7 @@ A2:
 \"\"\""""
 
 def generate( device, model, tokenizer, input_text ):
-    used_input_text = test_prompt
+    used_input_text = input_text
     input_ids = tokenizer.encode( used_input_text, return_tensors = "pt" ) \
         .to( device )
 
@@ -195,7 +195,7 @@ def generate( device, model, tokenizer, input_text ):
             pad_token_id=tokenizer.pad_token_id,
             # min_length = 400,
             # max_length = 512,
-            max_new_tokens = 250,
+            max_new_tokens = 50,
             top_p = 0.95,
             top_k = 50,
             temperature = 0.8,

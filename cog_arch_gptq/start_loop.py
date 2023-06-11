@@ -11,8 +11,8 @@ import transformers as tf
 
 sys.path.append( "/workspace/GPTQ-for-LLaMa/" )
 # toggle between branches
-lm = il.import_module( "llama_inference" )
-# lm = il.import_module( "llama" )
+# lm = il.import_module( "llama_inference" )
+lm = il.import_module( "llama" )
 gn = il.import_module( "generate" )
 
 def git_pull():
@@ -94,12 +94,12 @@ def loop_inference( device, model, tokenizer, input_text ):
     loop_inference( device, model, tokenizer, input_text )
 
 device = to.device( "cuda:0" )
-model_dir = "/workspace/vicuna-7B-1.1-GPTQ-4bit-128g"
+model_dir = "/workspace/GPT4-X-Alpaca-30B-4bit"
 
 # toggle between branches
 model = lm.load_quant(
     model_dir,
-    f"{ model_dir }/vicuna-7B-1.1-GPTQ-4bit-128g.no-act-order.pt",
+    f"{ model_dir }/gpt4-x-alpaca-30b-4bit.safetensors",
     4,
     128
 ).to( device )
@@ -111,6 +111,7 @@ model = lm.load_quant(
 #     128,
 #     "cuda:0"
 # ).to( device )
+
 tokenizer = tf.AutoTokenizer.from_pretrained( model_dir, use_fast = False )
 
 loop_inference( device, model, tokenizer, "Within this decade, AI will" )
