@@ -19,7 +19,7 @@ def git_pull():
 
 def load_prompts():
     with cl.ExitStack() as stack:
-        names = [ "summarize", "improve" ]
+        names = [ "summarize", "improve", "solve_riddle" ]
 
         return dict(
             zip(
@@ -75,14 +75,14 @@ def init_model( device ):
 
     return model, tokenizer
 
-def generate_timed( model, tokenizer, device, input_text ):
+def generate_timed( model, tokenizer, device, prompts, input_text ):
     global gn
 
     print( "\nGenerating...\n" )
     gn = il.reload( gn )
 
     before = tm.time()
-    output_text = gn.generate( model, tokenizer, device, input_text )
+    output_text = gn.generate( model, tokenizer, device, prompts, input_text )
     after = tm.time()
 
     num_tokens, tps = measure_tokens( output_text, before, after )
@@ -90,7 +90,7 @@ def generate_timed( model, tokenizer, device, input_text ):
     print( f"\n---\n\nResponse:\n\n{ output_text }\n\n---" )
     print( f"\nNum tokens: { num_tokens }\ttps: { tps }\n\n---" )
 
-def loop_inference( model, tokenizer, device, input_text ):
+def loop_inference( model, tokenizer, device, prompts, input_text ):
     user_msg = input(
         "\nOptions:"
         "\n\n- r to pull repo and reload prompts"
@@ -104,10 +104,12 @@ def loop_inference( model, tokenizer, device, input_text ):
     elif user_msg == "end":
         return
 
-    generate_timed( model, tokenizer, device, input_text )
-    loop_inference( model, tokenizer, input_text )
+    generate_timed( model, tokenizer, device, prompts, input_text )
+    loop_inference( model, tokenizer, prompts, input_text )
 
 device = "cuda:0"
 model, tokenizer = init_model( device )
 
-loop_inference( model, tokenizer, device, "Within this decade, AI will" )
+loop_inference(
+    model, tokenizer, device, prompts, "Within this decade, AI will"
+)
