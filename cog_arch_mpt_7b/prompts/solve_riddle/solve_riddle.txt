@@ -6,10 +6,7 @@ Complete the following dialogue by providing the final A2:
 Q1:
 
 '''
-Determine the name of the correct entity in the following riddle to take on
-the very first boat trip.
-
-Include nothing but a single word in your response, the name of the entity.
+In the following riddle, what is the first thing to decide? Answer briefly.
 
 """
 You are a pirate who's just found three treasures: a sack of diamonds, a monkey who loves diamonds, and a fierce dog who dislikes the monkey. You need to transport all three back to your ship using a small rowboat that can only carry one item at a time.
@@ -24,16 +21,13 @@ How can you transport all three back to your ship?
 A1:
 
 '''
-Monkey.
+Who to bring on the first trip to the destination.
 '''
 
 Q1:
 
 '''
-Determine the name of the correct entity in the following riddle to take on
-the very first boat trip.
-
-Include nothing but a single word in your response, the name of the entity.
+In the following riddle, what is the first thing to decide? Answer briefly.
 
 """
 Suppose I have a cabbage, a goat and a lion, and I need to get them across
