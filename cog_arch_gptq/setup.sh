@@ -12,6 +12,7 @@ conda create --name gptq python=3.9 pip -y
 source /workspace/miniconda3/etc/profile.d/conda.sh
 conda activate gptq
 conda install pytorch torchvision torchaudio pytorch-cuda=11.7 -c pytorch -c nvidia -y
+conda install transformers accelerate
 
 git clone https://github.com/qwopqwop200/GPTQ-for-LLaMa
 cd GPTQ-for-LLaMa
