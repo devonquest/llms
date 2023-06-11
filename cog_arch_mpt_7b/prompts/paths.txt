@@ -1,0 +1,3 @@
+summarize
+improve
+solve_riddle/solve_riddle
