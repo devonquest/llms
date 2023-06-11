@@ -19,14 +19,14 @@ def git_pull():
 
 def load_prompts():
     with cl.ExitStack() as stack:
-        names = [ "summarize", "improve", "solve_riddle" ]
+        paths = [ "summarize", "improve", "solve_riddle/solve_riddle" ]
 
         return dict(
             zip(
-                names,
+                paths,
                 [
                     stack.enter_context( open( f"./prompts/{ n }.txt" ) ).read()
-                    for n in names
+                    for n in paths
                 ]
             )
         )
