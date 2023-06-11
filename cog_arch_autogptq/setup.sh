@@ -65,6 +65,9 @@ tokens = tokenizer(prompt, return_tensors="pt").to("cuda:0").input_ids
 output = model.generate(input_ids=tokens, max_new_tokens=500, do_sample=True, temperature=0.6)
 print(tokenizer.decode(output[0], skip_special_tokens=True))
 
+# TODO: Continue from here. Try to prompt engineer the 30B model to get better results or try other models otherwise.
+#   Consider high frequency prompt chaining.
+
 """
 ### Instruction:
 
@@ -181,33 +184,109 @@ vibrant embrace of the metropolis.
 # ### Response:
 # """
 
+# prompt = """Q1:
+
+# '''
+# Solve the following riddle.
+
+# Riddle: The Clock Puzzle
+
+# Suppose you have three clocks: a slow clock that loses 10 minutes every hour,
+# an accurate clock that keeps perfect time, and a fast clock that gains 10 minutes
+# every hour. Your task is to determine which clock is which, but there's a catch.
+# You have only one chance to ask one clock one question, and the clocks will answer
+# only in their own language. How can you figure out which clock is which?
+# '''
+
+# A1:
+
+# '''
+# To solve this riddle, follow these steps:
+
+# 1. Pick any two clocks and label them A and B, leaving the third unmarked for now.
+# 2. Set clocks A and B to the same time, for example, 12:00 PM.
+# 3. Let them run for a while.
+# 4. After a certain amount of time, clock A will show 12:30 PM, while clock B will show 12:20 PM if clock A is the fast clock, or 12:40 PM if clock A is the slow clock.
+# 5. Now, it's time to ask the unmarked clock a question. Choose any time, let's say 1:00 PM, and ask the unmarked clock what time it is.
+# 6. Suppose the unmarked clock responds with 1:10 PM. In this case, you can conclude that the unmarked clock must be the fast clock since it gained 10 minutes from the actual time of 1:00 PM.
+# 7. If the unmarked clock responds with 12:50 PM, you can conclude that the unmarked clock must be the slow clock since it lost 10 minutes from the actual time of 1:00 PM.
+# 8. The remaining clock, which was not asked a question, must be the accurate clock.
+
+# By asking one clock one question and comparing its response to the actual time, you can determine which clock is fast, which is slow, and which is accurate.
+# '''
+
+# Q2:
+
+# '''
+# Solve the following riddle.
+
+# Riddle: The Lion, the goat and the cabbage
+
+# I'm standing at a river bank with a cabbage, a goat and a lion beside me and a boat in front of us.
+
+# Rules:
+
+# - leaving the lion and cabbage alone together at a shore is not allowed
+# - leaving the lion and goat alone together at a shore is not allowed
+# - the boat can carry only two entities during one river crossing, so me ( as I must steer the boat ) and one of the others
+
+# How do I get the lion, cabbage and goat safely across the river?
+# '''
+
+# A2:
+
+# '''
+# To solve this riddle, follow these steps:
+
+
+# """
+
+# How many legs did a three-legged llama have before it lost one leg? Write a python function that gives the answer.
+
+# prompt = """### Instruction:
+
+# Write a python function that solves the fox, hen, egg problem.
+
+# ### Response:
+# """
+
 prompt = """### Instruction:
 
-Look at the following riddle and note that it is a variation of the one with the fox, the hen and the bag of grains.
-Recognize what's been changed and how your solution must change accordingly. Then provide the solution. Do not default
-to known solutions, but reason from first principles, step by step.
+Consider the following riddle:
 
 '''
 I'm standing at a river bank with a cabbage, a goat and a lion beside me and a boat in front of us.
 
 Rules:
 
-- leaving the lion and cabbage alone together is not allowed
-- leaving the lion and goat alone together is not allowed
-- the boat can carry only two entities during one river crossing, so me ( as I must steer the boat ) and one of the others
+- leaving the lion and cabbage alone together at a shore is not allowed
+- leaving the lion and goat alone together at a shore is not allowed
+- the boat can carry only two entities during one river crossing, so me ( as I must drive the boat ) and one of the others
 
 How do I get the lion, cabbage and goat safely across the river?
 '''
+
+Solve it using these steps:
+
+- get in the boat with one of the entities
+- note where all entities that are not on the boat are
+- check if these can be left alone where they are according to the riddle
+- if they can't, start from step 1 ( get in the boat with... )
+- cross the river with the entity
+- drop the entity on the reached river side
+- decide whether or whether not to take an entity from the reached side back with you to the initial side
+- cross back to the initial side with or without an entity
+- repeat from step 1 ( get in the boat with... )
 
 ### Response:
 """
 
 tokens = tokenizer(prompt, return_tensors="pt").to("cuda:0").input_ids
 output = model.generate(
-    input_ids=tokens, max_new_tokens=400, do_sample=True, temperature=0.8,
+    input_ids=tokens, max_new_tokens=500, do_sample=True, temperature=0.8,
     top_p=0.95,
     top_k=50,
-    # repetition_penalty=1.02,
+    repetition_penalty=1.02,
     # use_cache=True,
     # eos_token_id=tokenizer.eos_token_id,
     # pad_token_id=tokenizer.pad_token_id,
