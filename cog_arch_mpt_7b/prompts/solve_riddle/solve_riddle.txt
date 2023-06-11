@@ -11,9 +11,7 @@ You are a pirate who's just found three treasures: a sack of diamonds, a monkey 
 How can you transport all three back to your ship?
 """
 
-First, decide whether to take the dog to the ship.
-Reply with just "yes" or "no" and a brief explanation, like so:
-
-"{ Yes or No }, because { a couple of words }."
+If you take the diamonds first, who are the objects left alone?
+Reply with just the names separated by a comma ( e.g. "knive, flower" ).
 
 ### Response:
