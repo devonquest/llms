@@ -30,6 +30,7 @@ cd /workspace
 wget https://packagecloud.io/install/repositories/github/git-lfs/script.deb.sh
 bash ./script.deb.sh
 apt install git-lfs
+truncate -s 0 /etc/gitconfig
 
 git lfs install --skip-smudge
 # toggle between models
