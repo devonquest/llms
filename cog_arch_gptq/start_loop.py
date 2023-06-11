@@ -101,7 +101,7 @@ model = lm.load_quant(
     model_dir,
     f"{ model_dir }/gpt4-x-alpaca-30b-4bit.safetensors",
     4,
-    128
+    0
 ).to( device )
 # model = lm.load_quant(
 #     model_dir,
