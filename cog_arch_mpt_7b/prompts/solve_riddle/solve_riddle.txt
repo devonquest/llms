@@ -15,7 +15,7 @@ If you take the diamonds first, who are the objects left alone?
 Reply with just the names separated by a comma ( e.g. "knive, flower" ).
 
 Do not attempt to solve the riddle completely just yet.
-Realize that "knive, flower" are just objects from an example and irrelevant
+Dont include "knive" or "flower" in your response. They're not relevant
 to the riddle.
 
 ### Response:
