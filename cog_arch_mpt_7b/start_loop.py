@@ -23,7 +23,7 @@ def context_open_prompt( stack, path ):
 
     return stack.enter_context( f ).read()
 
-def load_prompts():
+def load_prompts(): 
     with cl.ExitStack() as stack:
         paths = context_open_prompt( stack, "paths" ).splitlines()
 
