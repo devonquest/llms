@@ -17,7 +17,7 @@ def git_pull():
     except sp.CalledProcessError as e:
         print( f"\nError: Git pull failed.\n\nMessage:\n\n{ e.output }" )
     
-def context_open_prompt( stack, path ):
+def stack_read_prompt_file( stack, path ):
     full_path = f"./prompts/{ path }.txt"
     f = open( full_path )
 
@@ -25,11 +25,11 @@ def context_open_prompt( stack, path ):
 
 def load_prompts(): 
     with cl.ExitStack() as stack:
-        paths = context_open_prompt( stack, "paths" ).splitlines()
+        paths = stack_read_prompt_file( stack, "paths" ).splitlines()
 
         return dict(
             zip(
-                paths, [ context_open_prompt( stack, p ) for p in paths ]
+                paths, [ stack_read_prompt_file( stack, p ) for p in paths ]
             )
         )
     
