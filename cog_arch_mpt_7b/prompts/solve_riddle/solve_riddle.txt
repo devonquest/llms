@@ -12,7 +12,8 @@ How can you transport all three back to your ship?
 """
 
 First, decide whether to take the dog to the ship.
-Do not provide a wordy answer that can be summarized as a single word.
-Reply with just "yes" or "no".
+Reply with just "yes" or "no" and a brief explanation, like so:
+
+"{ Yes or No }, because { a couple of words }."
 
 ### Response:
