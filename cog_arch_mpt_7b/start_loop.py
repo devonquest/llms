@@ -75,7 +75,7 @@ def init_model( device ):
 
     return model, tokenizer
 
-def generate_timed( model, tokenizer, device, prompts ):
+def generate_timed( model, tokenizer, device ):
     global gn
 
     print( "\nGenerating...\n" )
@@ -90,7 +90,7 @@ def generate_timed( model, tokenizer, device, prompts ):
     print( f"\n---\n\nResponse:\n\n{ output_text }\n\n---" )
     print( f"\nNum tokens: { num_tokens }\ttps: { tps }\n\n---" )
 
-def loop_inference( model, tokenizer, device, prompts ):
+def loop_inference( model, tokenizer, device ):
     user_msg = input(
         "\nOptions:"
         "\n\n- r to pull repo and reload prompts"
@@ -104,10 +104,10 @@ def loop_inference( model, tokenizer, device, prompts ):
     elif user_msg == "end":
         return
 
-    generate_timed( model, tokenizer, device, prompts )
-    loop_inference( model, tokenizer, device, prompts )
+    generate_timed( model, tokenizer, device )
+    loop_inference( model, tokenizer, device )
 
 device = "cuda:0"
 model, tokenizer = init_model( device )
 
-loop_inference( model, tokenizer, device, prompts )
+loop_inference( model, tokenizer, device )
