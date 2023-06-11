@@ -103,7 +103,7 @@ def loop_inference( model, tokenizer, device, prompts, input_text ):
         return
 
     generate_timed( model, tokenizer, device, prompts, input_text )
-    loop_inference( model, tokenizer, prompts, input_text )
+    loop_inference( model, tokenizer, device, prompts, input_text )
 
 device = "cuda:0"
 model, tokenizer = init_model( device )
