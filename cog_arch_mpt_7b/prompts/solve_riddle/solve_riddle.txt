@@ -1,12 +1,6 @@
 ### Instruction:
 
-Complete the following dialogue by providing the final A2:
-
-"""
-Q1:
-
-'''
-In the following riddle, what is the first thing to decide? Answer briefly.
+Consider the following riddle:
 
 """
 You are a pirate who's just found three treasures: a sack of diamonds, a monkey who loves diamonds, and a fierce dog who dislikes the monkey. You need to transport all three back to your ship using a small rowboat that can only carry one item at a time.
@@ -16,32 +10,7 @@ You are a pirate who's just found three treasures: a sack of diamonds, a monkey 
 
 How can you transport all three back to your ship?
 """
-'''
 
-A1:
-
-'''
-Who to bring on the first trip to the destination.
-'''
-
-Q2:
-
-'''
-In the following riddle, what is the first thing to decide? Answer briefly.
-
-"""
-Suppose I have a cabbage, a goat and a lion, and I need to get them across
-a river. I have a boat that can only carry myself and a single other item.
-I am not allowed to leave the cabbage and lion alone together, and I am not
-allowed to leave the lion and goat alone together.
-
-How can I safely get all three across?
-"""
-'''
-
-A2:
-
-'''
-"""
+First, decide whether to take the monkey to the ship or leave it on the shore.
 
 ### Response:
