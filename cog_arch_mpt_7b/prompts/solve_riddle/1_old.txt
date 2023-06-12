@@ -13,4 +13,8 @@ How can you transport all three back to your ship?
 
 Can the objects "monkey, dog" be left alone?
 
+### Response format:
+
+{ y / n }
+
 ### Response:
