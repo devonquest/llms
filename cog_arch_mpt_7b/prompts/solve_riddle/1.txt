@@ -16,7 +16,7 @@ together?
 
 ### Object pairs that can't be left alone together:
 
-( monkey, dog )
+( diamonds, dog )
 
 ### Response format:
 
