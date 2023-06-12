@@ -20,6 +20,6 @@ together?
 
 ### Response format:
 
-{ n | y }
+{ yes or no }
 
 ### Response:
