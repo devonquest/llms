@@ -15,7 +15,7 @@ Which objects are on the ship right now?
 
 ### Your location: ship
 
-### Objects on the ship: monkey
+### Objects on the ship: dog
 
 ### Response format: { object }
 
