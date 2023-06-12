@@ -18,6 +18,8 @@ Select a reasonable object to take with you on the first boat trip to the ship.
 It must be a single word.
 The word must be capitalized.
 The word must not come with an article.
-The word must not be enclosed in single or double quotes, like "table".
+The word must not be enclosed in single or double quotes, so
+    - "table" would be bad.
+    - table would be good.
 
 ### Response:
