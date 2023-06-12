@@ -11,12 +11,12 @@ You are a pirate who's just found three treasures: a sack of diamonds, a monkey 
 How can you transport all three back to your ship?
 """
 
-Select a reasonable next object to take with you on the first boat trip to
-the ship.
+Select a possible ( can be none ) reasonable next object to take with you on
+the next boat trip.
 
-### Your location: shore
+### Your location: ship
 
-### Objects on the ship: monkey
+### Objects on the ship: monkey, dog
 
 ### Response format: { object }
 
