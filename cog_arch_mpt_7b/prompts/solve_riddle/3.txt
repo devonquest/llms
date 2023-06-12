@@ -1,7 +1,3 @@
-### Input ( selected object ):
-
-monkey
-
 ### Response format:
 
 ( object_0, object_1 )
@@ -19,6 +15,7 @@ You are a pirate who's just found three treasures: a sack of diamonds, a monkey 
 How can you transport all three back to your ship?
 """
 
-Determine the left alone object pair given the selected object.
+Your selected object to take with you on the first boat trip to the ship was
+"monkey". Which objects remain on the shore as a consequence?
 
 ### Response:
