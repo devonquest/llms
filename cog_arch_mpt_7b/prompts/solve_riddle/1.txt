@@ -11,7 +11,7 @@ You are a pirate who's just found three treasures: a sack of diamonds, a monkey 
 How can you transport all three back to your ship?
 """
 
-Can the objects "monkey, dog" be left alone?
+Can the objects "diamonds, dog" be left alone?
 
 ### Response format:
 
