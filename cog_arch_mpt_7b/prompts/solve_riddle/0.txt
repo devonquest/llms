@@ -16,7 +16,7 @@ the ship.
 
 ### Your location: shore
 
-### Objects on the ship: none
+### Objects on the ship: monkey
 
 ### Response format: { object }
 
