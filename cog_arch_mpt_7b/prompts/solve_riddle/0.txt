@@ -12,7 +12,7 @@ How can you transport all three back to your ship?
 """
 
 There are multiple object pairs that can't be left alone according to the
-riddle. Which are they?
+riddle. Which are they? Don't list duplicates.
 
 ### Response format:
 
