@@ -16,8 +16,6 @@ the ship.
 
 ### Response format: { object }
 
-### Your location: shore
-
 ### Objects on the ship: none
 
 ### Response:
