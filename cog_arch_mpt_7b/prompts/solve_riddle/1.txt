@@ -11,10 +11,11 @@ You are a pirate who's just found three treasures: a sack of diamonds, a monkey 
 How can you transport all three back to your ship?
 """
 
-Does the riddle allow the "diamond" and the "dog" to be left alone?
+Are the "diamond" and the "dog" among the things mentioned that can't
+be left alone?
 
 ### Response format:
 
-- brief informal keyword phrases
+{ n / y }
 
 ### Response:
