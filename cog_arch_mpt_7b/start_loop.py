@@ -25,7 +25,9 @@ def stack_read_prompt_file( stack, path ):
 
 def load_prompts(): 
     with cl.ExitStack() as stack:
-        paths = stack_read_prompt_file( stack, "paths" ).splitlines()
+        paths_with_blanks = \
+            stack_read_prompt_file( stack, "paths" ).splitlines()
+        paths = [ p for p in paths_with_blanks if p != "" ]
 
         return dict(
             zip(
