@@ -12,6 +12,7 @@ How can you transport all three back to your ship?
 """
 
 Which object pairs except for "monkey, dog" can't be left alone together?
+Do not reply with "monkey, dog", these have already been identified.
 
 ### Response format:
 
