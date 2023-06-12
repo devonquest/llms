@@ -11,8 +11,7 @@ You are a pirate who's just found three treasures: a sack of diamonds, a monkey 
 How can you transport all three back to your ship?
 """
 
-Which object pairs except for "monkey, dog" can't be left alone together?
-Your reply _must not_ be "monkey, dog".
+Say hey.
 
 ### Response format:
 
