@@ -13,13 +13,10 @@ How can you transport all three back to your ship?
 
 Select a reasonable object to take with you on the first boat trip to the ship.
 
-### Response format:
+### Response rules:
 
-{ object }
-
-### Response format rules:
-
-- response must be capitalized
-- response must not come with an article
+- format: { object }
+- must be capitalized
+- must not come with an article
 
 ### Response:
