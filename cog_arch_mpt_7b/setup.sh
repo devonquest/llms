@@ -2,6 +2,7 @@ cd /workspace
 
 apt update -y
 apt upgrade -y
+apt install build-essential clang -y
 
 wget https://repo.anaconda.com/miniconda/Miniconda3-py310_23.3.1-0-Linux-x86_64.sh
 bash Miniconda3-py310_23.3.1-0-Linux-x86_64.sh -b -p /workspace/miniconda3
@@ -14,7 +15,7 @@ conda activate mpt-7b
 
 conda install pytorch torchvision torchaudio pytorch-cuda=11.7 -c pytorch -c nvidia -y
 triton="triton-pre-mlir@git+https://github.com/vchiley/triton.git@triton_pre_mlir_sm90#subdirectory=python"
-yes | pip install cmake transformers einops "$triton"
+yes | pip install transformers einops "$triton"
 
 cd /workspace/llms/cog_arch_mpt_7b
 python start_loop.py
