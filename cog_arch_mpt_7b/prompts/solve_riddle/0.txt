@@ -14,10 +14,10 @@ How can you transport all three back to your ship?
 Select a reasonable next object to take with you on the first boat trip to
 the ship.
 
-### Response format: { object }
-
 ### Your location: shore
 
 ### Objects on the ship: none
+
+### Response format: { object }
 
 ### Response:
