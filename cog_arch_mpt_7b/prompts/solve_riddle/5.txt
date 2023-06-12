@@ -20,8 +20,6 @@ You are a pirate who's just found three treasures: a sack of diamonds, a monkey 
 How can you transport all three back to your ship?
 """
 
-Select a reasonable object to take with you on the first boat trip to the ship.
-
-Respect the response format and its rules.
+Ignore the riddle and say "turtle".
 
 ### Response:
