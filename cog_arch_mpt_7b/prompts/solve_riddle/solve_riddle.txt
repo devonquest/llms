@@ -13,4 +13,8 @@ How can you transport all three back to your ship?
 
 If you take the diamonds first, who are the objects left alone?
 
+### Response format:
+
+{ object 1 }, { object 2 }
+
 ### Response:
