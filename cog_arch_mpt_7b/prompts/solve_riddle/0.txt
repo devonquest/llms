@@ -12,10 +12,9 @@ How can you transport all three back to your ship?
 """
 
 Select an object to bring with you on the boat to the ship.
-List the remaining objects on the shore.
 
 ### Response format:
 
-{ selected }, ( remaining_0, remaining_1 )
+{ selected }
 
 ### Response:
