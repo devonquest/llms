@@ -17,8 +17,6 @@ Select a reasonable object to take with you on the first boat trip to the ship.
 
 { object }
 
-### Disallowed selections:
-
-dog, diamonds
+### Disallowed selections: dog, diamonds
 
 ### Response:
