@@ -1,7 +1,3 @@
-### Response format:
-
-{ object }
-
 ### Instruction:
 
 Consider the following riddle:
@@ -16,5 +12,9 @@ How can you transport all three back to your ship?
 """
 
 Select a reasonable object to take with you on the first boat trip to the ship.
+
+### Response format: { object }
+
+### Disallowed selections: none
 
 ### Response:
