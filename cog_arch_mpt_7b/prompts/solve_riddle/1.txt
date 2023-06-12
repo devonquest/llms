@@ -1,3 +1,7 @@
+### Object pairs that can't be left alone together:
+
+( diamonds, dog )
+
 ### Instruction:
 
 Consider the following riddle:
@@ -11,10 +15,11 @@ You are a pirate who's just found three treasures: a sack of diamonds, a monkey 
 How can you transport all three back to your ship?
 """
 
-Select an object to bring with you on the boat to the ship.
+What are the pairs mentioned among the object pairs that can't be left alone
+together?
 
 ### Response format:
 
-{ object }
+( object_0, object_1 )
 
 ### Response:
