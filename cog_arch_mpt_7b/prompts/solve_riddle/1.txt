@@ -16,6 +16,6 @@ be left alone?
 
 ### Response format:
 
-{ n / y }
+{ y / n }
 
 ### Response:
