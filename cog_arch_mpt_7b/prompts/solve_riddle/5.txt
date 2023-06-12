@@ -20,6 +20,6 @@ Select a reasonable object to take with you on the first boat trip to the ship.
 ### Response format rules:
 
 - no articles
-- lowercase
+- uppercase
 
 ### Response:
