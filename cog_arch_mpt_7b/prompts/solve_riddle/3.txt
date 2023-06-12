@@ -19,6 +19,6 @@ You are a pirate who's just found three treasures: a sack of diamonds, a monkey 
 How can you transport all three back to your ship?
 """
 
-Determine the left alone object pairs given the selected object.
+Determine the left alone object pair given the selected object.
 
 ### Response:
