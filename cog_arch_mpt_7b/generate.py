@@ -17,6 +17,6 @@ def generate( model, tokenizer, device, prompts ):
 
     generated_ids = generated_ids[ 0 ]
     items = [ el.item() for el in generated_ids ]
-    output_text = tokenizer.decode( items ).strip()
+    output_text = tokenizer.decode( items )
     
     return output_text.replace( used_input_text, "" ).strip()
