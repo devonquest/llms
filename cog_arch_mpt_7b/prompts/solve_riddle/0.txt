@@ -15,7 +15,7 @@ How can you transport all three back to your ship?
 
 Determine which objects are on the ship right now.
 Determine which objects are not on the ship right now.
-Tangent: I must take E to B from A. Where must E be so I can do that?
+Off-topic: I must take E to B from A. Where must E be so I can do that?
 If an object must be taken from the ship to the shore, where must it be
 before that?
 Which objects could be taken from the ship to the shore?
@@ -24,7 +24,7 @@ Which objects could be taken from the ship to the shore?
 
 On the ship: object[,...]
 Not on the ship: object[,...]
-Tangent: Where E must be: location
+Off-topic: Where E must be: location
 Where an object must be before, that must be taken from the ship to
 the shore: location
 Objects that could be taken from the ship to the shore: object[,...]
