@@ -19,6 +19,6 @@ Select a reasonable object to take with you on the first boat trip to the ship.
 
 ### Response format rules:
 
-- response must be in lowercase
+- response must be capitalized
 
 ### Response:
