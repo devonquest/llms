@@ -11,10 +11,10 @@ You are a pirate who's just found three treasures: a sack of diamonds, a monkey 
 How can you transport all three back to your ship?
 """
 
-What would happen if the objects "diamonds, dog" were left alone?
+Can the objects "diamonds, dog" be left alone?
 
 ### Response format:
 
-- brief informal keyword phrases
+{ y / n }
 
 ### Response:
