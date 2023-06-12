@@ -15,8 +15,7 @@ How can you transport all three back to your ship?
 
 Determine which objects are on the ship right now.
 Determine which objects are not on the ship right now.
-An object is going to be taken _to_ A _from_ B. Determine where it must be
-before that.
+An object is going to be taken _to_ A _from_ B. Determine where it is now.
 
 ### Response format:
 
