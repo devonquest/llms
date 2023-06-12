@@ -13,7 +13,7 @@ How can you transport all three back to your ship?
 
 Select a reasonable object to take with you on the first boat trip to the ship.
 
-Your response must be a single word.
+Your response must be a single word, like "table" or "knive".
 Your response word must be in lowercase.
 Your response word must not come with an article.
 Your response must not contain any special characters.
