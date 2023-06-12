@@ -13,8 +13,12 @@ How can you transport all three back to your ship?
 
 ### Instruction:
 
-Determine which objects are _not_ on the ship right now.
+Determine which objects are on the ship right now.
+Subsequently, determine which objects are _not_ on the ship right now.
 
-### Response format: object,...
+### Response format:
+
+object,...
+object,...
 
 ### Response:
