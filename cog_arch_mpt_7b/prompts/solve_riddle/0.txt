@@ -14,9 +14,11 @@ How can you transport all three back to your ship?
 ### Instruction:
 
 Determine which objects are on the ship right now.
+Determine which objects are not on the ship right now.
 
 ### Response format:
 
 On the ship: object[,...]
+Not on the ship: object[,...]
 
 ### Response:
