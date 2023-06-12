@@ -11,7 +11,7 @@ You are a pirate who's just found three treasures: a sack of diamonds, a monkey 
 How can you transport all three back to your ship?
 """
 
-Are the "diamond" and the "dog" among the things mentioned in the riddle that
+Are the "diamonds" and the "dog" among the things mentioned in the riddle that
 can't be left alone with each other?
 
 ### Response format:
