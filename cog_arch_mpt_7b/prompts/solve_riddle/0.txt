@@ -21,6 +21,6 @@ If an object is going to be taken to A from B, where must it be before that?
 
 On the ship: object[,...]
 Not on the ship: object[,...]
-Location letter: [A or B]
+Location: [A or B]
 
 ### Response:
