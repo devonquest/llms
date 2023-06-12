@@ -1,5 +1,6 @@
 ### Input:
 
+( diamonds, monkey )
 ( monkey, dog )
 ( monkey, diamonds )
 ( dog, monkey )
