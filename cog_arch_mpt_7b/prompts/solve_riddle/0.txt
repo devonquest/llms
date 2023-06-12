@@ -12,7 +12,7 @@ How can you transport all three back to your ship?
 """
 
 Select a possible ( can be none ) reasonable next object to take with you on
-the next boat trip.
+the boat trip from your location to the other side.
 
 ### Your location: ship
 
