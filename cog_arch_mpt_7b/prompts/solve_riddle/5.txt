@@ -18,6 +18,6 @@ Select a reasonable object to take with you on the first boat trip to the ship.
 It must be a single word.
 The word must be capitalized.
 The word must not come with an article.
-The word must not be quoted.
+The word must not be enclosed in single or double quotes.
 
 ### Response:
