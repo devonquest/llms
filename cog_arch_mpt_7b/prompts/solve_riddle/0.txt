@@ -15,7 +15,7 @@ How can you transport all three back to your ship?
 
 Determine which objects are on the ship right now.
 Determine which objects are not on the ship right now.
-I must take E to B from A in the future.
+I must take E to A from B in the future.
 Where must E be in the present so I can do that ( A or B )?
 If an object must be taken from the ship to the shore, where must it be
 before that?
