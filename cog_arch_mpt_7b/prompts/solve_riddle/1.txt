@@ -16,6 +16,6 @@ Do not reply with "monkey, dog", these have already been identified.
 
 ### Response format:
 
-{ object 1 }, { object 2 }
+{ object }, { object }
 
 ### Response:
