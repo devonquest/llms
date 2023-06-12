@@ -13,6 +13,10 @@ How can you transport all three back to your ship?
 
 Select a reasonable object to take with you on the first boat trip to the ship.
 
+### Disallowed choices:
+
+monkey
+
 ### Response format:
 
 { object }
