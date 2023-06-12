@@ -16,6 +16,6 @@ the ship.
 
 ### Response format: { object }
 
-### Objects on the ship: none
+### Objects on the ship: monkey
 
 ### Response:
