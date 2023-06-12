@@ -21,6 +21,6 @@ Don't list duplicates.
 
 ( object_0, object_1 )
 ...
-( object_0, object_1 )
+( object_0, object_1 ) ( no duplicate )
 
 ### Response:
