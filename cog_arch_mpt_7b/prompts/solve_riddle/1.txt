@@ -15,11 +15,11 @@ You are a pirate who's just found three treasures: a sack of diamonds, a monkey 
 How can you transport all three back to your ship?
 """
 
-Is ( monkey, dog ) already listed among the pairs that can't be left alone
-together?
+What are the pairs already mentioned among the object pairs that can't be left
+alone together?
 
 ### Response format:
 
-{ yes or no }
+( object_0, object_1 )
 
 ### Response:
