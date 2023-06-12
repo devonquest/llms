@@ -11,10 +11,10 @@ You are a pirate who's just found three treasures: a sack of diamonds, a monkey 
 How can you transport all three back to your ship?
 """
 
-Say hey.
+Name the riddle.
 
 ### Response format:
 
-{ object }, { object }
+- name
 
 ### Response:
