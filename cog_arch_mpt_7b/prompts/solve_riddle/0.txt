@@ -15,7 +15,7 @@ How can you transport all three back to your ship?
 
 Determine which objects are on the ship right now.
 Determine which objects are not on the ship right now.
-Can the objects on the ship be left alone according to the riddle?
+What does the riddle say about the objects that are on the ship right now?
 Determine whether to leave all objects on the ship when you go back to the
 shore.
 
@@ -23,7 +23,8 @@ shore.
 
 On the ship: object[,...]
 Not on the ship: object[,...]
-Can the objects on the ship be left alone according to the riddle? [yes or no]
+What does the riddle say about the objects that are on the ship right
+now? [phrase]
 Leave all objects on the ship when you go back to the
 shore? [yes or no]
 
