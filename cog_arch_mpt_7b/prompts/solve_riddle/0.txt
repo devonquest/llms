@@ -15,12 +15,14 @@ How can you transport all three back to your ship?
 
 Determine which objects are on the ship right now.
 Determine which objects are not on the ship right now.
-Determine whether to take an object back with you from the ship to the shore.
+Determine whether to leave all objects on the ship when you go back to the
+shore.
 
 ### Response format:
 
 On the ship: object[,...]
 Not on the ship: object[,...]
-Take an object back with you from the ship to the shore: [yes or no]
+Leave all objects on the ship when you go back to the
+shore? [yes or no]
 
 ### Response:
