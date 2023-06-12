@@ -15,13 +15,13 @@ How can you transport all three back to your ship?
 
 Determine which objects are on the ship right now.
 Determine which objects are not on the ship right now.
-In the future an object is going to be taken _to_ A _from_ B. Where is it in
-the present?
+In the future an example object is going to be taken _to_ A _from_ B.
+Where is it in the present?
 
 ### Response format:
 
 On the ship: object[,...]
 Not on the ship: object[,...]
-Where the object is: [A or B]
+Where the example object is: [A or B]
 
 ### Response:
