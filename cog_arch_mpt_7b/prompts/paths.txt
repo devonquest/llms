@@ -4,3 +4,4 @@ improve
 solve_riddle/0
 solve_riddle/1
 solve_riddle/2
+solve_riddle/3
