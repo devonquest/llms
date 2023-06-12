@@ -11,8 +11,7 @@ You are a pirate who's just found three treasures: a sack of diamonds, a monkey 
 How can you transport all three back to your ship?
 """
 
-Select a possible ( can be none ) reasonable next object to take with you on
-the boat trip from your location to the other side.
+Which objects are on the ship right now?
 
 ### Your location: ship
 
