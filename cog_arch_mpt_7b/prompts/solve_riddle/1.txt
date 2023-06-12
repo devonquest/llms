@@ -12,6 +12,13 @@ How can you transport all three back to your ship?
 """
 
 Which object pairs can't be left alone together?
-Already identified pairs: ( monkey, dog )
+
+### Already identified pairs:
+
+( monkey, dog )
+
+### Response format:
+
+( non_identified_object_0, non_identified_object_1 )
 
 ### Response:
