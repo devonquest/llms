@@ -14,7 +14,7 @@ conda activate mpt-7b
 
 conda install pytorch torchvision torchaudio pytorch-cuda=11.7 -c pytorch -c nvidia -y
 triton="triton-pre-mlir@git+https://github.com/vchiley/triton.git@triton_pre_mlir_sm90#subdirectory=python"
-yes | pip install transformers einops "$triton"
+yes | pip install cmake transformers einops "$triton"
 
 cd /workspace/llms/cog_arch_mpt_7b
 python start_loop.py
