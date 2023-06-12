@@ -16,6 +16,7 @@ Select a reasonable object to take with you on the first boat trip to the ship.
 ### Disallowed choices:
 
 monkey
+dog
 
 ### Response format:
 
