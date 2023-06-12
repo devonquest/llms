@@ -18,6 +18,6 @@ How can you transport all three back to your ship?
 Is ( monkey, dog ) already listed among the pairs that can't be left alone
 together?
 
-Response format: { n / y }
+Reply in the format "{ n / y }".
 
 ### Response:
