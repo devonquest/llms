@@ -1,4 +1,4 @@
-### Input ( Riddle ):
+### Riddle:
 
 You are a pirate who's just found three treasures: a sack of diamonds, a monkey who loves diamonds, and a fierce dog who dislikes the monkey. You need to transport all three back to your ship using a small rowboat that can only carry one item at a time.
 
@@ -7,14 +7,14 @@ You are a pirate who's just found three treasures: a sack of diamonds, a monkey 
 
 How can you transport all three back to your ship?
 
-### Input ( Your location ): ship
+### Your location: ship
 
-### Input ( Objects on the ship ): monkey
+### Objects on the ship: monkey
 
 ### Instruction:
 
 Determine which objects are not on the ship right now.
 
-### Response format: object,...
+### Response format: { object }
 
 ### Response:
