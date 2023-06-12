@@ -2,6 +2,11 @@
 
 { object }
 
+#### Rules:
+
+- no articles
+- lowercase
+
 ### Instruction:
 
 Consider the following riddle:
