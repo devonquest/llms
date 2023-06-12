@@ -17,6 +17,5 @@ List the remaining objects on the shore.
 ### Response format:
 
 { selected }
-( remaining_0, remaining_1 )
 
 ### Response:
