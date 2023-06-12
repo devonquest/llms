@@ -15,13 +15,12 @@ How can you transport all three back to your ship?
 
 Determine which objects are on the ship right now.
 Determine which objects are not on the ship right now.
-One object may be taken from the ship to the shore in the future. So where must
-that object be in the present?
+Which objects could be taken from the ship to the shore?
 
 ### Response format:
 
 On the ship: object[,...]
 Not on the ship: object[,...]
-Where object that may be taken must be: location
+Objects that could be taken from the ship to the shore: object[,...]
 
 ### Response:
