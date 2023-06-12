@@ -22,6 +22,6 @@ the present?
 
 On the ship: object[,...]
 Not on the ship: object[,...]
-Location: [A or B]
+Where the object is: [A or B]
 
 ### Response:
