@@ -9,7 +9,7 @@ How can you transport all three back to your ship?
 
 ### Your location: ship
 
-### Objects on the ship: diamonds
+### Objects on the ship: monkey
 
 ### Instruction:
 
