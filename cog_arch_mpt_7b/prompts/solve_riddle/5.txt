@@ -2,7 +2,7 @@
 
 { object }
 
-#### Rules:
+### Response format rules:
 
 - no articles
 - lowercase
