@@ -9,10 +9,9 @@ How can you transport all three back to your ship?
 
 ### Input, Your location: ship
 
-### Input, Objects on the ship: monkey
-
 ### Instruction:
 
+Objects on the ship: monkey
 Determine which objects are _not_ on the ship right now.
 
 ### Response format: { object }
