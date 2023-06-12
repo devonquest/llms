@@ -13,10 +13,9 @@ How can you transport all three back to your ship?
 
 Select a reasonable object to take with you on the first boat trip to the ship.
 
-### Response rules:
-
-The response must be a single word.
-The response word must be capitalized.
-The response must not contain any special characters.
+Your response must be a single word.
+Your response word must be capitalized.
+Your response word must not come with an article.
+Your response must not contain any special characters.
 
 ### Response:
