@@ -17,7 +17,6 @@ Select a reasonable object to take with you on the first boat trip to the ship.
 
 The response must be a single word.
 The response word must be capitalized.
-The response word must not come with an article.
 The response must not contain any special characters.
 
 ### Response:
