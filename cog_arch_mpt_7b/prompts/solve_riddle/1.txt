@@ -11,14 +11,10 @@ You are a pirate who's just found three treasures: a sack of diamonds, a monkey 
 How can you transport all three back to your ship?
 """
 
-Which object pairs can't be left alone together?
-
-Already mentioned: "monkey, dog"
+Which object pairs except for "monkey, dog" can't be left alone together?
 
 ### Response format:
 
 { object 1 }, { object 2 }
-{ object 1 }, { object 2 }
-...
 
 ### Response:
