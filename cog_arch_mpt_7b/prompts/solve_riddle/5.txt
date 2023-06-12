@@ -15,9 +15,9 @@ Select a reasonable object to take with you on the first boat trip to the ship.
 
 ### Response rules:
 
-It must be a single word.
-The word must be capitalized.
-The word must not come with an article.
-Double quotes are not allowed.
+The response must be a single word.
+The response word must be capitalized.
+The response word must not come with an article.
+The response word must not be enclosed in double quotes.
 
 ### Response:
