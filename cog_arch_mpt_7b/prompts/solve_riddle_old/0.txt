@@ -11,10 +11,11 @@ You are a pirate who's just found three treasures: a sack of diamonds, a monkey 
 How can you transport all three back to your ship?
 """
 
-Select a reasonable object to take with you on the first boat trip to the ship.
+There are multiple object pairs that can't be left alone according to the
+riddle. Which are they?
 
-### Response format: { object }
+### Response format:
 
-### On the ship: none
+( object_0, object_1 )
 
 ### Response:
