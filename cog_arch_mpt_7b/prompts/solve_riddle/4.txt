@@ -8,7 +8,6 @@ Does the list
 
 """
 ( monkey, diamonds )
-( diamonds, dog )
 ( monkey, dog )
 """
 
