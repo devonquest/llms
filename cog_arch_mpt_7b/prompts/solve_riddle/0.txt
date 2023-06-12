@@ -16,7 +16,7 @@ the next boat trip.
 
 ### Your location: ship
 
-### Objects on the ship: monkey, dog
+### Objects on the ship: monkey
 
 ### Response format: { object }
 
