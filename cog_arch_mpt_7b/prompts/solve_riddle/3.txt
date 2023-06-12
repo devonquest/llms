@@ -16,6 +16,6 @@ How can you transport all three back to your ship?
 """
 
 Your selected object to take with you on the first boat trip to the ship was
-"monkey". Which objects remain on the shore as a consequence?
+"monkey". Which object pair remains on the shore as a consequence?
 
 ### Response:
