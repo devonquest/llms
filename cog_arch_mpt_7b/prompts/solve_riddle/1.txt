@@ -1,3 +1,7 @@
+### Object pairs that can't be left alone together:
+
+( diamonds, dog )
+
 ### Instruction:
 
 Consider the following riddle:
@@ -13,10 +17,6 @@ How can you transport all three back to your ship?
 
 Is ( monkey, dog ) already listed among the pairs that can't be left alone
 together?
-
-### Object pairs that can't be left alone together:
-
-( diamonds, dog )
 
 ### Response format:
 
