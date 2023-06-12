@@ -15,8 +15,8 @@ How can you transport all three back to your ship?
 
 Determine which objects are on the ship right now.
 Determine which objects are not on the ship right now.
-One object may be taken back to the shore in the future. So where must it be
-in the present?
+One object may be taken from the ship to the shore in the future. So where must
+that object be in the present?
 
 ### Response format:
 
