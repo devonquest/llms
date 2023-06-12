@@ -11,12 +11,11 @@ You are a pirate who's just found three treasures: a sack of diamonds, a monkey 
 How can you transport all three back to your ship?
 """
 
-Which object pairs can't be left alone together?
+Are the "diamonds" and the "dog" among the things mentioned in the riddle that
+can't be left alone with each other?
 
 ### Response format:
 
-{ object 1 }, { object 2 }
-{ object 1 }, { object 2 }
-...
+{ y / n }
 
 ### Response:
