@@ -13,8 +13,6 @@ How can you transport all three back to your ship?
 
 Which object pairs can't be left alone together?
 
-Already mentioned: "monkey, dog"
-
 ### Response format:
 
 { object 1 }, { object 2 }
