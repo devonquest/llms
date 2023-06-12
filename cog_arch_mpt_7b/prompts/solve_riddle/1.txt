@@ -1,10 +1,10 @@
 ### Response format:
 
-( non_identified_object_0, non_identified_object_1 )
+{ y / n }
 
 ### Object pairs that can't be left alone together:
 
-{ y / n }
+( monkey, dog )
 
 ### Instruction:
 
