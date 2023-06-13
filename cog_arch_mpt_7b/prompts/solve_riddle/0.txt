@@ -15,10 +15,14 @@ How can you transport all three back to your ship?
 
 Which objects are on the ship right now?
 What happens when these are alone together?
+Does that interaction necessitate that you take one of the objects on the
+ship right now back with you to the shore?
 
-### Response format ( Q? A; include only A; respect format of A ):
+### Response format ( Q? A; include only A ):
 
 Which objects are on the ship right now? object[,...]
 What happens when these are alone together? [phrase]
+Does that interaction necessitate that you take one of the objects on the
+ship right now back with you to the shore? [yes or no]
 
 ### Response:
