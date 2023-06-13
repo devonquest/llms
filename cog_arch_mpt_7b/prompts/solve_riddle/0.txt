@@ -1,6 +1,6 @@
 ### Input
 
-#### Riddle:
+#### Problem:
 
 You are a pirate who's just found three treasures: diamonds, a monkey who loves diamonds, and a fierce dog who dislikes the monkey. You need to transport all three back to your ship using a small rowboat that can only carry one item at a time.
 
@@ -23,6 +23,6 @@ The pirate must not leave the sack of diamonds and the monkey alone together, be
 
 ### Instruction:
 
-Which is the core tool meant to approach the desired end state?
+Which is the core tool meant to approach the desired end state and solve the problem?
 
 ### Response:
