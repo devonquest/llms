@@ -1,6 +1,6 @@
 ### Instruction:
 
-Riddle:
+Variant:
 
 """
 You are a pirate who's just found three treasures: diamonds, a monkey who loves
@@ -16,6 +16,14 @@ monkey.
 How can you transport all three back to your ship?
 """
 
-Determine the common riddle this is a variation of.
+Common riddle:
+
+"""
+A farmer needs to transport a fox, a hen, and a sack of grain across a river. However, his boat is only large enough to carry him and one of the three items at a time. The problem is that if the fox and the hen are left alone together, the fox will eat the hen. Likewise, if the hen and the grain are left alone together, the hen will eat the grain.
+
+The challenge is to find a way for the farmer to transport all three items across the river without any of them being eaten. The solution involves a specific sequence of trips across the river while ensuring that the fox, the hen, and the grain are never left alone together.
+"""
+
+Determine how the variant is different than the common riddle.
 
 ### Response:
