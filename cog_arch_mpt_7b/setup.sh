@@ -10,10 +10,10 @@ bash Miniconda3-py310_23.3.1-0-Linux-x86_64.sh -b -p /workspace/miniconda3
 export PATH=$PATH:/workspace/miniconda3/bin
 
 cd /workspace/miniconda3/envs
-conda create --prefix mpt-7b python=3.9 pip -y
+conda create --prefix cog_arch python=3.9 pip -y
 
 source /workspace/miniconda3/etc/profile.d/conda.sh
-conda activate mpt-7b
+conda activate cog_arch
 
 conda install pytorch torchvision torchaudio pytorch-cuda=12.0 -c pytorch -c nvidia -y
 triton="triton-pre-mlir@git+https://github.com/vchiley/triton.git@triton_pre_mlir_sm90#subdirectory=python"

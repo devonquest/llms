@@ -59,6 +59,20 @@ Summarize the input text in 3 different lengths:
 
 ### Input:
 
-{ input }
+The art of culinary excellence transports us to a realm of sensory delight,
+where flavors, textures, and aromas harmoniously dance on our taste buds. From
+the delicate intricacies of French cuisine to the bold spices of Indian dishes,
+each culture's gastronomy tells a unique story, woven with history, traditions,
+and local ingredients. Michelin-starred restaurants offer a glimpse into the
+world of haute cuisine, where master chefs meticulously craft dishes that are
+both visually stunning and tantalizing to the palate. Street food markets
+awaken our adventurous spirit, as we indulge in mouthwatering treats like
+crispy falafel wraps, steaming bowls of ramen, and fragrant spices of Thai
+curries. Cooking classes provide an immersive experience, allowing us to unlock
+the secrets of traditional recipes passed down through generations.
+Farm-to-table movements highlight the importance of sustainable sourcing,
+connecting us to the origins of our food and supporting local farmers. With
+each bite, we embark on a culinary journey, expanding our cultural horizons and
+savoring the artistry of food in all its glorious forms. 
 
 ### Response:

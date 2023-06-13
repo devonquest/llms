@@ -1,4 +1,3 @@
-import sys
 import importlib as il
 import subprocess as sp
 import contextlib as cl
@@ -8,11 +7,8 @@ import re
 
 import torch as to
 import transformers as tf
+import auto_gptq as ag
 
-sys.path.append( "/workspace/GPTQ-for-LLaMa/" )
-# toggle between branches
-lm = il.import_module( "llama_inference" )
-# lm = il.import_module( "llama" )
 gn = il.import_module( "generate" )
 
 def git_pull():
@@ -21,6 +17,32 @@ def git_pull():
         print( "\nGit pull successful." )
     except sp.CalledProcessError as e:
         print( f"\nError: Git pull failed.\n\nMessage:\n\n{ e.output }" )
+
+def setup_model():
+    repo = "TheBloke/Wizard-Vicuna-13B-Uncensored-GPTQ"
+    cache_dir = "/workspace/cache"
+
+    device = "cuda:0"
+
+    tokenizer = tf.AutoTokenizer.from_pretrained(
+        repo, cache_dir = cache_dir, device = device, use_fast = True
+    )
+
+    model = ag.AutoGPTQForCausalLM.from_quantized(
+        repo,
+        model_basename = "Wizard-Vicuna-13B-Uncensored-GPTQ-4bit-128g" \
+            ".compat.no-act-order",
+        cache_dir = cache_dir,
+        quantize_config = ag.BaseQuantizeConfig(
+            bits = 4,
+            group_size = 128,
+            desc_act = False,
+        ),
+        device = device, use_triton = False,
+        use_safetensors = True, use_cuda_fp16 = True, torch_dtype = to.float16, 
+    ).to( device )
+
+    return model, tokenizer, device
 
 def load_prompts():
     with cl.ExitStack() as stack:
@@ -63,20 +85,22 @@ def measure_tokens( text, before, after ):
 
     return num_tokens, num_tokens / ( after - before )
 
-def generate_timed( device, model, tokenizer, input_text ):
+def generate_timed( device, model, tokenizer ):
     global gn
 
     print( "\nGenerating...\n" )
     gn = il.reload( gn )
 
     before = tm.time()
-    output_text = gn.generate( device, model, tokenizer, input_text )
-    num_tokens, tps = measure_tokens( output_text, before, tm.time() )
+    output_text = gn.generate( device, model, tokenizer, prompts )
+    after = tm.time()
+
+    num_tokens, tps = measure_tokens( output_text, before, after )
 
     print( f"\n---\n\nResponse:\n\n{ output_text }\n\n---" )
     print( f"\nNum tokens: { num_tokens }\ttps: { tps }\n\n---" )
 
-def loop_inference( device, model, tokenizer, input_text ):
+def loop_inference( device, model, tokenizer ):
     user_msg = input(
         "\nOptions:"
         "\n\n- r to pull repo and reload prompts"
@@ -90,26 +114,8 @@ def loop_inference( device, model, tokenizer, input_text ):
     elif user_msg == "end":
         return
 
-    generate_timed( device, model, tokenizer, input_text )
-    loop_inference( device, model, tokenizer, input_text )
+    generate_timed( device, model, tokenizer )
+    loop_inference( device, model, tokenizer )
 
-device = to.device( "cuda:0" )
-model_dir = "/workspace/GPT4-X-Alpaca-30B-4bit"
-
-# toggle between branches
-# model = lm.load_quant(
-#     model_dir,
-#     f"{ model_dir }/gpt4-x-alpaca-30b-4bit.safetensors",
-#     4
-# ).to( device )
-model = lm.load_quant(
-    model_dir,
-    f"{ model_dir }/gpt4-x-alpaca-30b-4bit.safetensors",
-    4,
-    -1,
-    "cuda:0"
-).to( device )
-
-tokenizer = tf.AutoTokenizer.from_pretrained( model_dir, use_fast = False )
-
-loop_inference( device, model, tokenizer, "Within this decade, AI will" )
+model, tokenizer, device = setup_model()
+loop_inference( device, model, tokenizer )
