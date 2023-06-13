@@ -1,5 +1,7 @@
 ### Instruction:
 
+Riddle:
+
 """
 You are a pirate who's just found three treasures: diamonds, a monkey who loves
 diamonds, and a fierce dog who dislikes the monkey. You need to transport all
@@ -17,6 +19,6 @@ How can you transport all three back to your ship?
 The monkey is already on the ship.
 The dog is already on the ship.
 
-What to do next?
+what's next?
 
 ### Response:
