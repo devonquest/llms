@@ -196,9 +196,9 @@ def generate( device, model, tokenizer, input_text ):
             # min_length = 400,
             # max_length = 512,
             max_new_tokens = 100,
-            top_p = 0.95,
+            top_p = 0.1,
             top_k = 50,
-            temperature = 0.8,
+            temperature = 0.1,
             repetition_penalty=1.02
         )
 

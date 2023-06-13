@@ -5,12 +5,12 @@ apt upgrade -y
 
 wget https://repo.anaconda.com/miniconda/Miniconda3-py310_23.3.1-0-Linux-x86_64.sh
 bash Miniconda3-py310_23.3.1-0-Linux-x86_64.sh -b -p /workspace/miniconda3
-# repeat after restart
+# repeat after reboot
 export PATH=$PATH:/workspace/miniconda3/bin
 
-conda create --name gptq python=3.9 pip -y
+conda create --name cog_arch python=3.9 pip -y
 source /workspace/miniconda3/etc/profile.d/conda.sh
-conda activate gptq
+conda activate cog_arch
 conda install pytorch torchvision torchaudio pytorch-cuda=11.7 -c pytorch -c nvidia -y
 
 git clone https://github.com/qwopqwop200/GPTQ-for-LLaMa
@@ -38,9 +38,10 @@ git lfs install --skip-smudge
 # git clone https://huggingface.co/TheBloke/gpt4-x-vicuna-13B-GPTQ
 # git clone https://huggingface.co/TheBloke/wizardLM-7B-GPTQ
 # git clone https://huggingface.co/TheBloke/vicuna-7B-1.1-GPTQ-4bit-128g
-git clone https://huggingface.co/MetaIX/GPT4-X-Alpaca-30B-4bit
-cd GPT4-X-Alpaca-30B-4bit
-git lfs pull --include="gpt4-x-alpaca-30b-4bit.safetensors"
+# git clone https://huggingface.co/MetaIX/GPT4-X-Alpaca-30B-4bit
+git clone https://huggingface.co/TheBloke/Wizard-Vicuna-13B-Uncensored-GPTQ
+cd Wizard-Vicuna-13B-Uncensored-GPTQ
+git lfs pull --include="Wizard-Vicuna-13B-Uncensored-GPTQ-4bit-128g.compat.no-act-order.safetensors"
 
 cd /workspace/llms/cog_arch_gptq
 python start_loop.py
