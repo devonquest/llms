@@ -13,9 +13,8 @@ How can you transport all three back to your ship?
 
 ### Instruction:
 
-Which objects are on the ship right now? Let's call them ship objects.
-How do the ship objects interact with each other when left alone according
-to the riddle?
+Which objects are on the ship right now?
+What happens when these are left alone?
 Does that interaction necessitate that you take one of the objects on the
 ship right now back with you to the shore?
 What would happen otherwise?
@@ -23,8 +22,7 @@ What would happen otherwise?
 ### Response format ( don't include repeated questions ):
 
 Which objects are on the ship right now? object[,...]
-How do the ship objects interact with each other when left alone according
-to the riddle? [phrase]
+What happens when these are left alone? [phrase]
 Does that interaction necessitate that you take one of the objects on the
 ship right now back with you to the shore? [yes or no]
 What would happen otherwise? [phrase]
