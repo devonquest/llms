@@ -27,6 +27,6 @@ The main tool used to go from the initial to the desired end state is the pirate
 
 ### Instruction:
 
-What is the main basic action using the main tool to go approach the desired end state?
+What is the main action involving the main tool at each step to approach the desired end state?
 
 ### Response:
