@@ -23,6 +23,6 @@ The pirate must not leave the sack of diamonds and the monkey alone together, be
 
 ### Instruction:
 
-List the solution tools implicitly or explicitly suggested.
+Which is the core tool meant to approach the desired end state?
 
 ### Response:
