@@ -1,6 +1,4 @@
-### Input
-
-#### Problem:
+### Instruction:
 
 You are a pirate who's just found three treasures: diamonds, a monkey who loves diamonds, and a fierce dog who dislikes the monkey. You need to transport all three back to your ship using a small rowboat that can only carry one item at a time.
 
@@ -9,36 +7,10 @@ You are a pirate who's just found three treasures: diamonds, a monkey who loves 
 
 How can you transport all three back to your ship?
 
-#### Initial state:
-
-You are a pirate who's just found three treasures: diamonds, a monkey who loves diamonds, and a fierce dog who dislikes the monkey.
-
-#### Current state:
-
-The monkey is already on the ship.
-The dog is already on the ship.
-
-#### Desired end state:
-
-All three items are safely back on your ship.
-
-#### Solution constraints:
-
-The pirate must not leave the sack of diamonds and the monkey alone together, because the monkey will scatter the diamonds. The pirate must not leave the monkey and the dog alone because the dog will scare the monkey.
-
-#### Main tool:
-
+The desired end state is that all three items are safely back on your ship.
 The main tool used to go from the initial to the desired end state is the pirate's rowboat.
-
-#### Main step action:
-
+The solution constraints are that the pirate must not leave the sack of diamonds and the monkey alone together, because the monkey will scatter the diamonds. The pirate must not leave the monkey and the dog alone because the dog will scare the monkey.
 At each step, the main action involves the pirate using the rowboat to transport one item at a time to the ship.
-
-#### Previous step action:
-
-Bring dog to ship.
-
-### Instruction:
 
 The monkey is already on the ship.
 The dog is already on the ship.
