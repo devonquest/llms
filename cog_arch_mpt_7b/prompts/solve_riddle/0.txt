@@ -45,6 +45,6 @@ Bring monkey to ship.
 ### Instruction:
 
 Look at the current state.
-Does the proposed next step action make sense?
+What next step action doesn't need to be done, because it would be redundant?
 
 ### Response:
