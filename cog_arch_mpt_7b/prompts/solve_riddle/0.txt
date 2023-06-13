@@ -15,7 +15,7 @@ You are a pirate who's just found three treasures: diamonds, a monkey who loves 
 
 #### Current state:
 
-You are a pirate who's just found three treasures: diamonds, a monkey who loves diamonds, and a fierce dog who dislikes the monkey.
+The next state resulting from the current main step action is that the monkey is now on the ship.
 
 #### Desired end state:
 
@@ -39,6 +39,6 @@ The next main step action is to use the rowboat to transport the monkey to the s
 
 ### Instruction:
 
-What is the next state resulting from the current main step action?
+Determine the next main step action to approach the desired end state from the current state.
 
 ### Response:
