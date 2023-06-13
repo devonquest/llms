@@ -40,8 +40,7 @@ Bring dog to ship.
 
 ### Instruction:
 
-Given the problem, the current state, the desired end state, the solution
-constraints, the main tool, the main step action and the previous step action,
-would "Bring monkey to ship." as the next step action make sense?
+List the markdown sections most relevant to deciding whether the proposed next
+step action "Bring monkey to ship." makes sense.
 
 ### Response:
