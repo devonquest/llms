@@ -26,5 +26,6 @@ scare the monkey.
 ### Instruction:
 
 Based on the solution critique, how can we improve the solution?
+Think step by step.
 
 ### Response:
