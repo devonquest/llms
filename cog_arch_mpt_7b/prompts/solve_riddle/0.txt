@@ -20,7 +20,7 @@ Does that interaction necessitate that you take one of the objects on the
 ship right now back with you to the shore?
 What would happen otherwise?
 
-### Response format:
+### Response format ( don't include repeated questions ):
 
 Which objects are on the ship right now? object[,...]
 How do the objects on the ship right now interact with each other when left
