@@ -37,8 +37,12 @@ At each step, the main action involves the pirate using the rowboat to transport
 
 Bring monkey to ship.
 
+#### Current step action:
+
+Bring dog to ship.
+
 ### Instruction:
 
-After the previous step action, determine the next step action bringing you closer from the current state to the desired end state.
+What is the next state resulting from the current step action?
 
 ### Response:
