@@ -11,12 +11,10 @@ How can you transport all three back to your ship?
 
 ### Instruction:
 
-Describe the initial state.
+What are the variables that make up the initial state.
 
 ### Response format:
 
-variable_0: value_0
-...
-variable_n: value_n
+word_0, ..., word_n
 
 ### Response:
