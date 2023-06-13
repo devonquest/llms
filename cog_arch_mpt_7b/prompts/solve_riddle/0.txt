@@ -33,8 +33,12 @@ The main tool used to go from the initial to the desired end state is the pirate
 
 At each step, the main action involves the pirate using the rowboat to transport one item at a time to the ship.
 
+#### Current main step action:
+
+The next main step action is to use the rowboat to transport the monkey to the ship.
+
 ### Instruction:
 
-Determine the next main step action to approach the desired end state from the current state.
+What is the next state resulting from the current main step action?
 
 ### Response:
