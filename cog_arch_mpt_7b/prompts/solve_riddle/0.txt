@@ -26,8 +26,6 @@ How do the objects on the ship right now interact with each other when left
 alone according to the riddle? [phrase]
 Should you take an object back with you from the ship to
 the shore? [yes or no]
-Why should you take an object back with you from the ship to the
-shore? [yes or no]
 What would happen otherwise? [yes or no]
 
 ### Response:
