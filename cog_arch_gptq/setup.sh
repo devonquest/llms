@@ -12,10 +12,10 @@ conda create --name cog_arch python=3.9 pip -y
 source /workspace/miniconda3/etc/profile.d/conda.sh
 conda activate cog_arch
 conda install pytorch torchvision torchaudio pytorch-cuda=11.7 -c pytorch -c nvidia -y
+yes | pip install vim
 
 git clone https://github.com/qwopqwop200/GPTQ-for-LLaMa
 cd GPTQ-for-LLaMa
-
 # toggle between branches
 # git checkout triton
 # git checkout cuda
@@ -26,6 +26,10 @@ sed -i "s/safetensors==0.3.0/safetensors==0.3.1/g" requirements.txt
 yes | pip install -r requirements.txt
 # toggle between branches
 python setup_cuda.py install
+
+# toggle between branches
+sed -i "s/model.load_state_dict(safe_load(checkpoint))/model.load_state_dict(safe_load(checkpoint), strict=False)/g" llama.py
+sed -i "s/model.load_state_dict(safe_load(checkpoint))/model.load_state_dict(torch.load(checkpoint), strict=False)/g" llama.py
 
 cd /workspace
 wget https://packagecloud.io/install/repositories/github/git-lfs/script.deb.sh
@@ -42,6 +46,10 @@ git lfs install --skip-smudge
 git clone https://huggingface.co/TheBloke/Wizard-Vicuna-13B-Uncensored-GPTQ
 cd Wizard-Vicuna-13B-Uncensored-GPTQ
 git lfs pull --include="Wizard-Vicuna-13B-Uncensored-GPTQ-4bit-128g.compat.no-act-order.safetensors"
+
+apt install vim -y
+cd /workspace/GPTQ-for-LLaMa
+vim llama.py
 
 cd /workspace/llms/cog_arch_gptq
 python start_loop.py
