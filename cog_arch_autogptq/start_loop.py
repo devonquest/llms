@@ -42,7 +42,8 @@ def setup_model():
             desc_act = False,
         ),
         device = device, use_triton = False,
-        use_safetensors = True, use_cuda_fp16 = True, torch_dtype = to.float16, 
+        use_safetensors = True, use_cuda_fp16 = False,
+        # torch_dtype = to.float16, 
     ).to( device )
 
     return model, tokenizer, device
