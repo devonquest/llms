@@ -12,16 +12,8 @@ monkey.
 
 How can you transport all three back to your ship?
 
-### Animate components:
-
-The riddle contains three animate components: a pirate, a monkey, and a dog.
-
-### Other components:
-
-a rowboat and a sack of diamonds
-
 ### Instruction:
 
-List all remaining physical things besides the already mentioned components.
+Solve the riddle.
 
 ### Response:
