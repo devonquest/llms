@@ -27,7 +27,8 @@ yes | pip install sentencepiece triton
 cd /workspace
 git clone https://github.com/PanQiWei/AutoGPTQ.git
 cd AutoGPTQ
-yes | pip install .[triton]
+yes | pip install .
+# yes | pip install .[triton]
 
 cd /workspace/llms/cog_arch_autogptq
 python start_loop.py
