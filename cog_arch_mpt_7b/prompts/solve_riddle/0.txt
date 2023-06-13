@@ -43,8 +43,15 @@ Solution 2:
 5. Finally, you take the diamonds across the river.
 """
 
+Critique of solution 2:
+
+"""
+You cannot leave the monkey and the dog alone because the dog will scare the
+monkey.
+"""
+
 ### Instruction:
 
-What constraints of riddle 2 are violated in solution 2?
+Revise solution 2 based on its critique.
 
 ### Response:
