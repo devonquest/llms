@@ -17,8 +17,12 @@ You are a pirate who's just found three treasures: diamonds, a monkey who loves 
 
 All three items are safely back on your ship.
 
+#### Solution constraints:
+
+The pirate must not leave the sack of diamonds and the monkey alone together, because the monkey will scatter the diamonds. The pirate must not leave the monkey and the dog alone because the dog will scare the monkey.
+
 ### Instruction:
 
-What are the constraints to respect while approaching the desired end state?
+Are there more solution constraints?
 
 ### Response:
