@@ -41,7 +41,7 @@ def setup_model():
             group_size = 128,
             desc_act = False,
         ),
-        device = device, use_triton = False,
+        device = device, use_triton = True,
         use_safetensors = True, use_cuda_fp16 = True, torch_dtype = to.float16, 
     ).to( device )
 
