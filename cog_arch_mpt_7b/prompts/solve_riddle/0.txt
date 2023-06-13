@@ -10,10 +10,10 @@ the monkey will scatter the diamonds.
 2. You cannot leave the monkey and the dog alone because the dog will scare the
 monkey.
 
-How can you transport all three back to your ship?
+How can you transport all three back to your ship? 
 
 ### Instruction:
 
-List all non-interacting, static components.
+List all animate objects.
 
 ### Response:
