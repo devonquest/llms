@@ -40,6 +40,8 @@ Bring dog to ship.
 
 ### Instruction:
 
-Given the current state, would "Bring monkey to ship." as the next step action make sense?
+Given the problem, the current state, the desired end state, the solution
+constraints, the main tool, the main step action and the previous step action,
+would "Bring monkey to ship." as the next step action make sense?
 
 ### Response:
