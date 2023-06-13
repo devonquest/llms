@@ -15,6 +15,6 @@ At each step, the main action involves the pirate using the rowboat to transport
 The monkey is already on the ship.
 The dog is already on the ship.
 
-Does the proposed next step action "Bring diamonds to ship." bring you closer to the desired end state?
+Why does the proposed next step action "Bring diamonds to ship." not bring you closer to the desired end state?
 
 ### Response:
