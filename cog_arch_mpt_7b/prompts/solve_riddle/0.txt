@@ -19,8 +19,8 @@ Subsequently, should you take one back to the shore?
 
 ### Response format ( Q? A; include only A ):
 
-Which objects are on the ship right now?
-What happens when these are alone together?
-Subsequently, should you take one back to the shore?
+Which objects are on the ship right now? object[,...]
+What happens when these are alone together? [phrase]
+Subsequently, should you take one back to the shore? [yes or no]
 
 ### Response:
