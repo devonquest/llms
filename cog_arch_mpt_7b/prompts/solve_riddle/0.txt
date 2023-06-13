@@ -14,7 +14,7 @@ How can you transport all three back to your ship?
 ### Instruction:
 
 Which objects are on the ship right now?
-What happens when these are left alone?
+What happens when these are alone together?
 
 ### Response format ( Q? A; include only A ):
 
