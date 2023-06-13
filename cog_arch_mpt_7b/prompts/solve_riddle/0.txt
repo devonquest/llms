@@ -20,6 +20,6 @@ What happens when the objects on the ship are alone together?
 
 ### Response format:
 
-[ interaction ]
+[ what happens ]
 
 ### Response:
