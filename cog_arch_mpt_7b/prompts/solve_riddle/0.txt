@@ -14,15 +14,15 @@ How can you transport all three back to your ship?
 ### Instruction:
 
 Determine which objects are on the ship right now.
-What does the riddle say about the objects that are on the ship
-right now?
+What does the riddle say about the relationship between the objects that
+are on the ship right now?
 Can the monkey and the dog be left alone?
 
 ### Response format:
 
 On the ship: object[,...]
-What does the riddle say about the objects that are on the ship
-right now? [phrase]
+What does the riddle say about the relationship between the objects that
+are on the ship right now? [phrase]
 Can the monkey and the dog be left alone? [yes or no]
 
 ### Response:
