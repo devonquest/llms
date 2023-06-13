@@ -11,9 +11,9 @@ How can you transport all three back to your ship?
 
 #### Your location: ship
 
-#### Objects on the ship: monkey, dog
+#### Objects on the ship: monkey
 
-#### How objects on the ship behave when alone together: dog scares monkey
+#### How objects on the ship behave when alone together: only one object
 
 ### Instruction:
 
