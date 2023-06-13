@@ -38,8 +38,17 @@ At each step, the main action involves the pirate using the rowboat to transport
 
 Bring dog to ship.
 
+#### Proposed possible next step actions:
+
+1. Bring monkey to ship.
+2. Bring diamonds to ship.
+3. Bring monkey and diamonds to ship.
+4. Bring dog and diamonds to ship.
+5. Bring dog and monkey to ship.
+6. Bring monkey and dog to ship.
+
 ### Instruction:
 
-What are all the next possible step actions?
+Which one of the proposed possible next step actions makes the most sense?
 
 ### Response:
