@@ -11,18 +11,14 @@ How can you transport all three back to your ship?
 
 #### Your location: ship
 
-#### Objects on the ship: monkey
-
-#### How objects on the ship behave when alone together: only one object
+#### Objects on the ship: monkey, diamonds
 
 ### Instruction:
 
-Should you take the object on the ship back to the shore?
-Why?
+How do the objects on the ship interact?
 
 ### Response format:
 
-[ yes or no ]
-[ reason ]
+[ interaction ]
 
 ### Response:
