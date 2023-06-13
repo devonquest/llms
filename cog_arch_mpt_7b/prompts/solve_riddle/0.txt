@@ -43,6 +43,6 @@ Bring dog to ship.
 
 ### Instruction:
 
-What is the next state resulting from the current step action?
+What is the complete next state resulting from the current step action?
 
 ### Response:
