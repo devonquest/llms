@@ -40,6 +40,6 @@ Bring dog to ship.
 
 ### Instruction:
 
-Determine the next step action bringing you closer from the current state to the desired end state.
+Determine the next step action bringing you to the desired end state, given the current state.
 
 ### Response:
