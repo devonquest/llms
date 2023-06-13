@@ -15,6 +15,6 @@ Describe the initial state.
 
 ### Response format:
 
-[ state ]
+variable: value
 
 ### Response:
