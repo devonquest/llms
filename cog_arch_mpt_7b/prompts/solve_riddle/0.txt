@@ -48,6 +48,6 @@ Solution 2:
 Go through each step of solution 2 and decide whether a constraint posed
 in riddle 2 has been violated.
 
-Then revise the full solution accordingly.
+Then provide a new solution.
 
 ### Response:
