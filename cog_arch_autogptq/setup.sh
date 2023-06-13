@@ -14,7 +14,7 @@ source /workspace/miniconda3/etc/profile.d/conda.sh
 conda activate cog_arch
 
 conda install pytorch torchvision torchaudio pytorch-cuda=11.7 -c pytorch -c nvidia -y
-conda install chardet -y
+conda install chardet cchardet -y
 yes | pip install chardet auto-gptq[triton]
 
 cd /workspace/llms/cog_arch_autogptq
