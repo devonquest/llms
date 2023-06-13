@@ -1,3 +1,4 @@
+import sys
 import importlib as il
 import subprocess as sp
 import contextlib as cl
@@ -7,7 +8,9 @@ import re
 
 import torch as to
 import transformers as tf
-import auto_gptq as ag
+
+sys.path.append( "/workspace/AutoGPTQ/" )
+ag = il.import_module( "auto_gptq" )
 
 gn = il.import_module( "generate" )
 
