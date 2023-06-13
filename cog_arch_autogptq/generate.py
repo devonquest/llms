@@ -13,12 +13,13 @@ def generate( device, model, tokenizer, prompts ):
             # min_length = 400,
             max_new_tokens = 50,
             top_p = 0.95, top_k = 50, temperature = 0.8,
+            num_beams = 4,
             repetition_penalty=1.02
         )
 
     output_ids = generated_ids[ 0 ]
     id_items = [ el.item() for el in output_ids ]
-    
+
     output_text = tokenizer.decode( id_items, skip_special_tokens = True )
     return output_text.replace( "<s>", "" ).replace( "</s>", "" ) \
         .replace( used_input_text, "" ).strip()
