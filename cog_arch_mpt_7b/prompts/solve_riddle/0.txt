@@ -36,7 +36,7 @@ At each step, the main action involves the pirate using the rowboat to transport
 ### Instruction:
 
 Determine the current state.
+The monkey is already on the ship.
 Determine the next main step action to approach the desired end state from the current state.
-The monkey is already on the ship. Why do you want to bring it there again?
 
 ### Response:
