@@ -38,12 +38,13 @@ At each step, the main action involves the pirate using the rowboat to transport
 
 Bring dog to ship.
 
-#### Proposed step action:
+#### Proposed next step action:
 
 Bring monkey to ship.
 
 ### Instruction:
 
-Why doesn't the proposed step action make sense in terms of bringing you closer to the desired end state given the current state?
+Look at the current state.
+Does the proposed next step action make sense?
 
 ### Response:
