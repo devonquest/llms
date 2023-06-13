@@ -14,13 +14,13 @@ How can you transport all three back to your ship?
 ### Instruction:
 
 Determine which objects are on the ship right now.
-What does the riddle say about the relationship between the objects that
-are on the ship right now, verbatim?
+How do the objects on the ship right now interact when left alone according
+to the riddle?
 
 ### Response format:
 
 On the ship: object[,...]
-What does the riddle say about the relationship between the objects that
-are on the ship right now, verbatim? [phrase]
+How do the objects on the ship right now interact when left alone according
+to the riddle? [phrase]
 
 ### Response:
