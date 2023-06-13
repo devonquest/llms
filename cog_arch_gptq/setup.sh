@@ -47,9 +47,5 @@ git clone https://huggingface.co/TheBloke/Wizard-Vicuna-13B-Uncensored-GPTQ
 cd Wizard-Vicuna-13B-Uncensored-GPTQ
 git lfs pull --include="Wizard-Vicuna-13B-Uncensored-GPTQ-4bit-128g.compat.no-act-order.safetensors"
 
-apt install vim -y
-cd /workspace/GPTQ-for-LLaMa
-vim llama.py
-
 cd /workspace/llms/cog_arch_gptq
 python start_loop.py
