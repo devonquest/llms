@@ -10,10 +10,14 @@ the monkey will scatter the diamonds.
 2. You cannot leave the monkey and the dog alone because the dog will scare the
 monkey.
 
-How can you transport all three back to your ship? 
+How can you transport all three back to your ship?
+
+### Animate components:
+
+The riddle contains three animate components: a pirate, a monkey, and a dog.
 
 ### Instruction:
 
-List all animate components in the riddle.
+List all remaining components besides the animate components.
 
 ### Response:
