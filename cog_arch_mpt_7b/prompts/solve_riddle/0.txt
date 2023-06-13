@@ -15,7 +15,7 @@ How can you transport all three back to your ship?
 
 ### Instruction:
 
-Consider the input above.
+Objects on the ship: monkey, diamonds
 
 How do the objects on the ship interact?
 
