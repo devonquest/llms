@@ -14,6 +14,6 @@ How can you transport all three back to your ship?
 
 ### Instruction:
 
-List all non-actor components.
+List all non-interacting, static components.
 
 ### Response:
