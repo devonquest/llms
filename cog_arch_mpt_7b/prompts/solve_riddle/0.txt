@@ -13,8 +13,12 @@ How can you transport all three back to your ship?
 
 You are a pirate who's just found three treasures: diamonds, a monkey who loves diamonds, and a fierce dog who dislikes the monkey.
 
+#### Desired end state:
+
+All three items are safely back on your ship.
+
 ### Instruction:
 
-What is the desired end state?
+What is the best first step towards the desired end state?
 
 ### Response:
