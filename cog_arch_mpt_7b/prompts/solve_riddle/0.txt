@@ -36,6 +36,6 @@ At each step, the main action involves the pirate using the rowboat to transport
 ### Instruction:
 
 Determine the current state.
-What is the next state resulting from the current main step action?
+Determine the next main step action to approach the desired end state from the current state.
 
 ### Response:
