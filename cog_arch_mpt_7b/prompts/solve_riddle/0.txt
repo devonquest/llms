@@ -12,10 +12,6 @@ monkey.
 
 How can you transport all three back to your ship?
 
-### Interacting components:
-
-The pirate, the monkey, the dog, the rowboat, and the diamonds.
-
 ### Instruction:
 
 List all static components.
