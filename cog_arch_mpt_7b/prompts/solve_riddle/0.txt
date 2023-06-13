@@ -15,7 +15,7 @@ At each step, the main action involves the pirate using the rowboat to transport
 The monkey is already on the ship.
 The dog is already on the ship.
 
-Decide whether the proposed next step action "Bring diamonds and dog to ship."
+Decide whether the proposed next step action "Bring diamonds to ship."
 makes sense.
 
 ### Response:
