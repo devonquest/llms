@@ -1,8 +1,5 @@
-### Instruction:
+### Riddle:
 
-Riddle:
-
-"""
 You are a pirate who's just found three treasures: diamonds, a monkey who loves
 diamonds, and a fierce dog who dislikes the monkey. You need to transport all
 three back to your ship using a small rowboat that can only carry one item at
@@ -14,8 +11,13 @@ the monkey will scatter the diamonds.
 monkey.
 
 How can you transport all three back to your ship?
-"""
 
-List all interacting components.
+### Interacting components:
+
+The pirate, the monkey, the dog, the rowboat, and the diamonds.
+
+### Instruction:
+
+List all static components.
 
 ### Response:
