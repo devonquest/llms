@@ -12,8 +12,14 @@ monkey.
 
 How can you transport all three back to your ship?
 
+### Proposed solution:
+
+The solution is to put the monkey in the sack of diamonds, and the dog in the
+monkey's pouch. Then you can put the sack of diamonds in the boat, and the
+monkey and dog in the boat together.
+
 ### Instruction:
 
-Solve the riddle.
+What is wrong with the proposed solution?
 
 ### Response:
