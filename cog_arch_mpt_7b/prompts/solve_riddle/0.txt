@@ -40,8 +40,10 @@ Bring dog to ship.
 
 ### Instruction:
 
-Determine the current state.
+The monkey is already on the ship.
+The dog is already on the ship.
+
 Decide whether the proposed next step action "Bring diamonds and dog to ship."
-makes sense given the current state.
+makes sense.
 
 ### Response:
