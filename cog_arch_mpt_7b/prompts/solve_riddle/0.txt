@@ -38,12 +38,9 @@ At each step, the main action involves the pirate using the rowboat to transport
 
 Bring dog to ship.
 
-#### Proposed possible next step actions:
-
-Bring monkey to ship.
-
 ### Instruction:
 
-Does the proposed possible next step action make sense?
+Consider the context from all the previous markdown sections.
+Would "Bring monkey to ship." as the next step action make sense?
 
 ### Response:
