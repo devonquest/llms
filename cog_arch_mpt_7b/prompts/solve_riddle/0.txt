@@ -11,6 +11,6 @@ How can you transport all three back to your ship?
 
 ### Instruction:
 
-Write the python function "transport_all_safely".
+Implement the python function "transport_all_safely".
 
 ### Response:
