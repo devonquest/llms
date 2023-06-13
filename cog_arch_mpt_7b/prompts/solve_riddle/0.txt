@@ -15,6 +15,7 @@ How can you transport all three back to your ship?
 
 Determine which objects are on the ship right now.
 What does ( ### Input, Riddle ) say about the monkey and the dog?
+Can the monkey and the dog be left alone?
 Determine which objects are not on the ship right now.
 Determine whether to leave all objects on the ship when you go back to the
 shore.
@@ -23,6 +24,7 @@ shore.
 
 On the ship: object[,...]
 What does ( ### Input, Riddle ) say about the monkey and the dog? [phrase]
+Can the monkey and the dog be left alone? [yes or no]
 Not on the ship: object[,...]
 Leave all objects on the ship when you go back to the
 shore? [yes or no]
