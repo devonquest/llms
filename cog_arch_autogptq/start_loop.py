@@ -28,7 +28,7 @@ def setup_model():
     device = "cuda:0"
 
     tokenizer = tf.AutoTokenizer.from_pretrained(
-        repo, cache_dir = cache_dir, device = device, use_fast = False
+        repo, cache_dir = cache_dir, device = device, use_fast = True
     )
 
     model = ag.AutoGPTQForCausalLM.from_quantized(

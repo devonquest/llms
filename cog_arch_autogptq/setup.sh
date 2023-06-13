@@ -22,11 +22,12 @@ source /workspace/miniconda3/etc/profile.d/conda.sh
 conda activate cog_arch
 
 conda install pytorch torchvision torchaudio pytorch-cuda=11.7 -c pytorch -c nvidia -y
+yes | pip install triton
 
 cd /workspace
 git clone https://github.com/PanQiWei/AutoGPTQ.git
 cd AutoGPTQ
-yes | pip install .
+yes | pip install .[triton]
 
 cd /workspace/llms/cog_arch_autogptq
 python start_loop.py
