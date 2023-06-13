@@ -18,8 +18,4 @@ How can you transport all three back to your ship?
 The objects on the ship are: monkey, diamonds
 What happens when the objects on the ship are alone together?
 
-### Response format:
-
-[ what happens ]
-
 ### Response:
