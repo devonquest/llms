@@ -18,9 +18,11 @@ How can you transport all three back to your ship?
 ### Instruction:
 
 Should you take the object on the ship back to the shore?
+Why?
 
 ### Response format:
 
 [ yes or no ]
+[ reason ]
 
 ### Response:
