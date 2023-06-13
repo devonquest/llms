@@ -18,8 +18,13 @@ The solution is to put the monkey in the sack of diamonds, and the dog in the
 monkey's pouch. Then you can put the sack of diamonds in the boat, and the
 monkey and dog in the boat together.
 
+### Solution critique:
+
+The proposed solution is incorrect because the dog will still be able to
+scare the monkey.
+
 ### Instruction:
 
-What is wrong with the proposed solution?
+Based on the solution critique, how can we improve the solution?
 
 ### Response:
