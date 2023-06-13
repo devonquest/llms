@@ -19,7 +19,7 @@ The monkey scatters the diamonds.
 
 ### Instruction:
 
-Why should you take one of the objects on the ship back to the shore?
+Why do you need to take one of the objects on the ship back to the shore?
 
 ### Response format:
 
