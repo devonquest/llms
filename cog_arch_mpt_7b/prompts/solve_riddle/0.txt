@@ -15,7 +15,7 @@ You are a pirate who's just found three treasures: diamonds, a monkey who loves 
 
 #### Current state:
 
-The next state resulting from the current main step action is that the monkey is now on the ship.
+The monkey is now on the ship.
 
 #### Desired end state:
 
@@ -32,10 +32,6 @@ The main tool used to go from the initial to the desired end state is the pirate
 #### Main step action:
 
 At each step, the main action involves the pirate using the rowboat to transport one item at a time to the ship.
-
-#### Current main step action:
-
-to be determined
 
 ### Instruction:
 
