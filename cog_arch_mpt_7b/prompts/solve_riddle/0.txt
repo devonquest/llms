@@ -40,7 +40,6 @@ Bring dog to ship.
 
 ### Instruction:
 
-Look at the current state.
 What are all the next step actions don't need to be done, because it would be redundant?
 
 ### Response:
