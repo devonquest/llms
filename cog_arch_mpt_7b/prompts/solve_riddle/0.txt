@@ -35,6 +35,6 @@ At each step, the main action involves the pirate using the rowboat to transport
 
 ### Instruction:
 
-List all the possible reasonable main step actions to approach the desired end state from the current state.
+Determine the next main step action to approach the desired end state from the current state.
 
 ### Response:
