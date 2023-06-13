@@ -43,8 +43,14 @@ Solution 2:
 5. Finally, you take the diamonds across the river.
 """
 
+Solution 2 critique:
+
+"""
+Solution 2 is incorrect because the dog and the monkey are never left alone together.
+"""
+
 ### Instruction:
 
-Explain why solution 2 is wrong.
+Explain why solution 2 critique is wrong.
 
 ### Response:
