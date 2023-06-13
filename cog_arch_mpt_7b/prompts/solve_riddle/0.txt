@@ -20,7 +20,7 @@ that are on the ship right now?
 ### Response format:
 
 On the ship: object[,...]
-What does the riddle precisely say about the relationship between the objects
-that are on the ship right now? [phrase]
+What does the riddle say about the relationship between the objects that
+are on the ship right now? [phrase]
 
 ### Response:
