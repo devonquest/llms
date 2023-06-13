@@ -1,6 +1,5 @@
 ### Instruction:
 
-"""
 You are a pirate who's just found three treasures: diamonds, a monkey who loves
 diamonds, and a fierce dog who dislikes the monkey. You need to transport all
 three back to your ship using a small rowboat that can only carry one item at
@@ -12,7 +11,6 @@ the monkey will scatter the diamonds.
 monkey.
 
 How can you transport all three back to your ship?
-"""
 
 The desired end state is that all three items are safely back on your ship.
 The main tool used to go from the initial to the desired end state is the
