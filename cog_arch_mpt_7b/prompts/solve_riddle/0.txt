@@ -40,6 +40,7 @@ Bring dog to ship.
 
 ### Instruction:
 
-Given the current state, is the proposed next step action "Bring diamonds and dog to ship." reasonable?
+Decide whether the proposed next step action "Bring diamonds and dog to ship."
+makes sense given the current state.
 
 ### Response:
