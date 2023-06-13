@@ -23,6 +23,6 @@ The pirate must not leave the sack of diamonds and the monkey alone together, be
 
 ### Instruction:
 
-Which is the core tool meant to approach the desired end state and solve the problem?
+What is the main tool used to go from the initial to the desired end state?
 
 ### Response:
