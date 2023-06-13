@@ -43,7 +43,7 @@ def setup_model():
         ),
         device = device, use_triton = False,
         use_safetensors = True, use_cuda_fp16 = False,
-        torch_dtype = to.int, 
+        torch_dtype = to.int8, 
     ).to( device )
 
     return model, tokenizer, device
