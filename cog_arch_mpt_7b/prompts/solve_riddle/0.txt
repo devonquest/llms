@@ -13,12 +13,16 @@ How can you transport all three back to your ship?
 
 #### Objects on the ship: monkey, diamonds
 
+### What happens when the objects on the ship are alone together:
+
+The monkey scatters the diamonds.
+
 ### Instruction:
 
-What happens when the objects on the ship are alone together?
+Where are you?
 
 ### Response format:
 
-[ what happens ]
+[ location ]
 
 ### Response:
