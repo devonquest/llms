@@ -15,16 +15,10 @@ How can you transport all three back to your ship?
 
 Which objects are on the ship right now?
 What happens when these are left alone?
-Does that interaction necessitate that you take one of the objects on the
-ship right now back with you to the shore?
-What would happen otherwise?
 
 ### Response format ( don't include repeated questions ):
 
 Which objects are on the ship right now? object[,...]
 What happens when these are left alone? [phrase]
-Does that interaction necessitate that you take one of the objects on the
-ship right now back with you to the shore? [yes or no]
-What would happen otherwise? [phrase]
 
 ### Response:
