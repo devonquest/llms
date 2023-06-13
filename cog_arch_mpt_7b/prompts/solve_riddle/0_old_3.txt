@@ -9,12 +9,20 @@ You are a pirate who's just found three treasures: diamonds, a monkey who loves 
 
 How can you transport all three back to your ship?
 
+#### Your location: ship
+
+#### Objects on the ship: monkey, diamonds
+
+### What happens when the objects on the ship are alone together:
+
+The monkey scatters the diamonds.
+
 ### Instruction:
 
-Describe the initial state.
+Why is the monkey not allowed on the ship?
 
 ### Response format:
 
-[ state ]
+[ reason ]
 
 ### Response:
