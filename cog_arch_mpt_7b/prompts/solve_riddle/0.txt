@@ -13,7 +13,7 @@ How can you transport all three back to your ship?
 
 ### Instruction:
 
-Determine which objects are on the ship right now.
+Which objects are on the ship right now?
 How do the objects on the ship right now interact with each other when left
 alone according to the riddle?
 Does that interaction necessitate that you take one of the objects on the
@@ -22,7 +22,7 @@ What would happen otherwise?
 
 ### Response format:
 
-On the ship: object[,...]
+Which objects are on the ship right now? object[,...]
 How do the objects on the ship right now interact with each other when left
 alone according to the riddle? [phrase]
 Does that interaction necessitate that you take one of the objects on the
