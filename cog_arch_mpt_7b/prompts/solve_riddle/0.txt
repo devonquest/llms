@@ -20,6 +20,6 @@ The monkey is already on the ship.
 The dog is already on the ship.
 The diamonds are on the shore.
 
-what's next?
+What to do next?
 
 ### Response:
