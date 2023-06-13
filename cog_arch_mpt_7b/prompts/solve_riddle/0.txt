@@ -16,6 +16,6 @@ monkey.
 How can you transport all three back to your ship?
 """
 
-Is this a variation of a more common riddle? If so, describe it in detail.
+Determine the common riddle this is a variation of.
 
 ### Response:
