@@ -15,6 +15,6 @@ You are a pirate who's just found three treasures: diamonds, a monkey who loves 
 
 ### Instruction:
 
-What are the possible actions?
+What is the desired end state?
 
 ### Response:
