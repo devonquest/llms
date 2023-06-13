@@ -35,7 +35,7 @@ At each step, the main action involves the pirate using the rowboat to transport
 
 #### Current main step action:
 
-The next main step action is to use the rowboat to transport the monkey to the ship.
+to be determined
 
 ### Instruction:
 
