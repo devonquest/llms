@@ -17,7 +17,7 @@ How can you transport all three back to your ship?
 
 ### Instruction:
 
-Should you take one of the objects on the ship back to the shore?
+Should you take the object on the ship back to the shore?
 
 ### Response format:
 
