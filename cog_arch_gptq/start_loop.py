@@ -101,8 +101,7 @@ model = lm.load_quant(
     model_dir,
     f"{ model_dir }/Wizard-Vicuna-13B-Uncensored-GPTQ-4bit-128g.compat.no-act-order.safetensors",
     4,
-    0,
-    act_order = False
+    128,
 ).to( device )
 # model = lm.load_quant(
 #     model_dir,
@@ -112,6 +111,6 @@ model = lm.load_quant(
 #     "cuda:0"
 # ).to( device )
 
-tokenizer = tf.AutoTokenizer.from_pretrained( model_dir, use_fast = False )
+tokenizer = tf.AutoTokenizer.from_pretrained( model_dir, use_fast = True )
 
 loop_inference( device, model, tokenizer, "Within this decade, AI will" )
