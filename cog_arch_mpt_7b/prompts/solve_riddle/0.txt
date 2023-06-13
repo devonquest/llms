@@ -9,10 +9,12 @@ You are a pirate who's just found three treasures: diamonds, a monkey who loves 
 
 How can you transport all three back to your ship?
 
+#### Initial state:
+
+You are a pirate who's just found three treasures: diamonds, a monkey who loves diamonds, and a fierce dog who dislikes the monkey.
+
 ### Instruction:
 
-Implement the python function "transport_all_safely".
+What are the possible actions?
 
 ### Response:
-
-def transport_all_safely():
