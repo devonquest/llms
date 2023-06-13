@@ -16,7 +16,7 @@ monkey.
 How can you transport all three back to your ship?
 """
 
-List all the interacting components in the riddle and destructure them into
+List _all_ the interacting components in the riddle and destructure them into
 their atomic parts.
 
 ### Response:
