@@ -40,16 +40,10 @@ Bring dog to ship.
 
 #### Proposed possible next step actions:
 
-1. Bring monkey to ship.
-2. Bring diamonds to ship.
-3. Bring monkey and diamonds to ship.
-4. Bring dog and diamonds to ship.
-5. Bring dog and monkey to ship.
-6. Bring monkey and dog to ship.
+Bring monkey to ship.
 
 ### Instruction:
 
-Consider the context provided in all the previous markdown sections.
-Which one of the proposed possible next step actions are nonsensical?
+Does the proposed possible next step action make sense?
 
 ### Response:
