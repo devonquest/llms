@@ -40,7 +40,6 @@ Bring dog to ship.
 
 ### Instruction:
 
-Think step by step.
-Why is the step action "Bring diamonds and dog to ship." not possible in the current situation?
+Given the current state, is the proposed next step action "Bring diamonds and dog to ship." reasonable?
 
 ### Response:
