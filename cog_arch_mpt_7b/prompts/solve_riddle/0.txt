@@ -44,6 +44,6 @@ Bring monkey to ship.
 
 ### Instruction:
 
-Does the proposed step action make sense in terms of bringing you closer to the desired end state given the current state?
+Why doesn't the proposed step action make sense in terms of bringing you closer to the desired end state given the current state?
 
 ### Response:
