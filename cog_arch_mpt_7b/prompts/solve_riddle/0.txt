@@ -19,10 +19,10 @@ The monkey scatters the diamonds.
 
 ### Instruction:
 
-Which of the objects on the ship should be taken back to the shore?
+Why should the monkey be taken back to the shore?
 
 ### Response format:
 
-[ object ]
+[ reason ]
 
 ### Response:
