@@ -22,7 +22,7 @@ source /workspace/miniconda3/etc/profile.d/conda.sh
 conda activate cog_arch
 
 conda install pytorch torchvision torchaudio pytorch-cuda=11.7 -c pytorch -c nvidia -y
-yes | pip install triton
+yes | pip install sentencepiece triton
 
 cd /workspace
 git clone https://github.com/PanQiWei/AutoGPTQ.git
