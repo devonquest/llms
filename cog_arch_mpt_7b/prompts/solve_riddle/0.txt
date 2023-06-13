@@ -19,6 +19,6 @@ What happens when these are left alone?
 ### Response format ( Q? A; include only A ):
 
 Which objects are on the ship right now? object[,...]
-What happens when these are left alone? [phrase]
+What happens when these are alone together? [phrase]
 
 ### Response:
