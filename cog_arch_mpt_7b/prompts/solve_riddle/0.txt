@@ -37,6 +37,6 @@ At each step, the main action involves the pirate using the rowboat to transport
 
 Determine the current state.
 Determine the next main step action to approach the desired end state from the current state.
-Does the next action make sense given the current state?
+If the monkey is already on the ship, how does the proposed action make sense?
 
 ### Response:
