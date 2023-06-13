@@ -40,7 +40,6 @@ Bring dog to ship.
 
 ### Instruction:
 
-List the markdown sections most relevant to deciding whether the proposed next
-step action "Bring monkey to ship." makes sense.
+Is the proposed step action "Bring monkey to ship." possible in the current situation?
 
 ### Response:
