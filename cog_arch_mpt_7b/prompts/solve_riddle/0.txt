@@ -1,23 +1,6 @@
-Riddle 1:
+### Instruction:
 
-"""
-A farmer needs to transport a fox, a hen, and a sack of grain across a river. However, his boat is only large enough to carry him and one of the three items at a time. The problem is that if the fox and the hen are left alone together, the fox will eat the hen. Likewise, if the hen and the grain are left alone together, the hen will eat the grain.
-
-The challenge is to find a way for the farmer to transport all three items across the river without any of them being eaten. The solution involves a specific sequence of trips across the river while ensuring that the fox, the hen, and the grain are never left alone together.
-"""
-
-Solution 1:
-
-"""
-1. The farmer takes the hen across the river and leaves it on the other side.
-2. The farmer goes back alone to the starting side ( without the hen ).
-3. The farmer takes the fox across the river and leaves it on the other side, but he takes the hen back to the starting side.
-4. The farmer leaves the hen on the starting side and takes the grain across the river.
-5. The farmer leaves the grain with the fox on the other side and returns alone to the starting side.
-6. Finally, the farmer takes the hen across the river one last time.
-"""
-
-Riddle 2:
+Riddle:
 
 """
 You are a pirate who's just found three treasures: diamonds, a monkey who loves
@@ -33,21 +16,6 @@ monkey.
 How can you transport all three back to your ship?
 """
 
-Solution 2:
-
-"""
-1. You take the monkey across the river first.
-2. You leave the monkey on the other side and return alone to the starting side.
-3. You take the dog across the river next.
-4. You leave the dog on the other side and return alone to the starting side.
-5. Finally, you take the diamonds across the river.
-"""
-
-### Instruction:
-
-Go through each step of solution 2 and decide whether a constraint posed
-in riddle 2 has been violated.
-
-Additionally, provide a new solution.
+List all the interacting components in the riddle.
 
 ### Response:
