@@ -24,6 +24,7 @@ A farmer needs to transport a fox, a hen, and a sack of grain across a river. Ho
 The challenge is to find a way for the farmer to transport all three items across the river without any of them being eaten. The solution involves a specific sequence of trips across the river while ensuring that the fox, the hen, and the grain are never left alone together.
 """
 
-Determine how the variant is different than the common riddle.
+Determine how the variant is different than the common riddle and what the
+implications are.
 
 ### Response:
