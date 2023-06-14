@@ -30,6 +30,6 @@ How can you transport all three back to your ship?
 
 ### Instruction:
 
-Provide solution 2:
+Provide solution 2. Think step by step.
 
 ### Response:
