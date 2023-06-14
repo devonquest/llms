@@ -19,16 +19,13 @@ You cannot leave the monkey and the dog alone because the dog will scare the mon
 
 ### Current state:
 
-### Your previous steps:
+### Your steps:
 
 1. Row monkey to ship.
 2. Take the sack of diamonds to the ship.
 
 ### Instruction:
 
-"2. What is the current state of the monkey?
-3. What is the current state of the diamonds?"
-
-Can you answer these questions?
+What is the state of the riddle after your steps?
 
 ### Response:
