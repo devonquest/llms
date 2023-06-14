@@ -15,9 +15,9 @@ def generate( device, model, tokenizer, prompts ):
             eos_token_id = tokenizer.eos_token_id,
             pad_token_id = tokenizer.pad_token_id,
             max_new_tokens = 100,
-            top_p = 0.5,
+            top_p = 0.95,
             top_k = 50,
-            temperature = 0.5,
+            temperature = 0.8,
             repetition_penalty = 1.02
         )
 
