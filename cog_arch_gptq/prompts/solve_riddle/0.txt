@@ -19,12 +19,12 @@ You cannot leave the monkey and the dog alone because the dog will scare the mon
 
 ### Current state:
 
-### Your step:
+The monkey is on the ship and the diamonds and dog are still on the shore.
 
-1. Row monkey to ship.
+### Your step:
 
 ### Instruction:
 
-What is the state of the riddle after your step?
+Suggest a reasonable next step.
 
 ### Response:
