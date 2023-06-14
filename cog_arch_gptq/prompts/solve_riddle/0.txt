@@ -30,6 +30,7 @@ How can you transport all three back to your ship?
 
 ### Instruction:
 
-Solve riddle 2. Hint: At some point you have to backtrack.
+Solve riddle 2. Hint: At some point you have to take an object from the ship
+back to the shore, due to the riddle's rules.
 
 ### Response:
