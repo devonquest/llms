@@ -14,7 +14,7 @@ How can you transport all three back to your ship?
 
 ### Your previous step:
 
-You could start by transporting the monkey and leaving the sack of diamonds and dog on the shore.
+Row monkey to ship.
 
 ### Instruction:
 
