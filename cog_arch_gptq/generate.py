@@ -17,7 +17,6 @@ def generate( device, model, tokenizer, prompts ):
             top_p = 0.1,
             top_k = 50,
             temperature = 0.1,
-            num_beams = 2,
             repetition_penalty=1.02
         )
 
