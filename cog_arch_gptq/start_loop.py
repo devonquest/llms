@@ -22,17 +22,45 @@ def git_pull():
     except sp.CalledProcessError as e:
         print( f"\nError: Git pull failed.\n\nMessage:\n\n{ e.output }" )
 
-def load_prompts():
+def setup_model():
+    device = to.device( "cuda:0" )
+    model_dir = "/workspace/Wizard-Vicuna-13B-Uncensored-GPTQ"
+
+    # toggle between branches
+    model = lm.load_quant(
+        model_dir,
+        f"{ model_dir }/Wizard-Vicuna-13B-Uncensored-GPTQ-4bit-128g.compat" /
+            ".no-act-order.safetensors",
+        4,
+        128,
+    ).to( device )
+    # model = lm.load_quant(
+    #     model_dir,
+    #     f"{ model_dir }/gpt4-x-alpaca-30b-4bit.safetensors",
+    #     4,
+    #     -1,
+    #     "cuda:0"
+    # ).to( device )
+
+    tokenizer = tf.AutoTokenizer.from_pretrained( model_dir, use_fast = True )
+
+    return model, tokenizer, device
+
+def stack_read_prompt_file( stack, path ):
+    full_path = f"./prompts/{ path }.txt"
+    f = open( full_path )
+
+    return stack.enter_context( f ).read()
+
+def load_prompts(): 
     with cl.ExitStack() as stack:
-        names = [ "summarize", "improve" ]
+        paths_with_blanks = \
+            stack_read_prompt_file( stack, "paths" ).splitlines()
+        paths = [ p for p in paths_with_blanks if p != "" ]
 
         return dict(
             zip(
-                names,
-                [
-                    stack.enter_context( open( f"./prompts/{ n }.txt" ) ).read()
-                    for n in names
-                ]
+                paths, [ stack_read_prompt_file( stack, p ) for p in paths ]
             )
         )
     
@@ -63,20 +91,22 @@ def measure_tokens( text, before, after ):
 
     return num_tokens, num_tokens / ( after - before )
 
-def generate_timed( device, model, tokenizer, input_text ):
+def generate_timed( device, model, tokenizer ):
     global gn
 
     print( "\nGenerating...\n" )
     gn = il.reload( gn )
 
     before = tm.time()
-    output_text = gn.generate( device, model, tokenizer, input_text )
-    num_tokens, tps = measure_tokens( output_text, before, tm.time() )
+    output_text = gn.generate( device, model, tokenizer, prompts )
+    after = tm.time()
+
+    num_tokens, tps = measure_tokens( output_text, before, after )
 
     print( f"\n---\n\nResponse:\n\n{ output_text }\n\n---" )
     print( f"\nNum tokens: { num_tokens }\ttps: { tps }\n\n---" )
 
-def loop_inference( device, model, tokenizer, input_text ):
+def loop_inference( device, model, tokenizer ):
     user_msg = input(
         "\nOptions:"
         "\n\n- r to pull repo and reload prompts"
@@ -90,28 +120,8 @@ def loop_inference( device, model, tokenizer, input_text ):
     elif user_msg == "end":
         return
 
-    generate_timed( device, model, tokenizer, input_text )
-    loop_inference( device, model, tokenizer, input_text )
+    generate_timed( device, model, tokenizer )
+    loop_inference( device, model, tokenizer )
 
-device = to.device( "cuda:0" )
-model_dir = "/workspace/Wizard-Vicuna-13B-Uncensored-GPTQ"
-
-# toggle between branches
-model = lm.load_quant(
-    model_dir,
-    f"{ model_dir }/Wizard-Vicuna-13B-Uncensored-GPTQ-4bit-128g.compat" /
-        ".no-act-order.safetensors",
-    4,
-    128,
-).to( device )
-# model = lm.load_quant(
-#     model_dir,
-#     f"{ model_dir }/gpt4-x-alpaca-30b-4bit.safetensors",
-#     4,
-#     -1,
-#     "cuda:0"
-# ).to( device )
-
-tokenizer = tf.AutoTokenizer.from_pretrained( model_dir, use_fast = True )
-
-loop_inference( device, model, tokenizer, "Within this decade, AI will" )
+model, tokenizer, device = setup_model()
+loop_inference( device, model, tokenizer )
