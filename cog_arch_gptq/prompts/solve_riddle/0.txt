@@ -30,7 +30,7 @@ Yesterday is in the past, today is in the present. You asked how many you have i
 
 ### Instruction:
 
-Use the example above to "think step by step" about the riddle constraints and
+Adapt "### Thinking step by step example" to be about the riddle constraints and
 your previous steps.
 
 ### Response:
