@@ -7,9 +7,7 @@ def generate( device, model, tokenizer, prompts ):
 
 Summarize the input text in 3 different lengths:
 
-- 50 words
 - 5 words
-- a single word
 
 ### Input:
 
