@@ -29,6 +29,8 @@ The monkey is on the ship and the diamonds and dog are still on the shore.
 
 ### Instruction:
 
-Suggest a single, reasonable next step in order to solve the riddle.
+What is the smallest action that adheres to the riddle constraints and brings
+you closer from the current state to the desired end state?
+
 
 ### Response:
