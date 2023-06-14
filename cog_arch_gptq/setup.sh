@@ -17,6 +17,7 @@ yes | pip install vim triton
 git clone https://github.com/qwopqwop200/GPTQ-for-LLaMa
 cd GPTQ-for-LLaMa
 # pip uninstall quant-cuda -y
+git stash
 # toggle between branches
 git checkout triton
 # git checkout cuda
