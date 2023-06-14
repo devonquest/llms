@@ -19,7 +19,7 @@ The monkey scatters the diamonds.
 
 ### Instruction:
 
-Why is the monkey not allowed on the ship?
+
 
 ### Response format:
 
