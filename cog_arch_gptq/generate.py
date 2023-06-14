@@ -15,10 +15,10 @@ def generate( device, model, tokenizer, prompts ):
             eos_token_id = tokenizer.eos_token_id,
             pad_token_id = tokenizer.pad_token_id,
             max_new_tokens = 300,
-            top_p = 0.95,
+            top_p = 0.1,
             top_k = 50,
-            temperature = 0.8,
-            # repetition_penalty = 1.02
+            temperature = 0.1,
+            repetition_penalty = 1.02
         )
 
     output_text = tokenizer.decode( [ el.item() for el in generated_ids[ 0 ] ] )
