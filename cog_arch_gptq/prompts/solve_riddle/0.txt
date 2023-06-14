@@ -17,15 +17,14 @@ How can you transport all three back to your ship?
 1. Row monkey to ship.
 2. Take the sack of diamonds to the ship.
 
-### Instruction:
+### Thinking step by step:
 
 "Yesterday, I finished reading two books. Today, I have five books on my shelf. How many books do I have on my shelf?"
 
 Yesterday is in the past, today is in the present. You asked how many you have in the present. You have five books on your shelf.
 
-*
+### Instruction:
 
-Reason out the next step from your previous steps. Beforehand, think
-step by step like in the example above.
+What's the thinking step by step example above about?
 
 ### Response:
