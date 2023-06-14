@@ -26,6 +26,6 @@ You cannot leave the monkey and the dog alone because the dog will scare the mon
 
 ### Instruction:
 
-Describe the next state that results from your previous steps.
+As a result from your previous steps, where are the diamonds?
 
 ### Response:
