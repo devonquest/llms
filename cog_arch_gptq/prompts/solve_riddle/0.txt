@@ -14,11 +14,11 @@ How can you transport all three back to your ship?
 
 ### Your previous steps:
 
-Row monkey to ship.
-Take the sack of diamonds to the ship.
+1. Row monkey to ship.
+2. Take the sack of diamonds to the ship.
 
 ### Instruction:
 
-Suggest a reasonable next step, and only one step.
+Suggest a reasonable next step. Do not suggest more steps, ONLY A SINGLE ONE!
 
 ### Response:
