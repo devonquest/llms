@@ -1,6 +1,6 @@
 ### Instruction:
 
-Solve the riddle, thinking step by step.
+What common riddle is this one a variation of?
 
 ### Input:
 
