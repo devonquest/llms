@@ -21,11 +21,10 @@ our lives and our world. Furthermore, """
     with to.no_grad():
         generated_ids = model.generate(
             input_ids,
-            use_cache = True, do_sample = True,
+            use_cache = True,
+            do_sample = True,
             eos_token_id = tokenizer.eos_token_id,
             pad_token_id = tokenizer.pad_token_id,
-            # min_length = 400,
-            max_length = 2048,
             max_new_tokens = 1000,
             top_p = 0.1,
             top_k = 50,
