@@ -25,6 +25,6 @@ The monkey is on the ship and the diamonds and dog are still on the shore.
 
 ### Instruction:
 
-Suggest a reasonable next step.
+Suggest a reasonable next step in order to solve the riddle.
 
 ### Response:
