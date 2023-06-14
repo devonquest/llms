@@ -2,7 +2,7 @@ import torch as to
 
 def generate( device, model, tokenizer, prompts ):
     # used_input_text = prompts[ "summarize" ]
-    used_input_text = "Within this decade, AI will"
+    used_input_text = """Within this decade, AI will become a ubiquitous tool for businesses, transforming the way they operate and compete. It will enable companies to automate routine tasks, optimize processes, and make better decisions based on data and insights."""
 #     used_input_text = """### Instruction:
 
 # Summarize the input text in 3 different lengths:
