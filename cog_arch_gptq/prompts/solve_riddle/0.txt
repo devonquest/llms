@@ -25,7 +25,6 @@ Yesterday is in the past, today is in the present. You asked how many you have i
 
 ### Instruction:
 
-Think step by step, as shown in the example, about your previous steps and then
-suggest a reasonable next step.
+Reason out the next step from your previous steps. Think step by step.
 
 ### Response:
