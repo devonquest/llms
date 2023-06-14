@@ -17,8 +17,14 @@ How can you transport all three back to your ship?
 1. Row monkey to ship.
 2. Take the sack of diamonds to the ship.
 
+### Your critique of your previous steps:
+
+No, the previous steps do not align with the problem constraints. The monkey
+and the diamonds cannot be left alone together, and the monkey and the dog
+cannot be left alone together.
+
 ### Instruction:
 
-Do you previous steps align with the problem constraints so far?
+Suggest a reasonable way to resolve the issue from your critique.
 
 ### Response:
