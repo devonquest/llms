@@ -15,8 +15,7 @@ Summarize the input text in 3 different lengths:
 
 The art of culinary excellence.
 
-### Response:
-    """
+### Response:"""
     input_ids = tokenizer.encode( used_input_text, return_tensors = "pt" ) \
         .to( device )
 
