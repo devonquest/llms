@@ -15,6 +15,7 @@ How can you transport all three back to your ship?
 ### Your previous step:
 
 Row monkey to ship.
+Take the sack of diamonds to the ship.
 
 ### Instruction:
 
