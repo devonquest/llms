@@ -6,8 +6,6 @@ def generate( device, model, tokenizer, prompts ):
 transforming the way they operate and compete. It will enable companies to
 automate routine tasks, optimize processes, and make better decisions based on
 
-
-
 data and insights. However, AI also raises significant challenges, including
 the need to manage and govern data, ensure transparency and accountability, and
 address potential job displacement and societal impacts. To harness the
