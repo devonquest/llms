@@ -32,12 +32,12 @@ How can you transport all three back to your ship?
 
 Consider riddle 2 and the compressed version of its solution chain:
 
-SH=Shore, SP=Ship, M=Monkey, DG=Dog, DM=Diamonds
-SH->SP(M), SH->SP(DM), SP->SH(M), SH->SP(DG), SH->SP(M)
+SHO=Shore, SHP=Ship, MNK=MNKonkey, DOG=Dog, DMD=Diamonds
+SHO->SHP(MNK), SHO->SHP(DMD), SHP->SHO(MNK), SHO->SHP(DOG), SHO->SHP(MNK)
 
 Here's your previous explanation of the first part:
 
-'"SH->SP(M)" means "go from shore to ship with the monkey".'
+'"SHO->SHP(MNK)" means "go from shore to ship with the monkey".'
 
 Can you now explain each reamining step in this chain, in order?
 
