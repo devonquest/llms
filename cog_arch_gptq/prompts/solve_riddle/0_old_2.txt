@@ -1,0 +1,30 @@
+### Input, Riddle:
+
+You are a pirate who's just found three treasures: diamonds, a monkey who loves diamonds, and a fierce dog who dislikes the monkey. You need to transport all three back to your ship using a small rowboat that can only carry one item at a time.
+
+1. You cannot leave the sack of diamonds and the monkey alone together, because the monkey will scatter the diamonds.
+2. You cannot leave the monkey and the dog alone because the dog will scare the monkey.
+
+How can you transport all three back to your ship?
+
+### Input, Your location: ship
+
+### Input, Objects on the ship: monkey, dog
+
+### Instruction:
+
+Which objects are on the ship right now?
+Based on your previous answer, what happens when these are alone
+together?
+Based on your previous answer, should you take one back to the
+shore?
+
+### Response format ( Q? A; include only A ):
+
+Which objects are on the ship right now? object[,...]
+Based on your previous answer, what happens when these are alone
+together? [phrase]
+Based on your previous answer, should you take one back to the
+shore? [yes or no]
+
+### Response:

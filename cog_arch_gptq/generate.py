@@ -1,7 +1,7 @@
 import torch as to
 
 def generate( device, model, tokenizer, prompts ):
-    used_input_text = prompts[ "summarize" ]
+    used_input_text = prompts[ "solve_riddle/0" ]
     # used_input_text = """Within this decade, AI"""
 
     input_ids = tokenizer.encode( used_input_text, return_tensors = "pt" ) \

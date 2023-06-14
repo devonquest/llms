@@ -1,2 +1,4 @@
 summarize
 improve
+
+solve_riddle/0
