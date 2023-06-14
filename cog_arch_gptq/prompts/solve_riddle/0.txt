@@ -18,4 +18,4 @@ You could start by transporting the sack of diamonds and leaving the monkey and 
 
 ### Instruction:
 
-Say hello.
+Suggest a reasonable next step.
