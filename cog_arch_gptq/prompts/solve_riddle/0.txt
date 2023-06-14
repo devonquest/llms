@@ -30,7 +30,8 @@ How can you transport all three back to your ship?
 
 ### Instruction:
 
-Solve riddle 2. Hint: At some point you have to take an object from the ship
-back to the shore, due to the riddle's rules.
+Decompress this compressed solution of riddle 2:
+
+1. M➔, 2. ⬅️, D➔, 3. Swap M/D, 4. Dog➔, 5. ⬅️, M➔
 
 ### Response:
