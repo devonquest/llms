@@ -1,30 +1,5 @@
-### Riddle:
+"Yesterday, I finished reading two books. Today, I have five books on my shelf. How many books do I have on my shelf?"
 
-You are a pirate who's just found three treasures: diamonds, a monkey who loves
-diamonds, and a fierce dog who dislikes the monkey. You need to transport all
-three back to your ship using a small rowboat that can only carry one item at
-a time.
+Yesterday is in the past, today is in the present. You asked how many you have in the present. You have five books on your shelf.
 
-You cannot leave the sack of diamonds and the monkey alone together, because
-the monkey will scatter the diamonds.
-You cannot leave the monkey and the dog alone because the dog will scare the
-monkey.
-
-How can you transport all three back to your ship?
-
-### Your previous steps:
-
-1. Row monkey to ship.
-2. Take the sack of diamonds to the ship.
-
-### Your critique of your previous steps:
-
-No, the previous steps do not align with the problem constraints. The monkey
-and the diamonds cannot be left alone together, and the monkey and the dog
-cannot be left alone together.
-
-### Instruction:
-
-Suggest a reasonable way to resolve the issue from your critique.
-
-### Response:
+"Today I have four bananas. Yesterday, I ate two bananas. How many bananas do I have now?"
