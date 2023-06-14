@@ -32,6 +32,7 @@ How can you transport all three back to your ship?
 
 Consider riddle 2 and the compressed version of its solution chain:
 
+SH=Shore, SP=Ship, M=Monkey, DG=Dog, DM=Diamonds
 SH->SP(M), SH->SP(DM), SP->SH(M), SH->SP(DG), SH->SP(M)
 
 Can you explain each step in this chain?
