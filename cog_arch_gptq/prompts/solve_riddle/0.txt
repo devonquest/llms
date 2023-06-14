@@ -39,6 +39,6 @@ Here's your previous explanation of the first part:
 
 '"SH->SP(M)" means "go from shore to ship with the monkey".'
 
-Can you now explain each reamining step in this chain?
+Can you now explain each reamining step in this chain, in order?
 
 ### Response:
