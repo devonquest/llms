@@ -15,13 +15,13 @@ conda install pytorch torchvision torchaudio pytorch-cuda=11.7 -c pytorch -c nvi
 yes | pip install vim triton
 
 git clone https://github.com/qwopqwop200/GPTQ-for-LLaMa
-cd GPTQ-for-LLaMa
-# pip uninstall quant-cuda -y
+cd /workspace/GPTQ-for-LLaMa
+pip uninstall quant-cuda -y
 git stash
 # toggle between branches
-git checkout triton
+# git checkout triton
 # git checkout cuda
-# git checkout fastest-inference-4bit
+git checkout fastest-inference-4bit
 # git checkout old-cuda
 
 sed -i "s/safetensors==0.3.0/safetensors==0.3.1/g" requirements.txt
