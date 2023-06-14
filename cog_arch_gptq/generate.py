@@ -2,18 +2,18 @@ import torch as to
 
 def generate( device, model, tokenizer, prompts ):
     # used_input_text = prompts[ "summarize" ]
-    # used_input_text = "Within this decade, AI will"
-    used_input_text = """### Instruction:
+    used_input_text = "Within this decade, AI will"
+#     used_input_text = """### Instruction:
 
-Summarize the input text in 3 different lengths:
+# Summarize the input text in 3 different lengths:
 
-- 30 words
+# - 30 words
 
-### Input:
+# ### Input:
 
-The art of culinary excellence.
+# The art of culinary excellence.
 
-### Response:"""
+# ### Response:"""
     input_ids = tokenizer.encode( used_input_text, return_tensors = "pt" ) \
         .to( device )
 
@@ -26,9 +26,9 @@ The art of culinary excellence.
             # min_length = 400,
             # max_length = 512,
             max_new_tokens = 50,
-            top_p = 0.95,
+            top_p = 0.1,
             top_k = 50,
-            temperature = 0.8,
+            temperature = 0.1,
             # repetition_penalty = 1.02
         )
 
