@@ -12,6 +12,11 @@ monkey.
 
 How can you transport all three back to your ship?
 
+### Riddle constraints:
+
+You cannot leave the sack of diamonds and the monkey alone together, because the monkey will scatter the diamonds.
+You cannot leave the monkey and the dog alone because the dog will scare the monkey.
+
 ### Your previous steps:
 
 1. Row monkey to ship.
@@ -25,6 +30,7 @@ Yesterday is in the past, today is in the present. You asked how many you have i
 
 ### Instruction:
 
-What are the constraints imposed by the riddle?
+Use the example above to "think step by step" about the riddle constraints and
+your previous steps.
 
 ### Response:
