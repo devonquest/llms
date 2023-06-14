@@ -5,11 +5,9 @@ def generate( device, model, tokenizer, prompts ):
     used_input_text = """Within this decade, AI will become a ubiquitous tool for businesses,
 transforming the way they operate and compete. It will enable companies to
 automate routine tasks, optimize processes, and make better decisions based on
-
 data and insights. However, AI also raises significant challenges, including
 the need to manage and govern data, ensure transparency and accountability, and
 address potential job displacement and societal impacts. To harness the
-
 potential of AI while mitigating its risks, businesses and governments must
 work together to establish a framework for responsible AI. This framework
 should include principles for fairness, transparency, accountability, and
