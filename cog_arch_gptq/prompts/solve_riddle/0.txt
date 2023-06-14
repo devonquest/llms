@@ -22,17 +22,12 @@ You cannot leave the monkey and the dog alone because the dog will scare the mon
 1. Row monkey to ship.
 2. Take the sack of diamonds to the ship.
 
-### Thinking step by step example:
-
-"Yesterday, I finished reading two books. Today, I have five books on my shelf. How many books do I have on my shelf?"
-
-Yesterday is in the past, today is in the present. You asked how many you have in the present. You have five books on your shelf.
-
 ### Instruction:
 
-Repeat the "### Thinking step by step example" verbatim.
+"Yesterday, I finished reading two books. Today, I have five books on my shelf. How many books do I have on my shelf?
+Yesterday is in the past, today is in the present. You asked how many you have in the present. You have five books on your shelf."
 
-Adapt "### Thinking step by step example" to be about the riddle constraints and
-your previous steps.
+Think step by step about the riddle constraints and your previous steps like
+in the quote above.
 
 ### Response:
