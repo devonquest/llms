@@ -30,12 +30,8 @@ How can you transport all three back to your ship?
 
 ### Instruction:
 
-Provide solution 2. Think step by step. At each step, think something like this:
+Provide solution 2. Here is the compressed version of the solution chain:
 
-"...now x is here, x can be here, because this, so now let's"
-
-or
-
-"...now x is here with y, x can't be here with y, because this, therefore"
+SH->SP(M), SH->SP(DM), SP->SH(M), SH->SP(DG), SH->SP(M)
 
 ### Response:
