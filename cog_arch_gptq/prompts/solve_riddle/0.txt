@@ -26,7 +26,9 @@ You cannot leave the monkey and the dog alone because the dog will scare the mon
 
 ### Instruction:
 
-If I were to describe the state that results from your previous steps, what
-questions would I need to answer?
+"2. What is the current state of the monkey?
+3. What is the current state of the diamonds?"
+
+Can you answer these questions?
 
 ### Response:
