@@ -17,6 +17,8 @@ How can you transport all three back to your ship?
 You cannot leave the sack of diamonds and the monkey alone together, because the monkey will scatter the diamonds.
 You cannot leave the monkey and the dog alone because the dog will scare the monkey.
 
+### Current state:
+
 ### Your previous steps:
 
 1. Row monkey to ship.
@@ -24,6 +26,6 @@ You cannot leave the monkey and the dog alone because the dog will scare the mon
 
 ### Instruction:
 
-Describe the state resulting from your previous steps.
+Describe the next state that results from your previous steps.
 
 ### Response:
