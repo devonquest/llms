@@ -19,6 +19,6 @@ How can you transport all three back to your ship?
 
 ### Instruction:
 
-Suggest a reasonable next step. Do not suggest more steps, ONLY A SINGLE ONE!
+Do you previous steps align with the problem constraints so far?
 
 ### Response:
