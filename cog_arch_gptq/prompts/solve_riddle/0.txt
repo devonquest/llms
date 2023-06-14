@@ -12,12 +12,6 @@ monkey.
 
 How can you transport all three back to your ship?
 
-### Thinking step by step example:
-
-"Yesterday, I finished reading two books. Today, I have five books on my shelf. How many books do I have on my shelf?"
-
-Yesterday is in the past, today is in the present. You asked how many you have in the present. You have five books on your shelf.
-
 ### Your previous steps:
 
 1. Row monkey to ship.
@@ -25,7 +19,13 @@ Yesterday is in the past, today is in the present. You asked how many you have i
 
 ### Instruction:
 
+"Yesterday, I finished reading two books. Today, I have five books on my shelf. How many books do I have on my shelf?"
+
+Yesterday is in the past, today is in the present. You asked how many you have in the present. You have five books on your shelf.
+
+*
+
 Reason out the next step from your previous steps. Beforehand, think
-step by step like in the example section above.
+step by step like in the example above.
 
 ### Response:
