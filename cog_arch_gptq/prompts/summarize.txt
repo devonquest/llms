@@ -1,4 +1,4 @@
-### Instruction:
+### Instruction 1:
 
 Summarize the input text in 3 different lengths:
 
@@ -6,7 +6,7 @@ Summarize the input text in 3 different lengths:
 - 5 words
 - a single word
 
-### Input:
+### Input 1:
 
 Tokyo's architecture is a mesmerizing blend of tradition and innovation,
 showcasing the city's unique character. Walking through the bustling streets,
@@ -31,7 +31,7 @@ advancements. From ancient temples to modern skyscrapers, Tokyo's architecture
 is a testament to the city's rich heritage and its unwavering embrace of
 progress.
 
-### Response:
+### Response 1:
 
 # 50 words
 
@@ -49,7 +49,7 @@ Traditional and modern Tokyo.
 
 Tokyo
 
-### Instruction:
+### Instruction 2:
 
 Summarize the input text in 3 different lengths:
 
@@ -57,7 +57,7 @@ Summarize the input text in 3 different lengths:
 - 5 words
 - a single word
 
-### Input:
+### Input 2:
 
 The art of culinary excellence transports us to a realm of sensory delight,
 where flavors, textures, and aromas harmoniously dance on our taste buds. From
@@ -75,4 +75,4 @@ connecting us to the origins of our food and supporting local farmers. With
 each bite, we embark on a culinary journey, expanding our cultural horizons and
 savoring the artistry of food in all its glorious forms.
 
-### Response:
+### Response 2:
