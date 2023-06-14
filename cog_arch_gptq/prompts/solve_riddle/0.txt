@@ -17,7 +17,7 @@ How can you transport all three back to your ship?
 1. Row monkey to ship.
 2. Take the sack of diamonds to the ship.
 
-### Thinking step by step:
+### Thinking step by step example:
 
 "Yesterday, I finished reading two books. Today, I have five books on my shelf. How many books do I have on my shelf?"
 
@@ -25,6 +25,6 @@ Yesterday is in the past, today is in the present. You asked how many you have i
 
 ### Instruction:
 
-What objects are being used in the thinking step by step example above?
+Make the thinking step by step example above about your previous steps.
 
 ### Response:
