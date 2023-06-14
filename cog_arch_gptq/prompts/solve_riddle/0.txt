@@ -27,7 +27,4 @@ You cannot leave the monkey and the dog alone because the dog will scare the mon
 "Yesterday, I finished reading two books. Today, I have five books on my shelf. How many books do I have on my shelf?
 Yesterday is in the past, today is in the present. You asked how many you have in the present. You have five books on your shelf."
 
-Think step by step about the riddle constraints and your previous steps like
-in the quote above.
-
 ### Response:
