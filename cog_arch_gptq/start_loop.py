@@ -29,7 +29,7 @@ def setup_model():
     # toggle between branches
     model = lm.load_quant(
         model_dir,
-        f"{ model_dir }/Wizard-Vicuna-13B-Uncensored-GPTQ-4bit-128g.compat" /
+        f"{ model_dir }/Wizard-Vicuna-13B-Uncensored-GPTQ-4bit-128g.compat" \
             ".no-act-order.safetensors",
         4,
         128,
