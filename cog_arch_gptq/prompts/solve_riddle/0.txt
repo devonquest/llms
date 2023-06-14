@@ -28,12 +28,16 @@ monkey.
 
 How can you transport all three back to your ship?
 
+### Proposed solution 2:
+
+1. The man takes the monkey across the river, leaving the diamonds and the dog behind.
+2. He then takes the dog across the river, leaving the monkey and diamonds behind.
+3. He returns to the first side and takes the diamonds across the river, leaving the monkey and dog behind.
+4. He then takes the monkey across the river, leaving the diamonds and dog behind.
+5. Finally, he takes the dog across the river, leaving the monkey and diamonds behind.
+
 ### Instruction:
 
-Provide solution 2, following this process:
-
-- make one river crossing with or without an object
-- ask yourself whether the objects currently on one side alone can be left alone
-- repeat until finished
+What is wrong with solution 2?
 
 ### Response:
