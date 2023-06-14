@@ -1,8 +1,8 @@
 import torch as to
 
 def generate( device, model, tokenizer, prompts ):
-    # used_input_text = prompts[ "summarize" ]
-    used_input_text = "Within this decade, AI will"
+    used_input_text = prompts[ "summarize" ]
+    # used_input_text = "Within this decade, AI will"
     input_ids = tokenizer.encode( used_input_text, return_tensors = "pt" ) \
         .to( device )
 
