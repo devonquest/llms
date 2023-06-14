@@ -30,7 +30,10 @@ How can you transport all three back to your ship?
 
 ### Instruction:
 
-Provide solution 2. While you do so, clearly discern between the shore and the
-ship side each time you make a step. Think step by step.
+Provide solution 2, following this process:
+
+- make one river crossing with or without an object
+- ask yourself whether the objects currently on one side alone can be left alone
+- repeat until finished
 
 ### Response:
