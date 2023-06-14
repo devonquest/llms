@@ -26,9 +26,9 @@ The art of culinary excellence.
             # min_length = 400,
             # max_length = 512,
             max_new_tokens = 50,
-            top_p = 0.1,
+            top_p = 0.95,
             top_k = 50,
-            temperature = 0.1,
+            temperature = 0.8,
             # repetition_penalty = 1.02
         )
 
