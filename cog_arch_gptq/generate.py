@@ -25,7 +25,7 @@ def generate( device, model, tokenizer, prompts ):
             do_sample = True,
             eos_token_id = tokenizer.eos_token_id,
             pad_token_id = tokenizer.pad_token_id,
-            max_new_tokens = 1000,
+            max_new_tokens = 100,
             top_p = 0.1,
             top_k = 50,
             temperature = 0.1,
