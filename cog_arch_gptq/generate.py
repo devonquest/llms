@@ -26,7 +26,7 @@ our lives and our world. Furthermore, """
             pad_token_id = tokenizer.pad_token_id,
             # min_length = 400,
             # max_length = 512,
-            # max_new_tokens = 300,
+            max_new_tokens = 1000,
             top_p = 0.1,
             top_k = 50,
             temperature = 0.1,
