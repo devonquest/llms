@@ -38,4 +38,6 @@ SH->SP(M), SH->SP(DM), SP->SH(M), SH->SP(DG), SH->SP(M)
 Can you explain each step in this chain? Let's start simple.
 What does "SH->SP(M)" mean?
 
+Once you've explained that. Carry on explaining the rest of the chain.
+
 ### Response:
