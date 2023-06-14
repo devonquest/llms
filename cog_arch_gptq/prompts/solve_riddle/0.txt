@@ -18,6 +18,6 @@ You could start by transporting the sack of diamonds and leaving the monkey and 
 
 ### Instruction:
 
-Suggest a reasonable next step.
+Suggest a reasonable next step, and only one step.
 
 ### Response:
