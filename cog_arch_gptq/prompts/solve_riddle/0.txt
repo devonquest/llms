@@ -29,8 +29,6 @@ The monkey is on the ship and the diamonds and dog are still on the shore.
 
 ### Instruction:
 
-What is the smallest action that adheres to the riddle constraints and brings
-you closer from the current state to the desired end state?
-
+What is the nearest state from your current state towards the desired end state?
 
 ### Response:
