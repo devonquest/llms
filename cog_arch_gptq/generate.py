@@ -15,8 +15,6 @@ address potential job displacement and societal impacts. To harness the
 potential of AI while mitigating its risks, businesses and governments must
 work together to establish a framework for responsible AI. This framework
 should include principles for fairness, transparency, accountability, and
-
-
 inclusivity,as well as mechanisms for oversight, regulation, and collaboration.
 By working together, we can ensure that AI delivers on its promise to improve
 our lives and our world. Furthermore, """
