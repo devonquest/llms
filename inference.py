@@ -28,7 +28,7 @@ def generate():
                 lines, trimmed = output.split("\n"), ""
 
                 for l in lines:
-                    if bool(re.match("^\d.*$")):
+                    if bool(re.match("^\d.*$", l)):
                         trimmed += f"\n{l}"
                 trimmed = trimmed.strip()
 
