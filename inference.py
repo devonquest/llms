@@ -52,3 +52,6 @@ def run_loop():
     if selection != "e":
         input("Press enter to continue.")
         run_loop()
+
+
+run_loop()
