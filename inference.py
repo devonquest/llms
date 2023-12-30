@@ -1,5 +1,6 @@
 from os import system
 from contextlib import ExitStack
+import re
 
 from llama_cpp import Llama
 
@@ -24,7 +25,18 @@ def generate():
 
         for i, p in enumerate(user_prompts):
             if i > 0:
-                p += output
+                lines, trimmed = output.split("\n"), ""
+
+                for l in lines:
+                    if bool(re.match("^\d.*$")):
+                        trimmed += f"\n{l}"
+                trimmed = trimmed.strip()
+
+                # TODO: Remove ( debug )
+                print(trimmed)
+                input("Continue.")
+
+                p += trimmed
 
             output = llm.create_chat_completion(
                 messages=[
