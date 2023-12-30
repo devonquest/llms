@@ -1,0 +1,15 @@
+# Instruction
+
+Break down the task 'Writing a sci-fi story' into 3 to 7 subtasks.
+
+# Response format
+
+- subtask_0
+- subtask_1
+..
+- subtask_n
+
+## Explanation
+
+Every bullet point must start with a dash ( - ).
+Replace each "- subtask_n" with a sensible bullet point, do not label them.
