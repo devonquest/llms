@@ -23,7 +23,7 @@ def generate():
                 {"role": "system", "content": sys_prompt},
                 {"role": "user", "content": user_prompt}
             ],
-            max_tokens=70
+            max_tokens=150
         )
 
         msg = "\n-- Sys prompt\n\n"
