@@ -1,9 +1,9 @@
-Break down the task 'Writing a sci-fi story' into 3 to 7 subtasks.
-
-# Example
+Provide the assistant's next response in the dialogue below.
 
 User: Break down the task 'Buying a skateboard' into 3 to 7 subtasks.
 Assistant: """- determine your budget
 - lookup reviewed skateboards that suit your budget online
 - choose the best reviewed one that you like
 - go to the nearest store that has the board and buy it"""
+User: Break down the task 'Writing a sci-fi story' into 3 to 7 subtasks.
+Assistant:
