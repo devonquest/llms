@@ -32,14 +32,14 @@ def generate():
                     {"role": "user", "content": p}
                 ],
                 max_tokens=150
-            )
+            )["choices"][0]["message"]["content"]
 
             msg = "\n-- Sys prompt\n\n"
             msg += f"{ sys_prompt }\n\n"
             msg += "-- User prompt\n\n"
             msg += f"{ p }\n\n"
             msg += "-- Response\n\n"
-            msg += output["choices"][0]["message"]["content"]
+            msg += output
             msg += "\n"
 
             print(f"{msg}\n\n")
