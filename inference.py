@@ -25,7 +25,7 @@ def generate():
             ]
         )
 
-        msg = output["choices"][0]["message"]
+        msg = output["choices"][0]["message"]["content"]
         msg += "\n\n"
         print(msg)
 
