@@ -11,7 +11,7 @@ def generate():
         prompts = []
 
         for n in ("system/default", "user/breakdown_task/0"):
-            f = open(f"prompts/{n}.txt")
+            f = open(f"./prompts/{n}.txt")
             s.enter_context(f)
 
             prompt = f.read()
