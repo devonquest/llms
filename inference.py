@@ -22,7 +22,8 @@ def generate():
             messages=[
                 {"role": "system", "content": sys_prompt},
                 {"role": "user", "content": user_prompt}
-            ]
+            ],
+            max_tokens=70
         )
 
         msg = output["choices"][0]["message"]["content"]
