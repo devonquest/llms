@@ -1,1 +1,16 @@
-Say hello three times, verbatim.
+# Instruction
+
+Break down the task 'Writing a sci-fi story' into 3 to 7 subtasks.
+
+# Response format
+
+## General
+
+Bulletpoint list of keyword phrases
+
+## Example
+
+- subtask_0
+- subtask_1
+..
+- subtask_n

@@ -1,8 +1,1 @@
-Break down the task 'Writing a sci-fi story' into 3 to 7 subtasks.
-
-# Format
-
-- subtask_0
-- subtask_1
-..
-- subtask_n
+Say hello three times, verbatim.
