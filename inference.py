@@ -3,7 +3,7 @@ from contextlib import ExitStack
 
 from llama_cpp import Llama
 
-llm = Llama("../zephyr3B.gguf", n_gpu_layers=9999)
+llm = Llama("./zephyr3B.gguf", n_gpu_layers=9999)
 
 
 def generate():
