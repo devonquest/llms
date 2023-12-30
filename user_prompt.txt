@@ -12,4 +12,4 @@ Break down the task 'Writing a sci-fi story' into 3 to 7 subtasks.
 ## IMPORTANT
 
 Every bullet point starts with a dash ( - ).
-Replace each "subtask_n" with actual text.
+Replace each "subtask_n" with the subtasks you generated, do not label them.
