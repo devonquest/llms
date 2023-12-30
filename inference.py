@@ -8,33 +8,42 @@ llm = Llama("./zephyr3B.gguf", n_gpu_layers=9999)
 
 def generate():
     with ExitStack() as s:
-        prompts = []
+        sys_prompt, user_prompts = "", []
 
-        for n in ("system/default", "user/breakdown_task/0"):
-            f = open(f"./prompts/{n}.txt")
+        with open("system/default") as f:
+            sys_prompt = f.read()
+
+        for n in range(2):
+            f = open(f"./prompts/user/breakdown_task/{n}.txt")
             s.enter_context(f)
 
             prompt = f.read()
-            prompts.append(prompt)
+            user_prompts.append(prompt)
 
-        sys_prompt, user_prompt = prompts
-        output = llm.create_chat_completion(
-            messages=[
-                {"role": "system", "content": sys_prompt},
-                {"role": "user", "content": user_prompt}
-            ],
-            max_tokens=150
-        )
+        output = ""
 
-        msg = "\n-- Sys prompt\n\n"
-        msg += f"{ sys_prompt }\n\n"
-        msg += "-- User prompt\n\n"
-        msg += f"{ user_prompt }\n\n"
-        msg += "-- Response\n\n"
-        msg += output["choices"][0]["message"]["content"]
-        msg += "\n\n"
+        for p, i in enumerate(user_prompts):
+            if i > 0:
+                p += output
 
-        print(msg)
+            output = llm.create_chat_completion(
+                messages=[
+                    {"role": "system", "content": sys_prompt},
+                    {"role": "user", "content": p}
+                ],
+                max_tokens=150
+            )
+
+            msg = "\n-- Sys prompt\n\n"
+            msg += f"{ sys_prompt }\n\n"
+            msg += "-- User prompt\n\n"
+            msg += f"{ p }\n\n"
+            msg += "-- Response\n\n"
+            msg += output["choices"][0]["message"]["content"]
+            msg += "\n"
+
+            print(f"{msg}\n\n")
+            input("Press enter to continue.\n")
 
 
 def run_loop():
