@@ -10,7 +10,7 @@ def generate():
     with ExitStack() as s:
         sys_prompt, user_prompts = "", []
 
-        with open("system/default") as f:
+        with open("system/default.txt") as f:
             sys_prompt = f.read()
 
         for n in range(2):
