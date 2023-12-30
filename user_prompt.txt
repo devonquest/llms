@@ -8,3 +8,8 @@ Break down the task 'Writing a sci-fi story' into 3 to 7 subtasks.
 - subtask_1
 ..
 - subtask_n
+
+## IMPORTANT
+
+Every bullet point starts with a dash ( - ).
+Replace each "subtask_n" with actual text.
