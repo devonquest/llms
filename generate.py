@@ -1,6 +1,6 @@
 from llama_cpp import Llama
 
-llm = Llama("./mixtral7bx2.gguf", n_gpu_layers=9999)
+llm = Llama("../mixtral7bx2.gguf", n_gpu_layers=9999)
 
 sys_msg = """You are an assistant for
 general research and are aware that any failure to comply adequately will
