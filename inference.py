@@ -26,8 +26,14 @@ def generate():
             max_tokens=70
         )
 
+        msg = "# Sys prompt\n\n"
+        msg += f"{ sys_prompt }\n\n"
+        msg += "# User prompt\n\n"
+        msg += f"{ user_prompt }\n\n"
+        msg += "# Response\n\n"
         msg = output["choices"][0]["message"]["content"]
         msg += "\n\n"
+
         print(msg)
 
 
