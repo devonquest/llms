@@ -22,7 +22,7 @@ def generate():
 
         output = ""
 
-        for p, i in enumerate(user_prompts):
+        for i, p in enumerate(user_prompts):
             if i > 0:
                 p += output
 
