@@ -10,8 +10,8 @@ def generate():
     with ExitStack() as s:
         prompts = []
 
-        for n in ("sys_prompt", "user_prompt"):
-            f = open(f"{n}.txt")
+        for n in ("system/default", "user/breakdown_task/0"):
+            f = open(f"prompts/{n}.txt")
             s.enter_context(f)
 
             prompt = f.read()
